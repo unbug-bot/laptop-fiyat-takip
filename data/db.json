@@ -2,9 +2,9 @@
  "meta": {
   "blocked": 3,
   "checked": 0,
-  "duration_sec": 55,
+  "duration_sec": 54,
   "last_ok": "2026-11-01T19:14:40Z",
-  "last_run": "2026-11-01T19:47:59Z",
+  "last_run": "2026-11-01T20:03:52Z",
   "last_status": "engellendi",
   "requests": 3
  },
