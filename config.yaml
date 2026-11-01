@@ -23,6 +23,7 @@ cpu_whitelist:
   - core ultra 7 255hx
   - core ultra 9 275hx
   - core ultra 9 285hx
+  - core ultra 9 290hx          # 290HX Plus
   - core i9-14900hx
   - ryzen 9 8940hx
   - ryzen 9 8945hx

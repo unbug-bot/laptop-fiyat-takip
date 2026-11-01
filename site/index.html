@@ -151,7 +151,7 @@ function rowHTML(p){
   const c = p.last_change_pct;
   const chg = c==null ? '<span class="chg flat">değişim yok</span>'
     : `<span class="chg ${c<0?"down":c>0?"up":"flat"}">${c<0?"▼ İndirim":"▲ Zam"} %${Math.abs(c).toLocaleString("tr-TR")}</span>`;
-  const tags = (p.in_stock ? "" : '<span class="tag out">Stokta yok</span>') + (p.manual ? '<span class="tag">Elle onaylandı</span>' : "");
+  const tags = (p.in_stock === false ? '<span class="tag out">Stokta yok</span>' : p.in_stock == null ? '<span class="tag out">Fiyat henüz okunmadı</span>' : "") + (p.manual ? '<span class="tag">Elle onaylandı</span>' : "");
   return `<div class="row" tabindex="0" data-asin="${p.asin}" aria-expanded="${open===p.asin}">
     <div><p class="name">${esc(p.title)}</p><p class="spec">${tags}${esc(specLine(p.specs))}</p></div>
     <div>
@@ -176,7 +176,7 @@ function render(){
     : '<p class="empty">Filtreleri geçen ürün henüz yok. Tarama her saat çalışır; onay bekleyenler sekmesine de göz at.</p>';
   $("#pending").innerHTML = data.pending.length ? data.pending.map(p=>`<div class="row"><div>
       <p class="name">${esc(p.title)}</p><p class="spec">ASIN <span class="asin">${p.asin}</span>.
-      ${p.in_stock?"Şu an "+tl(p.current_price):"Stokta yok"}. <a href="https://www.amazon.com.tr/dp/${p.asin}" target="_blank" rel="noopener">Amazon’da aç</a></p>
+      ${p.in_stock===true?"Şu an "+tl(p.current_price):p.in_stock===false?"Stokta yok":"Fiyat henüz okunmadı"}. <a href="https://www.amazon.com.tr/dp/${p.asin}" target="_blank" rel="noopener">Amazon’da aç</a></p>
       <ul class="reasons">${(p.reasons||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
       <div class="spec">${Object.keys(LABELS).map(k=>`${LABELS[k]}: ${esc((p.specs?.[k]?.degerler||[]).map(x=>pretty(k,x)).join(" / ")||"—")}`).join("<br>")}</div></div>`).join("")
     : '<p class="empty">Onay bekleyen ürün yok.</p>';

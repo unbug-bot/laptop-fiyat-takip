@@ -9,6 +9,8 @@ Her özellik için her kaynaktan bulunan değerler toplanır. Karar kuralı:
 """
 import re
 
+RULES_VERSION = 2  # değişince bekleyen ve detaydan reddedilen ürünler yeniden değerlendirilir
+
 ATTRS = ["gpu", "cpu", "ekran_boyutu", "cozunurluk", "yenileme", "ram"]
 ATTR_LABELS = {
     "gpu": "Ekran kartı", "cpu": "İşlemci", "ekran_boyutu": "Ekran boyutu",
@@ -27,6 +29,12 @@ def norm(text):
     t = text.replace("İ", "i").replace("™", "").replace("®", "")
     t = t.replace("\u200e", "").replace("\u200f", "").replace("\xa0", " ")
     return re.sub(r"\s+", " ", t.lower()).strip()
+
+
+def fix_dotless(t):
+    """Satıcıların 'Aı', 'Msı', 'İ7' gibi yazımlarını özellik aramaları için düzeltir.
+    Yalnızca değer aramada kullanılır; anahtar ve kelime listesi eşleşmesi norm() ile kalır."""
+    return t.replace("ı", "i")
 
 
 def _num(s):
@@ -77,8 +85,10 @@ def judge_gpu(v, cfg):
 # ---------------------------------------------------------------- CPU
 RE_ULTRA = re.compile(r"(?<![a-z0-9])(?:core\s*)?ultra\s*(?:core\s*)?([579])\s*[-\s]?\s*(\d{3})\s*(hx|h|v|u)?(?![a-z0-9])")
 RE_CORE_I = re.compile(r"(?<![a-z0-9])(?:core\s*)?i([3579])\s*[-\s]?\s*(\d{4,5})\s*(hx|hk|h|u|p|k)?(?![a-z0-9])")
-RE_RYZEN = re.compile(r"(?<![a-z0-9])ryzen\s*([3579])\s*[-\s]?\s*(?:pro\s*)?(\d{4})\s*(hx3d|hx|hs|h|u)?(?![a-z0-9])")
-RE_RYZEN_AI = re.compile(r"(?<![a-z0-9])ryzen\s*ai\s*(?:max\+?\s*)?(?:\d\s*)?(?:hx\s*)?(\d{3})(?![a-z0-9])")
+RE_RYZEN = re.compile(r"(?<![a-z0-9])ryzen\s*([3579])\s*[-\s]?\s*(?:pro\s*)?(\d{3,4})\s*(hx3d|hx|hs|h|u)?(?![a-z0-9])")
+RE_CORE_N = re.compile(r"(?<![a-z0-9])(?<!ultra )(?<!ultra)core\s*([3579])\s*[-\s]?\s*(\d{3})\s*(hx|h|u|p)?(?![a-z0-9])")
+RE_CORE_I_ARROW = re.compile(r"(?<![a-z0-9])(?:core\s*)?i([579])\s*[-\s]?\s*(2\d{2})\s*(hx|h)(?![a-z0-9])")
+RE_RYZEN_AI = re.compile(r"(?<![a-z0-9])ryzen\s*ai\s*(max\+?\s*)?(?:([3579])\s*[-\s]?\s*)?(?:hx\s*[-\s]?\s*)?(\d{3})(?![a-z0-9])")
 
 
 def find_cpu(text, check_ports=False):
@@ -87,10 +97,16 @@ def find_cpu(text, check_ports=False):
         out.append(f"core ultra {m.group(1)} {m.group(2)}{m.group(3) or ''}")
     for m in RE_CORE_I.finditer(text):
         out.append(f"core i{m.group(1)}-{m.group(2)}{m.group(3) or ''}")
+    for m in RE_CORE_N.finditer(text):
+        out.append(f"core {m.group(1)} {m.group(2)}{m.group(3) or ''}")
+    for m in RE_CORE_I_ARROW.finditer(text):
+        # 3 haneli 2xx numaralı Core i işlemcisi yoktur; satıcı Core Ultra'yı "i9-275HX" diye yazmış
+        out.append(f"core ultra {m.group(1)} {m.group(2)}{m.group(3)}")
     for m in RE_RYZEN.finditer(text):
         out.append(f"ryzen {m.group(1)} {m.group(2)}{m.group(3) or ''}")
     for m in RE_RYZEN_AI.finditer(text):
-        out.append(f"ryzen ai {m.group(1)}")
+        tier = "max" if m.group(1) else (m.group(2) or "?")
+        out.append(f"ryzen ai {tier} {m.group(3)}")
     return out
 
 
@@ -99,16 +115,28 @@ def judge_cpu(v, cfg):
         return "gecti"
     if v.startswith("core i"):
         return "kaldi"
-    m = re.match(r"core ultra (\d) \d{3}(\w*)$", v)
+    m = re.match(r"core ultra (\d) (\d)(\d{2})(\w*)$", v)
     if m:
-        if m.group(1) == "5" or m.group(2) != "hx":
+        tier, gen, num, suf = m.group(1), m.group(2), int(m.group(2) + m.group(3)), m.group(4)
+        if tier == "5" or suf != "hx":
             return "kaldi"
+        if gen == "2" and tier == "9":
+            return "gecti"            # Ultra 9 2xxHX: 275HX/285HX/290HX Plus, hepsi 255HX ve 8940HX'ten iyi
+        if gen == "2" and tier == "7" and num >= 255:
+            return "gecti"            # 255HX ve üstü (270HX Plus dahil)
         return "bilinmiyor"
-    m = re.match(r"ryzen (\d) \d{4}(\w*)$", v)
+    m = re.match(r"core (\d) \d{3}(\w*)$", v)
+    if m:
+        return "bilinmiyor" if m.group(2) == "hx" else "kaldi"   # Core 7 240H, Core 5 210H vb.
+    m = re.match(r"ryzen ai (\w+) \d{3}$", v)
+    if m:
+        # Ryzen AI 5/7/9 (350, 365, HX 370...): en fazla 12 çekirdek, 16 çekirdekli 8940HX'in altında
+        return "bilinmiyor" if m.group(1) == "max" else "kaldi"
+    m = re.match(r"ryzen (\d) (\d{3,4})(\w*)$", v)
     if m:
         if m.group(1) in ("3", "5", "7"):
             return "kaldi"
-        if m.group(2) not in ("hx", "hx3d"):
+        if len(m.group(2)) == 3 or m.group(3) not in ("hx", "hx3d"):
             return "kaldi"
         return "bilinmiyor"
     return "bilinmiyor"
@@ -234,7 +262,7 @@ def _table_attr(key):
 
 
 def _table_values(attr, value):
-    v = norm(value)
+    v = fix_dotless(norm(value))
     if attr == "ekran_boyutu":
         return find_size(v, allow_cm=True)
     if attr == "ram":
@@ -251,7 +279,7 @@ def _table_values(attr, value):
 def collect(title, table, bullets):
     """Her özellik için kaynak -> değerler sözlüğü üretir."""
     found = {a: {} for a in ATTRS}
-    t = norm(title)
+    t = fix_dotless(norm(title))
     for a in ATTRS:
         vals = TEXT_FINDERS[a](t, check_ports=False)
         if vals:
@@ -263,7 +291,7 @@ def collect(title, table, bullets):
             if vals:
                 found[a].setdefault("teknik tablo", []).extend(vals)
     for b in bullets:
-        nb = norm(b)
+        nb = fix_dotless(norm(b))
         for a in ATTRS:
             vals = TEXT_FINDERS[a](nb, check_ports=True)
             if vals:
@@ -303,6 +331,9 @@ def evaluate(title, table, bullets, breadcrumb, cfg):
     found = collect(title, table, bullets)
     summary, why_by, verdicts = {}, {}, {}
     for a in ATTRS:
+        # Başlıkta değer varsa yalnızca başlık esas alınır; diğer kaynaklar sadece eksik bilgiyi tamamlar
+        if "başlık" in found[a]:
+            found[a] = {"başlık": found[a]["başlık"]}
         verdict, why = judge_attr(a, found[a], cfg)
         verdicts[a] = verdict
         vals = sorted({str(v) for src in found[a].values() for v in src})

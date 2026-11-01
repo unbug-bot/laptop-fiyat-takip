@@ -139,3 +139,53 @@ def parse_offers(html):
     if blocks and not any(conditions):
         return None                       # durum başlıkları okunamadı: markup değişmiş olabilir
     return {"new_prices": prices, "conditions": conditions}
+
+
+# ---------------------------------------------------------------- Ürün sayfasından fiyat (yedek yöntem)
+CORE_PRICE_SELECTORS = [
+    "#corePriceDisplay_desktop_feature_div .a-price.priceToPay .a-offscreen",
+    "#corePriceDisplay_desktop_feature_div .a-price:not(.a-text-price) .a-offscreen",
+    "#corePrice_feature_div .a-price:not(.a-text-price) .a-offscreen",
+    "#corePrice_desktop .a-price:not(.a-text-price) .a-offscreen",
+    "#apex_desktop .a-price:not(.a-text-price) .a-offscreen",
+    "#price_inside_buybox",
+]
+OUT_OF_STOCK_WORDS = ["şu anda mevcut değil", "stokta yok", "currently unavailable", "geçici olarak stokta"]
+RE_OLP_NEW = re.compile(r"yeni\s*\(\s*\d+\s*\)[^0-9]{0,40}(\d{1,3}(?:\.\d{3})*(?:,\d{1,2})?)\s*(?:tl|₺)")
+
+
+def parse_product_price(html):
+    """Ürün sayfasından yalnızca yeni ürün fiyatlarını çıkarır.
+    Kaynaklar: ana fiyat kutusu (satış kutusu yeni ürünse) ve 'Yeni (N) ... TL' diğer satıcılar özeti.
+    Fiyat da stok dışı işareti de bulunamazsa None (bilinmiyor)."""
+    soup = _soup(html)
+    if not soup.select_one("#productTitle"):
+        return None
+    prices = []
+    buybox = soup.select_one("#buybox, #desktop_buybox, #rightCol")
+    buybox_text = norm(_text(buybox))
+    new_row = soup.select_one("#newAccordionRow, #newAccordionRow_0")
+    if new_row:
+        el = new_row.select_one(".a-price:not(.a-text-price) .a-offscreen")
+        p = parse_price_tl(_text(el))
+        if p:
+            prices.append(p)
+    elif not any(w in buybox_text for w in EXCLUDED_CONDITIONS):
+        for sel in CORE_PRICE_SELECTORS:
+            p = parse_price_tl(_text(soup.select_one(sel)))
+            if p:
+                prices.append(p)
+                break
+    olp = norm(" ".join(_text(e) for e in soup.select(
+        "#olpLinkWidget_feature_div, #aod-ingress-link, #buybox-see-all-buying-choices, "
+        "#mbc, #dynamic-aod-ingress-box, #moreBuyingChoices_feature_div")))
+    for m in RE_OLP_NEW.finditer(olp):
+        p = parse_price_tl(m.group(1))
+        if p:
+            prices.append(p)
+    if prices:
+        return {"new_prices": prices, "source": "urun"}
+    avail = norm(_text(soup.select_one("#availability, #outOfStock")))
+    if soup.select_one("#outOfStock") or any(w in avail for w in OUT_OF_STOCK_WORDS):
+        return {"new_prices": [], "source": "urun"}
+    return None

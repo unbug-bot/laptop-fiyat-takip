@@ -24,18 +24,21 @@ class Fetcher:
         self.blocked = 0
         self.consecutive_blocks = 0
 
-    def _get(self, url):
+    def _get(self, url, headers=None, tag="istek"):
         time.sleep(random.uniform(*self.delay))
         for attempt in range(2):
             self.requests += 1
             try:
-                r = self.s.get(url, timeout=30)
+                r = self.s.get(url, timeout=30, headers=headers)
             except Exception as e:  # ağ hatası
                 print(f"  ağ hatası: {e}")
                 time.sleep(5)
                 continue
             if r.status_code in (503, 429) or is_blocked(r.text):
                 self.blocked += 1
+                print(f"  engel ({tag}): HTTP {r.status_code} {url}")
+                if self.blocked <= 2:
+                    save_debug(f"engel_{tag}_{self.blocked}_{r.status_code}.html", r.text)
                 self.consecutive_blocks += 1
                 if self.consecutive_blocks >= 3:
                     raise Blocked(url)
@@ -50,18 +53,23 @@ class Fetcher:
             return r.text
         return None
 
+    def reset_streak(self):
+        self.consecutive_blocks = 0
+
     def warmup(self):
-        return self._get(BASE + "/") is not None
+        return self._get(BASE + "/", tag="giris") is not None
 
     def search(self, query, page):
-        return self._get(f"{BASE}/s?k={quote_plus(query)}&page={page}")
+        return self._get(f"{BASE}/s?k={quote_plus(query)}&page={page}", tag="arama")
 
     def product(self, asin):
-        return self._get(f"{BASE}/dp/{asin}?th=1&psc=1")
+        return self._get(f"{BASE}/dp/{asin}?th=1&psc=1", tag="urun")
 
     def offers(self, asin):
-        html = self._get(f"{BASE}/gp/aod/ajax/ref=auto_load_aod?asin={asin}&pc=dp")
-        return html
+        headers = {"Referer": f"{BASE}/dp/{asin}", "X-Requested-With": "XMLHttpRequest",
+                   "Accept": "text/html,*/*"}
+        return self._get(f"{BASE}/gp/aod/ajax/ref=auto_load_aod?asin={asin}&pc=dp",
+                         headers=headers, tag="teklif")
 
 
 def save_debug(name, html):

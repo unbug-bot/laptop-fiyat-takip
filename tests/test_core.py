@@ -36,10 +36,17 @@ def test_missing_refresh_pending():
     assert st == "beklemede" and any("Yenileme" in x for x in r)
 
 
-def test_conflict_pending():
-    st, r, _ = ev("Acer Predator 18 i9-14900HX RTX 4090 32GB DDR5 18\" 2560x1600 250Hz",
-                  table=[("Ekran Yenileme Hızı", "120 Hz")])
+def test_conflict_pending_only_when_title_silent():
+    # Başlıkta Hz yok; tablo ve açıklama çelişiyor -> beklemede
+    st, r, _ = ev("Acer Predator 18 i9-14900HX RTX 4090 32GB DDR5 18\" 2560x1600",
+                  table=[("Ekran Yenileme Hızı", "120 Hz")], bullets=["250Hz yenileme hızı"])
     assert st == "beklemede" and "çelişiyor" in " ".join(r)
+
+
+def test_title_wins():
+    st, r, _ = ev("Acer Predator 18 i9-14900HX RTX 4090 32GB DDR5 18\" 2560x1600 250Hz",
+                  table=[("Ekran Yenileme Hızı", "120 Hz"), ("Grafik Kartı Açıklaması", "RTX 4060")])
+    assert st == "onayli", r
 
 
 def test_gpu_rules():
@@ -56,7 +63,7 @@ def test_cpu_rules():
     assert specs.find_cpu(specs.norm("Intel Core i9-14900HX")) == ["core i9-14900hx"]
     assert specs.find_cpu(specs.norm("AMD Ryzen™ 9 8940HX")) == ["ryzen 9 8940hx"]
     assert j("core i7-14700hx") == "kaldi" and j("core ultra 7 155h") == "kaldi"
-    assert j("ryzen 7 8845hs") == "kaldi" and j("core ultra 9 290hx") == "bilinmiyor"
+    assert j("ryzen 7 8845hs") == "kaldi" and j("core ultra 7 245hx") == "bilinmiyor" and j("core 7 240h") == "kaldi"
 
 
 def test_ram_ignores_vram():
@@ -175,3 +182,64 @@ def test_overrides():
     apply_overrides(db, {"approve": ["A", "C"], "reject": ["B"]})
     p = db["products"]
     assert p["A"]["status"] == "onayli" and p["B"]["status"] == "red" and p["C"]["status"] == "red"
+
+
+def test_monster_ultra_core_order():
+    assert specs.find_cpu(specs.norm("Intel Ultra Core 9 275HX")) == ["core ultra 9 275hx"]
+
+
+def test_real_listing_game_garaj():
+    st, r, _ = ev('Game Garaj Slayer R9M XL-5060 C2 AMD Ryzen 9 8940HX 32GB RAM 1TB SSD RTX5060 17" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop')
+    assert st == "onayli", r
+
+
+def test_dotless_and_ryzen_ai():
+    assert specs.find_cpu(specs.fix_dotless(specs.norm("Acer Nitro 18 Aı Ryzen Aı 9 365"))) == ["ryzen ai 9 365"]
+    assert specs.judge_cpu("ryzen ai 7 350", CFG) == "kaldi"
+    assert specs.judge_cpu("ryzen ai 9 365", CFG) == "kaldi"
+    assert specs.judge_cpu("ryzen 7 260", CFG) == "kaldi"
+    assert specs.find_cpu(specs.norm("Intel Core 7 240H")) == ["core 7 240h"]
+    assert specs.find_cpu(specs.norm("INTEL I9-275HX")) == ["core ultra 9 275hx"]
+    st, r, _ = ev('Hp Omen 17-DB1019NT Amd Ryzen AI 7-350 32GB 1TB SSD 8GB RTX 5070 Freedos 17.3" QHD')
+    assert st == "red" and "İşlemci" in r[0]
+
+
+def test_290hx_plus():
+    assert specs.find_cpu(specs.norm("Intel Core Ultra 9 290HX Plus")) == ["core ultra 9 290hx"]
+    assert specs.judge_cpu("core ultra 9 290hx", CFG) == "gecti"
+
+
+def test_product_page_price():
+    from scraper.parse import parse_product_price
+    base = '<span id="productTitle">X</span><div id="rightCol">{}</div>'
+    html = base.format('<div id="corePriceDisplay_desktop_feature_div"><span class="a-price a-text-price">'
+                       '<span class="a-offscreen">115.499,00 TL</span></span><span class="a-price priceToPay">'
+                       '<span class="a-offscreen">110.301,55 TL</span></span></div>'
+                       '<div id="olpLinkWidget_feature_div">Yeni (2) 108.000,00 TL itibaren</div>')
+    assert sorted(parse_product_price(html)["new_prices"]) == [10800000, 11030155]
+    used = base.format('<div id="buybox">Kullanılmış - Çok iyi <span class="a-price"><span class="a-offscreen">70.000 TL</span></span></div>')
+    assert parse_product_price(used) is None
+    mixed = base.format('<div id="olpLinkWidget_feature_div">Yeni ve kullanılmış (3) 60.000,00 TL</div>'
+                        '<div id="availability">Şu anda mevcut değil.</div>')
+    assert parse_product_price(mixed)["new_prices"] == []
+
+
+PENDING_CASES = [
+    # (ASIN, başlık, tablo, açıklama, beklenen)
+    ("B0HFKHSHNP", "GIGABYTE GAMING A18 Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070 8GB 85W, AMD Ryzen 7 260, 16GB DDR5 RAM, 1TB SSD, Windows 11 Home", [], [], "red"),
+    ("B0FMFM78FC", 'Game Garaj Slayer R9M XL-5060 C2 AMD Ryzen 9 8940HX 32GB RAM 1TB SSD RTX5060 17" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop', [("Grafik Kartı Açıklaması", "NVIDIA RTX 4060")], [], "onayli"),
+    ("B0HFKD4RRQ", "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070Ti 12GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home", [], [], "red"),
+    ("B0FTM5PR7J", 'Hp Omen 17-DB1019NT Amd Ryzen AI 7-350 32GB 1TB SSD 8GB RTX 5070 Freedos 17.3" QHD Laptop CB4D7EA', [], [], "red"),
+    ("B0HMNY3XQ6", 'Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta', [], [], "red"),
+    ("B0FNWKBZXT", 'Game Garaj Slayer R9M3D XL-5070 C2 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop', [("Grafik Kartı Açıklaması", "RTX 4060")], [], "onayli"),
+    ("B0H1MQBX3R", "MSI RAIDER A18 HX A8WHG-280TR Dizüstü Bilgisayar, RYZEN 9-8940HX, 18.0 QHD+ 240Hz, 32GB RAM DDR5, RTX5070TI GDDR7 12GB, 1TB SSD, W11", [("Standart Ekran Boyutu", "18 İnç")], ["UHD+ 120Hz", "RTX 5090, Ryzen 9 9955HX3D, 64GB"], "onayli"),
+    ("B0H3V17TYK", "ASUS ROG Strix SCAR 18 G835LXG-TQ545 - Gaming Dizüstü Bilgisayarı | NVIDIA GeForce RTX 5090 Laptop GPU 24GB GDDR7 |Intel Core Ultra 9 290HX Plus Processor 2.7 GHz | 64GB DDR5 RAM | 2TB SSD| 18 inç|DOS", [("Ekran Çözünürlüğü", "3840 x 2400"), ("Ekran Yenileme Hızı", "240 Hz")], [], "onayli"),
+    ("B0F9FVTN56", 'GIGABYTE NOTEBOOK GAMING INTEL 18" I9-275HX RTX5090 W11 AORUS MASTER 18 BZHC6TRD45SP QHD+/240HZ/64GB RAM/2TB NVME', [("Ekran Boyutu", "16 İnç"), ("Ekran Çözünürlüğü", "1920x1200")], [], "onayli"),
+    ("B0H4LFBGRW", "ASUS ROG Strix Scar G18 G835LXG-TQ547 24GB GeForce RTX5090 Intel Core Ultra 9 290HX 64GB RAM 2TB SSD 18 inç 4K WQUXGA 240Hz", [], [], "onayli"),
+]
+
+
+def test_user_pending_list():
+    for asin, title, table, bullets, want in PENDING_CASES:
+        st, r, _ = ev(title, table=table, bullets=bullets)
+        assert st == want, (asin, st, r)

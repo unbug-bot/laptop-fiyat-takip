@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 import sys
@@ -8,7 +9,7 @@ import yaml
 
 from . import specs
 from .fetch import BASE, Blocked, Fetcher, save_debug
-from .parse import parse_offers, parse_product, parse_search
+from .parse import parse_offers, parse_product, parse_product_price, parse_search
 
 DB_PATH = "data/db.json"
 SITE_PATH = "data/site.json"
@@ -198,7 +199,7 @@ def run():
                 html = f.search(q, page)
                 res = parse_search(html) if html else None
                 if not res:
-                    if html:
+                    if html and page == 1:   # 2. sayfanın boş olması normal (sonuç azdır)
                         save_debug(f"arama_{q.replace(' ', '_')}_{page}.html", html)
                     break
                 for asin, title in res:
@@ -218,8 +219,16 @@ def run():
             else:
                 queue.append(asin)
         recheck = timedelta(hours=cfg["pending_recheck_hours"])
+        cfg_hash = hashlib.sha1((json.dumps(cfg, sort_keys=True) + str(specs.RULES_VERSION))
+                                .encode()).hexdigest()[:12]
+        cfg_changed = meta.get("config_hash") != cfg_hash
         for asin, p in products.items():
-            if p.get("auto_status") == "beklemede" and t0 - parse_iso(p["evaluated_at"]) >= recheck:
+            from_detail_red = p.get("auto_status") == "red" and not any(
+                "arama başlığından" in r or "ikinci el" in r or "kategori" in r or "404" in r
+                for r in p.get("reasons") or [])
+            if (p.get("auto_status") == "beklemede" and (
+                    cfg_changed or t0 - parse_iso(p["evaluated_at"]) >= recheck)) or \
+                    (cfg_changed and from_detail_red):
                 queue.append(asin)
 
         # 2) Özellik doğrulama
@@ -237,15 +246,33 @@ def run():
             print(f"  {asin}: {r['status']} {'; '.join(r['reasons'])[:160]}")
 
         apply_overrides(db, ov)
+        meta["config_hash"] = cfg_hash
 
         # 3) Fiyat takibi (onaylı + beklemedeki ürünler)
         tracked = [a for a, p in products.items() if p.get("status") in ("onayli", "beklemede")]
+        # Teklif paneli (AOD) engellenirse 24 saat boyunca fiyat ürün sayfasından okunur
+        use_aod = not meta.get("aod_blocked_at") or \
+            t0 - parse_iso(meta["aod_blocked_at"]) >= timedelta(hours=24)
+        f.reset_streak()
         for asin in tracked:
-            html = f.offers(asin)
-            res = parse_offers(html) if html else None
+            res = None
+            if use_aod:
+                try:
+                    html = f.offers(asin)
+                    res = parse_offers(html) if html else None
+                    if res is None and html:
+                        save_debug(f"teklif_{asin}.html", html)
+                except Blocked:
+                    print("Teklif paneli engellendi; fiyatlar ürün sayfasından okunacak.")
+                    meta["aod_blocked_at"] = ts
+                    use_aod = False
+                    f.reset_streak()
             if res is None:
-                if html:
-                    save_debug(f"teklif_{asin}.html", html)
+                html = f.product(asin)
+                res = parse_product_price(html) if html else None
+                if res is None and html:
+                    save_debug(f"urun_fiyat_{asin}.html", html)
+            if res is None:
                 continue           # bilinmiyor: ürüne dokunma
             prices = res["new_prices"]
             observations[asin] = (min(prices) if prices else None, bool(prices))
