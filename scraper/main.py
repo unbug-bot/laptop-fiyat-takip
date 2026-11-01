@@ -9,6 +9,13 @@ import yaml
 
 from . import specs
 from .fetch import BASE, Blocked, Fetcher, save_debug
+
+
+def make_fetcher(cfg):
+    if cfg.get("fetcher", "tarayici") == "tarayici":
+        from .browser import BrowserFetcher
+        return BrowserFetcher(tuple(cfg["request_delay_sec"]))
+    return Fetcher(tuple(cfg["request_delay_sec"]))
 from .parse import parse_offers, parse_product, parse_product_price, parse_search
 
 DB_PATH = "data/db.json"
@@ -191,7 +198,7 @@ def run():
     meta["last_run"] = ts
     products = db["products"]
     alerts = []
-    f = Fetcher(tuple(cfg["request_delay_sec"]))
+    f = make_fetcher(cfg)
     blocked = False
     observations = {}
     done = {"arama": 0, "degerlendirme": 0}
@@ -266,14 +273,21 @@ def run():
         # 3) Fiyat takibi: en uzun süredir bakılmayan ürün önce (engellenen turlar sırayı bozmaz)
         tracked = sorted((a for a, p in products.items() if p.get("status") in ("onayli", "beklemede")),
                          key=lambda a: products[a].get("last_checked") or "")
-        use_aod = not meta.get("aod_blocked_at") or \
-            t0 - parse_iso(meta["aod_blocked_at"]) >= timedelta(hours=24)
+        use_aod = (not meta.get("aod_blocked_at") or
+                   t0 - parse_iso(meta["aod_blocked_at"]) >= timedelta(hours=24)) and \
+                  (not meta.get("aod_missing_at") or
+                   t0 - parse_iso(meta["aod_missing_at"]) >= timedelta(days=7))
         f.reset_streak()
         for asin in tracked:
             res = None
             if use_aod:
                 try:
                     html = f.offers(asin)
+                    if html == "":
+                        # Teklif paneli adresi bu sitede 404 veriyor: 7 gün boyunca hiç deneme
+                        print("Teklif paneli adresi bulunamadı (404); fiyatlar ürün sayfasından okunacak.")
+                        meta["aod_missing_at"] = ts
+                        use_aod = False
                     res = parse_offers(html) if html else None
                     if res is None and html:
                         save_debug(f"teklif_{asin}.html", html)
@@ -327,6 +341,8 @@ def run():
     if progress:
         meta["last_progress"] = ts
     f.save_cookies()
+    if hasattr(f, "close"):
+        f.close()
     save_json(DB_PATH, db)
     export_site(db, cfg)
     send_telegram(alerts)

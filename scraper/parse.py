@@ -5,13 +5,27 @@ from bs4 import BeautifulSoup
 
 from .specs import norm
 
-BLOCK_MARKERS = ["validatecaptcha", "captchacharacters", "robot olmadığınızı",
+BLOCK_MARKERS = ["bm-verify", "/_sec/verify",   # Akamai JS doğrulama sayfası
+                 "validatecaptcha", "captchacharacters", "robot olmadığınızı",
                  "not a robot", "api-services-support@amazon.com", "/errors/validatecaptcha"]
 
 
 def is_blocked(html):
     low = html.lower()
-    return any(m in low for m in BLOCK_MARKERS)
+    return any(m in low for m in BLOCK_MARKERS) or is_empty_product_shell(html)
+
+
+def is_empty_product_shell(html):
+    """Amazon'un şüpheli ziyaretçiye gönderdiği içi boş ürün sayfası: başlık etiketi var,
+    ama ürün alanı (#dp-container) boş. Ayrıştırma hatası değil, sessiz engel."""
+    if 'id="dp-container"' not in html or 'id="productTitle"' in html:
+        return False
+    i = html.find('id="dp-container"')
+    end = html.find("sp:end-feature:host-atf", i)
+    if end == -1:
+        return False
+    chunk = re.sub(r"<script.*?</script>|<!--.*?-->|<[^>]+>", " ", html[i:end], flags=re.S)
+    return len(chunk.split()) < 5
 
 
 def _soup(html):

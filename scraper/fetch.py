@@ -76,6 +76,8 @@ class Fetcher:
                 print(f"  ağ hatası: {e}")
                 time.sleep(5)
                 continue
+            if r.status_code == 404:
+                return ""                      # sayfa/uç nokta yok: engel değil
             if r.status_code == 200 and is_blocked(r.text) and attempt < 2 \
                     and self._pass_interstitial(r.text, url):
                 time.sleep(random.uniform(*self.delay))
@@ -91,8 +93,6 @@ class Fetcher:
                 time.sleep(30 + 30 * attempt)
                 continue
             self.consecutive_blocks = 0
-            if r.status_code == 404:
-                return ""
             if r.status_code != 200:
                 print(f"  HTTP {r.status_code}: {url}")
                 return None
