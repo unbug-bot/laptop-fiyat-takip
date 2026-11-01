@@ -5,7 +5,7 @@
   "captcha_passed": 0,
   "checked": 0,
   "config_hash": "e2ff8cb9f084",
-  "duration_sec": 171,
+  "duration_sec": 170,
   "eval_queue": {
    "B096Y34V92": "MSI KATANA 15 HX B14WFK-450XTR Dizüstü Bilgisayar, Intel Core I9-14900HX, 15.6 QHD 165Hz, 32GB RAM DDR5, RTX5060 GDDR7 8GB, 1TB SSD, DOS",
    "B0F9FVTN56": "GIGABYTE NOTEBOOK GAMING INTEL 18\" I9-275HX RTX5090 W11 AORUS MASTER 18 BZHC6TRD45SP QHD+/240HZ/64GB RAM/2TB NVME",
@@ -29,7 +29,7 @@
   "evaluated": 0,
   "last_ok": "2026-11-01T19:14:40Z",
   "last_progress": "2026-11-01T21:42:57Z",
-  "last_run": "2026-11-01T22:40:45Z",
+  "last_run": "2026-11-01T22:44:32Z",
   "last_status": "engellendi",
   "queue": 18,
   "requests": 3,
