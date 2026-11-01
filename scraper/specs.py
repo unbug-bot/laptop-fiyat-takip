@@ -75,7 +75,7 @@ def judge_gpu(v, cfg):
 
 
 # ---------------------------------------------------------------- CPU
-RE_ULTRA = re.compile(r"(?<![a-z0-9])(?:core\s*)?ultra\s*([579])\s*[-\s]?\s*(\d{3})\s*(hx|h|v|u)?(?![a-z0-9])")
+RE_ULTRA = re.compile(r"(?<![a-z0-9])(?:core\s*)?ultra\s*(?:core\s*)?([579])\s*[-\s]?\s*(\d{3})\s*(hx|h|v|u)?(?![a-z0-9])")
 RE_CORE_I = re.compile(r"(?<![a-z0-9])(?:core\s*)?i([3579])\s*[-\s]?\s*(\d{4,5})\s*(hx|hk|h|u|p|k)?(?![a-z0-9])")
 RE_RYZEN = re.compile(r"(?<![a-z0-9])ryzen\s*([3579])\s*[-\s]?\s*(?:pro\s*)?(\d{4})\s*(hx3d|hx|hs|h|u)?(?![a-z0-9])")
 RE_RYZEN_AI = re.compile(r"(?<![a-z0-9])ryzen\s*ai\s*(?:max\+?\s*)?(?:\d\s*)?(?:hx\s*)?(\d{3})(?![a-z0-9])")
