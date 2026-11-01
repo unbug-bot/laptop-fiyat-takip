@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laptop fiyat takibi</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F4F1; --surface:#FFFFFF; --ink:#1B2430; --muted:#5B6675; --line:#D5DAD6;
+  --down:#0F7B5F; --up:#B3361B; --accent:#2F4A6D; --rail:#C9D0CB;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#12171D; --surface:#1A2129; --ink:#E6EAEE; --muted:#93A0AE; --line:#2B3540;
+    --down:#4CC79E; --up:#F08268; --accent:#8FB2DA; --rail:#3A4552; color-scheme:dark; }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:400 16px/1.5 "Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-variant-numeric:tabular-nums}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 20px 64px}
+h1{font:700 clamp(28px,5vw,40px)/1.1 "Barlow Semi Condensed","Arial Narrow",sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+.status{color:var(--muted);font-size:14px;margin:0}
+.status b{font-weight:600;color:var(--ink)}
+.status .bad{color:var(--up);font-weight:600}
+.criteria{color:var(--muted);font-size:14px;margin:4px 0 0;max-width:72ch}
+nav{display:flex;gap:4px;margin:28px 0 12px;border-bottom:1px solid var(--line)}
+nav button{font:600 15px "Barlow",sans-serif;color:var(--muted);background:none;border:0;
+  padding:10px 14px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+nav button:focus-visible,.row:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tools{display:flex;justify-content:flex-end;margin:0 0 8px;font-size:14px;color:var(--muted)}
+select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 8px;margin-left:6px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;padding:18px 20px;
+  border-top:1px solid var(--line);cursor:pointer}
+.row:first-child{border-top:0}
+.row:hover{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.name{font-weight:600;margin:0 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.spec{color:var(--muted);font-size:14px;margin:0}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:1px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent);margin-right:6px}
+.tag.out{background:color-mix(in srgb,var(--muted) 18%,transparent);color:var(--muted)}
+.price{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.now{font:700 26px/1 "Barlow Semi Condensed","Arial Narrow",sans-serif}
+.now.na{font-size:18px;color:var(--muted);font-weight:600}
+.chg{font-weight:600;font-size:14px}
+.chg.down{color:var(--down)} .chg.up{color:var(--up)} .chg.flat{color:var(--muted)}
+.rail{position:relative;height:30px;margin-top:10px}
+.rail .track{position:absolute;left:0;right:0;top:9px;height:4px;border-radius:2px;background:var(--rail)}
+.rail .dot{position:absolute;top:4px;width:14px;height:14px;margin-left:-7px;border-radius:50%;
+  background:var(--ink);border:3px solid var(--surface)}
+.rail .lo,.rail .hi{position:absolute;top:18px;font-size:12px;color:var(--muted)}
+.rail .lo{left:0} .rail .hi{right:0}
+.rail .lo b{color:var(--down);font-weight:600}
+.detail{grid-column:1/-1;padding-top:6px}
+.detail svg{width:100%;height:auto;display:block}
+.detail .meta{font-size:14px;color:var(--muted);margin:8px 0 0}
+.detail a{color:var(--accent)}
+.empty{padding:40px 20px;color:var(--muted);text-align:center}
+.pending .row{cursor:default}
+.reasons{margin:8px 0 0;padding-left:18px;font-size:14px}
+.asin{font-weight:600;color:var(--ink);user-select:all}
+.help{font-size:14px;color:var(--muted);margin:0 0 12px;max-width:72ch}
+code{font-size:13px;background:color-mix(in srgb,var(--muted) 15%,transparent);padding:1px 5px;border-radius:4px}
+@media (max-width:720px){ .row{grid-template-columns:1fr;gap:10px} }
+@media (prefers-reduced-motion:no-preference){ .detail{animation:open .18s ease-out} @keyframes open{from{opacity:0}} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Laptop fiyat takibi</h1>
+    <p class="status" id="status">Veriler yükleniyor…</p>
+    <p class="criteria" id="criteria"></p>
+  </header>
+  <nav role="tablist">
+    <button role="tab" id="tab-list" aria-selected="true">Takip listesi</button>
+    <button role="tab" id="tab-pending" aria-selected="false">Onay bekleyenler</button>
+  </nav>
+  <section id="view-list">
+    <div class="tools"><label>Sırala
+      <select id="sort">
+        <option value="drop">Son değişim (en çok düşen)</option>
+        <option value="price">Şu anki fiyat</option>
+        <option value="fromMin">En düşük fiyata yakınlık</option>
+      </select></label></div>
+    <div class="list" id="list"></div>
+  </section>
+  <section id="view-pending" hidden>
+    <p class="help">Bu ürünlerin en az bir özelliği doğrulanamadı ya da kaynaklar çelişiyor. Bildirim almazlar ama fiyatları takip ediliyor.
+      Karar vermek için ASIN’i repodaki <code>overrides.yaml</code> dosyasında <code>approve</code> ya da <code>reject</code> listesine ekle.</p>
+    <div class="list pending" id="pending"></div>
+  </section>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const tl = k => k == null ? "—" : (k/100).toLocaleString("tr-TR",{maximumFractionDigits:0}) + " TL";
+const dt = s => s ? new Date(s).toLocaleString("tr-TR",{dateStyle:"medium",timeStyle:"short"}) : "—";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LABELS = {gpu:"Ekran kartı",cpu:"İşlemci",ekran_boyutu:"Ekran",cozunurluk:"Çözünürlük",yenileme:"Yenileme",ram:"RAM"};
+const STATUS = {tamam:"tamamlandı", engellendi:"Amazon istekleri engelledi", anomali:"teklif sayfaları okunamadı, fiyatlar yok sayıldı"};
+let data, open = null;
+
+const pretty = (k,x) => k==="gpu" ? x.toUpperCase().replace(" TI"," Ti")
+  : k==="cpu" ? x.replace(/\b(core|ultra|ryzen|ai)\b/g,w=>w==="ai"?"AI":w[0].toUpperCase()+w.slice(1)).replace(/(\d)(hx3d|hx|hs|hk|h|u|p|k)\b/g,(m,a,b)=>a+b.toUpperCase())
+  : k==="cozunurluk" ? x.toUpperCase() : x;
+function specLine(s){
+  if(!s) return "";
+  const v = k => (s[k]?.degerler || []).map(x=>pretty(k,x)).join(" / ");
+  const parts = [v("gpu"), v("cpu"),
+    v("ekran_boyutu") && v("ekran_boyutu")+"″", v("cozunurluk"), v("yenileme") && v("yenileme")+" Hz",
+    v("ram") && v("ram")+" GB RAM"];
+  return parts.filter(Boolean).join(", ");
+}
+
+function chart(hist){
+  const pts = hist.filter(h => h[1] != null);
+  if(pts.length < 2) return '<p class="meta">Grafik için en az iki farklı fiyat gerekiyor.</p>';
+  const W=900,H=200,P=36, t = hist.map(h=>+new Date(h[0])), t0=Math.min(...t), t1=Math.max(Date.now(),...t);
+  const vals=pts.map(p=>p[1]), lo=Math.min(...vals), hi=Math.max(...vals), pad=(hi-lo)*.12||hi*.02;
+  const x = d => P + (+new Date(d)-t0)/(t1-t0||1)*(W-P*2), y = v => H-P - (v-(lo-pad))/((hi+pad)-(lo-pad))*(H-P*2);
+  let path="", prev=null;
+  hist.forEach((h,i)=>{
+    const nx = x(h[0]);
+    if(prev!=null) path += `H${nx.toFixed(1)}`;
+    if(h[1]==null){ prev=null; return; }
+    path += (prev==null?`M${nx.toFixed(1)},`:`V`) + y(h[1]).toFixed(1);
+    prev=h[1];
+  });
+  if(prev!=null) path += `H${(W-P).toFixed(1)}`;
+  const gl = [lo,hi].map(v=>`<line x1="${P}" x2="${W-P}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" stroke-dasharray="4 4"/>
+    <text x="${W-P}" y="${y(v)-6}" text-anchor="end" font-size="13" fill="var(--muted)">${tl(v)}</text>`).join("");
+  return `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Fiyat geçmişi">${gl}
+    <path d="${path}" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+    <text x="${P}" y="${H-10}" font-size="13" fill="var(--muted)">${dt(hist[0][0])}</text>
+    <text x="${W-P}" y="${H-10}" font-size="13" text-anchor="end" fill="var(--muted)">şimdi</text></svg>`;
+}
+
+function rowHTML(p){
+  const cur = p.in_stock ? p.current_price : null;
+  const lo=p.min_price, hi=p.max_price;
+  const pos = (lo!=null && hi!=null && hi>lo && cur!=null) ? (cur-lo)/(hi-lo)*100 : (cur!=null?0:null);
+  const c = p.last_change_pct;
+  const chg = c==null ? '<span class="chg flat">değişim yok</span>'
+    : `<span class="chg ${c<0?"down":c>0?"up":"flat"}">${c<0?"▼ İndirim":"▲ Zam"} %${Math.abs(c).toLocaleString("tr-TR")}</span>`;
+  const tags = (p.in_stock ? "" : '<span class="tag out">Stokta yok</span>') + (p.manual ? '<span class="tag">Elle onaylandı</span>' : "");
+  return `<div class="row" tabindex="0" data-asin="${p.asin}" aria-expanded="${open===p.asin}">
+    <div><p class="name">${esc(p.title)}</p><p class="spec">${tags}${esc(specLine(p.specs))}</p></div>
+    <div>
+      <div class="price"><span class="now ${cur==null?"na":""}">${cur==null?(p.last_known_price?"Son: "+tl(p.last_known_price):"Fiyat yok"):tl(cur)}</span>${chg}</div>
+      ${lo!=null ? `<div class="rail" title="En düşük ${tl(lo)}, en yüksek ${tl(hi)}"><div class="track"></div>
+        ${pos!=null?`<div class="dot" style="left:${pos}%"></div>`:""}
+        <span class="lo">en düşük <b>${tl(lo)}</b></span><span class="hi">en yüksek ${tl(hi)}</span></div>` : ""}
+    </div>
+    ${open===p.asin ? `<div class="detail">${chart(p.history||[])}
+      <p class="meta">İlk görülme ${dt(p.first_seen)}. Önceki fiyat ${tl(p.prev_price)}. ${(p.alerts||[]).length} bildirim gönderildi.
+      <a href="https://www.amazon.com.tr/dp/${p.asin}" target="_blank" rel="noopener">Amazon’da aç</a></p></div>` : ""}
+  </div>`;
+}
+
+function render(){
+  const items=[...data.items], s=$("#sort").value;
+  const curOf = p => p.in_stock ? p.current_price : Infinity;
+  if(s==="price") items.sort((a,b)=>curOf(a)-curOf(b));
+  else if(s==="fromMin") items.sort((a,b)=>(curOf(a)/(a.min_price||1))-(curOf(b)/(b.min_price||1)));
+  else items.sort((a,b)=>(a.last_change_pct??0)-(b.last_change_pct??0));
+  $("#list").innerHTML = items.length ? items.map(rowHTML).join("")
+    : '<p class="empty">Filtreleri geçen ürün henüz yok. Tarama her saat çalışır; onay bekleyenler sekmesine de göz at.</p>';
+  $("#pending").innerHTML = data.pending.length ? data.pending.map(p=>`<div class="row"><div>
+      <p class="name">${esc(p.title)}</p><p class="spec">ASIN <span class="asin">${p.asin}</span>.
+      ${p.in_stock?"Şu an "+tl(p.current_price):"Stokta yok"}. <a href="https://www.amazon.com.tr/dp/${p.asin}" target="_blank" rel="noopener">Amazon’da aç</a></p>
+      <ul class="reasons">${(p.reasons||[]).map(r=>`<li>${esc(r)}</li>`).join("")}</ul></div>
+      <div class="spec">${Object.keys(LABELS).map(k=>`${LABELS[k]}: ${esc((p.specs?.[k]?.degerler||[]).map(x=>pretty(k,x)).join(" / ")||"—")}`).join("<br>")}</div></div>`).join("")
+    : '<p class="empty">Onay bekleyen ürün yok.</p>';
+  $("#tab-pending").textContent = `Onay bekleyenler (${data.pending.length})`;
+}
+
+function tab(which){
+  const list = which==="list";
+  $("#tab-list").setAttribute("aria-selected",list); $("#tab-pending").setAttribute("aria-selected",!list);
+  $("#view-list").hidden=!list; $("#view-pending").hidden=list;
+  history.replaceState(null,"",list?location.pathname:"#onay-bekleyenler");
+}
+$("#tab-list").onclick=()=>tab("list"); $("#tab-pending").onclick=()=>tab("pending");
+$("#sort").onchange=render;
+$("#list").addEventListener("click",e=>{const r=e.target.closest(".row"); if(!r||e.target.closest("a")) return; open = open===r.dataset.asin?null:r.dataset.asin; render();});
+$("#list").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){const r=e.target.closest(".row"); if(r){e.preventDefault(); open=open===r.dataset.asin?null:r.dataset.asin; render(); document.querySelector(`[data-asin="${r.dataset.asin}"]`)?.focus();}}});
+
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
+  data=d; const m=d.meta||{};
+  const st = STATUS[m.last_status]||m.last_status||"henüz çalışmadı";
+  $("#status").innerHTML = `Son tarama <b>${dt(m.last_run)}</b>: <span class="${m.last_status==="tamam"?"":"bad"}">${esc(st)}</span>.`
+    + (m.last_status!=="tamam" && m.last_ok ? ` Son başarılı tarama ${dt(m.last_ok)}.` : "");
+  $("#criteria").textContent = `Yalnızca yeni ürün teklifleri sayılır. ${d.config.max_price_tl.toLocaleString("tr-TR")} TL üstü listeden çıkar. Takip edilen en düşük fiyatın %${d.config.alert_drop_pct} altına inen ürün Telegram bildirimi alır.`;
+  render(); if(location.hash==="#onay-bekleyenler") tab("pending");
+}).catch(()=>{$("#status").textContent="data.json okunamadı. İlk tarama tamamlandığında veriler burada görünür.";});
+</script>
+</body>
+</html>
