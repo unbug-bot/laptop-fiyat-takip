@@ -284,3 +284,30 @@ def test_fetcher_passes_interstitial(monkeypatch):
     html = f.product("B0TEST0001")
     assert "productTitle" in html and f.captcha_passed == 1 and f.blocked == 0
     assert "field-keywords=GHJRHB" in calls[1]
+
+
+def test_404_is_not_block(monkeypatch):
+    import scraper.fetch as fe
+
+    class R:
+        status_code, text = 404, "<!-- api-services-support@amazon.com --> Sayfa bulunamadı"
+
+    class S:
+        headers, cookies = {}, None
+        def get(self, url, timeout=30, headers=None):
+            return R()
+
+    monkeypatch.setattr(fe.time, "sleep", lambda s: None)
+    f = fe.Fetcher.__new__(fe.Fetcher)
+    f.s, f.delay, f.requests, f.blocked, f.captcha_passed, f.consecutive_blocks = S(), (0, 0), 0, 0, 0, 0
+    assert f.offers("B0TEST0001") == "" and f.blocked == 0 and f.requests == 1
+
+
+def test_real_soft_blocks_detected():
+    from scraper.parse import is_blocked, is_empty_product_shell, parse_captcha_form
+    akamai = open("tests/ornek/akamai_arama.html", encoding="utf-8").read()
+    shell = open("tests/ornek/bos_urun.html", encoding="utf-8").read()
+    assert is_blocked(akamai) and parse_captcha_form(akamai) is None
+    assert is_empty_product_shell(shell) and is_blocked(shell)
+    normal = '<div id="dp-container"><span id="productTitle">X</span></div>'
+    assert not is_blocked(normal)
