@@ -197,7 +197,7 @@ def run():
             for page in range(1, cfg["search_pages"] + 1):
                 html = f.search(q, page)
                 res = parse_search(html) if html else None
-                if res is None:
+                if not res:
                     if html:
                         save_debug(f"arama_{q.replace(' ', '_')}_{page}.html", html)
                     break
