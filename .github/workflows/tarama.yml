@@ -19,7 +19,7 @@ concurrency:
 
 jobs:
   tarama:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04          # Playwright'ın resmi desteklediği sürüm
     timeout-minutes: 55
     steps:
       # Sırada beklemiş bir çalıştırma da en güncel veriyle başlasın (tetikleyen eski commit ile değil)
@@ -33,7 +33,9 @@ jobs:
           cache: pip
 
       - name: Bağımlılıklar
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
 
       - name: Testler
         run: pip install pytest==8.3.3 && python -m pytest -q tests
@@ -50,7 +52,8 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python -m scraper.main
+          HEADLESS: "0"            # görünür Chrome, sanal ekranda (xvfb)
+        run: xvfb-run -a python -m scraper.main
 
       - name: Çerezleri sakla
         if: always()
