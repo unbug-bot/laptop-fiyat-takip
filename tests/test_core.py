@@ -243,3 +243,44 @@ def test_user_pending_list():
     for asin, title, table, bullets, want in PENDING_CASES:
         st, r, _ = ev(title, table=table, bullets=bullets)
         assert st == want, (asin, st, r)
+
+
+def test_interstitial_form_real_page():
+    from scraper.parse import parse_captcha_form, is_blocked
+    html = open("tests/engel_giris_ornek.html", encoding="utf-8").read()
+    assert is_blocked(html)
+    f = parse_captcha_form(html)
+    assert f["action"] == "/errors_page/validateCaptcha"
+    assert f["params"]["field-keywords"] == "GHJRHB" and f["params"]["amzn-r"] == "/"
+
+
+def test_image_captcha_not_auto():
+    from scraper.parse import parse_captcha_form
+    html = ('<form action="/errors/validateCaptcha"><input type="hidden" name="amzn" value="x">'
+            '<img src="captcha.jpg"><input type="text" name="field-keywords"></form>')
+    assert parse_captcha_form(html) is None
+
+
+def test_fetcher_passes_interstitial(monkeypatch):
+    import scraper.fetch as fe
+    blocked = open("tests/engel_giris_ornek.html", encoding="utf-8").read()
+    calls = []
+
+    class R:
+        def __init__(self, text, code=200):
+            self.text, self.status_code = text, code
+
+    class S:
+        headers, cookies = {}, None
+        def get(self, url, timeout=30, headers=None):
+            calls.append(url)
+            if "validateCaptcha" in url:
+                return R("<html>ok</html>")
+            return R(blocked) if len(calls) == 1 else R('<span id="productTitle">X</span>')
+
+    monkeypatch.setattr(fe.time, "sleep", lambda s: None)
+    f = fe.Fetcher.__new__(fe.Fetcher)
+    f.s, f.delay, f.requests, f.blocked, f.captcha_passed, f.consecutive_blocks = S(), (0, 0), 0, 0, 0, 0
+    html = f.product("B0TEST0001")
+    assert "productTitle" in html and f.captcha_passed == 1 and f.blocked == 0
+    assert "field-keywords=GHJRHB" in calls[1]

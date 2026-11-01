@@ -106,7 +106,7 @@ const tl = k => k == null ? "—" : (k/100).toLocaleString("tr-TR",{maximumFract
 const dt = s => s ? new Date(s).toLocaleString("tr-TR",{dateStyle:"medium",timeStyle:"short"}) : "—";
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const LABELS = {gpu:"Ekran kartı",cpu:"İşlemci",ekran_boyutu:"Ekran",cozunurluk:"Çözünürlük",yenileme:"Yenileme",ram:"RAM"};
-const STATUS = {tamam:"tamamlandı", engellendi:"Amazon istekleri engelledi", anomali:"teklif sayfaları okunamadı, fiyatlar yok sayıldı"};
+const STATUS = {tamam:"tamamlandı", kismen:"kısmen tamamlandı, Amazon yarıda engelledi; kalan iş sonraki turda", engellendi:"Amazon istekleri engelledi, bu turda veri toplanamadı", anomali:"teklif sayfaları okunamadı, fiyatlar yok sayıldı", anomali_arama:"arama sayfaları açıldı ama ürün okunamadı"};
 let data, open = null;
 
 const pretty = (k,x) => k==="gpu" ? x.toUpperCase().replace(" TI"," Ti")
@@ -198,7 +198,8 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
   data=d; const m=d.meta||{};
   const st = STATUS[m.last_status]||m.last_status||"henüz çalışmadı";
   $("#status").innerHTML = `Son tarama <b>${dt(m.last_run)}</b>: <span class="${m.last_status==="tamam"?"":"bad"}">${esc(st)}</span>.`
-    + (m.last_status!=="tamam" && m.last_ok ? ` Son başarılı tarama ${dt(m.last_ok)}.` : "");
+    + (m.last_status!=="tamam" && m.last_ok ? ` Son eksiksiz tarama ${dt(m.last_ok)}.` : "")
+    + (m.last_status!=="tamam" && m.last_progress && m.last_progress!==m.last_run ? ` Son veri toplanan tur ${dt(m.last_progress)}.` : "");
   $("#criteria").textContent = `Yalnızca yeni ürün teklifleri sayılır. ${d.config.max_price_tl.toLocaleString("tr-TR")} TL üstü listeden çıkar. Takip edilen en düşük fiyatın %${d.config.alert_drop_pct} altına inen ürün Telegram bildirimi alır.`;
   render(); if(location.hash==="#onay-bekleyenler") tab("pending");
 }).catch(()=>{$("#status").textContent="data.json okunamadı. İlk tarama tamamlandığında veriler burada görünür.";});

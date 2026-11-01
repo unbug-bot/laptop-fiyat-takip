@@ -189,3 +189,26 @@ def parse_product_price(html):
     if soup.select_one("#outOfStock") or any(w in avail for w in OUT_OF_STOCK_WORDS):
         return {"new_prices": [], "source": "urun"}
     return None
+
+
+# ---------------------------------------------------------------- "Alışverişe devam et" ara sayfası
+def parse_captcha_form(html):
+    """Amazon'un doğrulama formunu okur. Kodun gizli alanda hazır geldiği
+    'Alışverişe Devam Et' sayfasında {'action', 'params'} döner. Resimli CAPTCHA
+    (kodun elle yazılması gereken) veya tanınmayan sayfada None döner."""
+    soup = _soup(html)
+    form = soup.find("form", action=re.compile(r"validatecaptcha", re.I))
+    if not form:
+        return None
+    params, typed_field = {}, False
+    for inp in form.find_all("input"):
+        name = inp.get("name")
+        if not name:
+            continue
+        if (inp.get("type") or "text").lower() != "hidden":
+            typed_field = True          # kullanıcının yazması gereken alan var: resimli CAPTCHA
+            continue
+        params[name] = inp.get("value", "")
+    if typed_field or not params.get("field-keywords") or form.find("img"):
+        return None
+    return {"action": form["action"], "params": params}

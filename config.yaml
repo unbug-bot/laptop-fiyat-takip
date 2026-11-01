@@ -48,6 +48,7 @@ search_queries:
 search_pages: 2
 
 # Tarama davranışı
-request_delay_sec: [3, 6]
-max_detail_fetch_per_run: 40
+request_delay_sec: [8, 20]
+max_detail_fetch_per_run: 15
+search_every_hours: 6           # arama (keşif) sıklığı; fiyat kontrolü her turda
 pending_recheck_hours: 24

@@ -175,6 +175,12 @@ def apply_overrides(db, ov):
             p.pop("manual", None)
 
 
+def is_detail_red(p):
+    return p.get("auto_status") == "red" and not any(
+        "arama başlığından" in r or "ikinci el" in r or "kategori" in r or "404" in r
+        for r in p.get("reasons") or [])
+
+
 def run():
     cfg = load_yaml("config.yaml")
     ov = load_yaml("overrides.yaml")
@@ -186,58 +192,68 @@ def run():
     products = db["products"]
     alerts = []
     f = Fetcher(tuple(cfg["request_delay_sec"]))
-    status = "tamam"
+    blocked = False
     observations = {}
+    done = {"arama": 0, "degerlendirme": 0}
+    search_ran = False
+    candidates_found = 0
     apply_overrides(db, ov)
 
-    try:
-        f.warmup()
-        # 1) Keşif
-        candidates = {}
-        for q in cfg["search_queries"]:
-            for page in range(1, cfg["search_pages"] + 1):
-                html = f.search(q, page)
-                res = parse_search(html) if html else None
-                if not res:
-                    if html and page == 1:   # 2. sayfanın boş olması normal (sonuç azdır)
-                        save_debug(f"arama_{q.replace(' ', '_')}_{page}.html", html)
-                    break
-                for asin, title in res:
-                    candidates.setdefault(asin, title)
-                if len(res) < 10:
-                    break
-        print(f"Arama: {len(candidates)} aday ASIN")
+    # Kalıcı değerlendirme kuyruğu: engellenen tur yarım kalan işi sonraki tura bırakır
+    queue = meta.setdefault("eval_queue", {})          # asin -> başlık
 
-        queue = []
-        for asin, title in candidates.items():
-            if asin in products:
-                continue
-            why = specs.title_prefilter(title, cfg)
-            if why:
-                products[asin] = {"asin": asin, "title": title, "auto_status": "red",
-                                  "status": "red", "reasons": [why], "evaluated_at": ts, "first_seen": ts}
-            else:
-                queue.append(asin)
-        recheck = timedelta(hours=cfg["pending_recheck_hours"])
-        cfg_hash = hashlib.sha1((json.dumps(cfg, sort_keys=True) + str(specs.RULES_VERSION))
-                                .encode()).hexdigest()[:12]
-        cfg_changed = meta.get("config_hash") != cfg_hash
+    cfg_hash = hashlib.sha1((json.dumps(cfg, sort_keys=True) + str(specs.RULES_VERSION))
+                            .encode()).hexdigest()[:12]
+    if meta.get("config_hash") != cfg_hash:
         for asin, p in products.items():
-            from_detail_red = p.get("auto_status") == "red" and not any(
-                "arama başlığından" in r or "ikinci el" in r or "kategori" in r or "404" in r
-                for r in p.get("reasons") or [])
-            if (p.get("auto_status") == "beklemede" and (
-                    cfg_changed or t0 - parse_iso(p["evaluated_at"]) >= recheck)) or \
-                    (cfg_changed and from_detail_red):
-                queue.append(asin)
+            if p.get("auto_status") == "beklemede" or is_detail_red(p):
+                queue.setdefault(asin, p.get("title") or asin)
+        meta["config_hash"] = cfg_hash
+    recheck = timedelta(hours=cfg["pending_recheck_hours"])
+    for asin, p in products.items():
+        if p.get("auto_status") == "beklemede" and t0 - parse_iso(p["evaluated_at"]) >= recheck:
+            queue.setdefault(asin, p.get("title") or asin)
 
-        # 2) Özellik doğrulama
-        for asin in queue[: cfg["max_detail_fetch_per_run"]]:
+    try:
+        # 1) Keşif: yalnızca 'search_every_hours' dolduysa
+        last_search = meta.get("last_search_at")
+        if not last_search or t0 - parse_iso(last_search) >= timedelta(hours=cfg["search_every_hours"]):
+            search_ran = True
+            for q in cfg["search_queries"]:
+                for page in range(1, cfg["search_pages"] + 1):
+                    html = f.search(q, page)
+                    res = parse_search(html) if html else None
+                    if not res:
+                        if html and page == 1:   # 2. sayfanın boş olması normaldir
+                            save_debug(f"arama_{q.replace(' ', '_')}_{page}.html", html)
+                        break
+                    done["arama"] += 1
+                    for asin, title in res:
+                        candidates_found += 1
+                        if asin in products or asin in queue:
+                            continue
+                        why = specs.title_prefilter(title, cfg)
+                        if why:
+                            products[asin] = {"asin": asin, "title": title, "auto_status": "red",
+                                              "status": "red", "reasons": [why],
+                                              "evaluated_at": ts, "first_seen": ts}
+                        else:
+                            queue[asin] = title
+                    if len(res) < 10:
+                        break
+            if candidates_found:
+                meta["last_search_at"] = ts
+            print(f"Arama: {candidates_found} sonuç, kuyrukta {len(queue)} ürün")
+
+        # 2) Özellik doğrulama (kuyruktan, tur başına sınırlı)
+        for asin in list(queue)[: cfg["max_detail_fetch_per_run"]]:
             r = evaluate_detail(f, asin, cfg)
             if r is None:
                 continue
+            title_hint = queue.pop(asin)
+            done["degerlendirme"] += 1
             p = products.setdefault(asin, {"asin": asin, "first_seen": ts})
-            p["title"] = r["title"] or p.get("title") or candidates.get(asin, asin)
+            p["title"] = r["title"] or p.get("title") or title_hint
             p["auto_status"], p["status"] = r["status"], r["status"]
             p["reasons"], p["specs"], p["evaluated_at"] = r["reasons"], r["specs"], ts
             if r["status"] == "red":
@@ -246,11 +262,10 @@ def run():
             print(f"  {asin}: {r['status']} {'; '.join(r['reasons'])[:160]}")
 
         apply_overrides(db, ov)
-        meta["config_hash"] = cfg_hash
 
-        # 3) Fiyat takibi (onaylı + beklemedeki ürünler)
-        tracked = [a for a, p in products.items() if p.get("status") in ("onayli", "beklemede")]
-        # Teklif paneli (AOD) engellenirse 24 saat boyunca fiyat ürün sayfasından okunur
+        # 3) Fiyat takibi: en uzun süredir bakılmayan ürün önce (engellenen turlar sırayı bozmaz)
+        tracked = sorted((a for a, p in products.items() if p.get("status") in ("onayli", "beklemede")),
+                         key=lambda a: products[a].get("last_checked") or "")
         use_aod = not meta.get("aod_blocked_at") or \
             t0 - parse_iso(meta["aod_blocked_at"]) >= timedelta(hours=24)
         f.reset_streak()
@@ -277,14 +292,15 @@ def run():
             prices = res["new_prices"]
             observations[asin] = (min(prices) if prices else None, bool(prices))
     except Blocked as e:
-        status = "engellendi"
+        blocked = True
         print(f"Amazon istekleri engelledi: {e}")
 
     # 4) Toplu stok kaybı koruması: ayrıştırma bozulduysa geçmişi kirletme
+    anomaly = False
     before_in_stock = [a for a in observations if products[a].get("in_stock")]
     now_in_stock = [a for a, (_, s) in observations.items() if s]
     if len(before_in_stock) >= 3 and not now_in_stock:
-        status = "anomali"
+        anomaly = True
         print("Takip edilen tüm ürünler aynı anda stok dışı göründü; bu turun fiyatları yok sayıldı.")
         observations = {}
 
@@ -293,16 +309,29 @@ def run():
         if a:
             alerts.append(a)
 
+    progress = done["arama"] + done["degerlendirme"] + len(observations)
+    if anomaly:
+        status = "anomali"
+    elif search_ran and not candidates_found and not blocked:
+        status = "anomali_arama"      # sayfalar açıldı ama hiç ürün okunamadı
+    elif blocked:
+        status = "kismen" if progress else "engellendi"
+    else:
+        status = "tamam"
     meta.update({"last_status": status, "requests": f.requests, "blocked": f.blocked,
-                 "checked": len(observations),
-                 "duration_sec": int((now() - t0).total_seconds())})
+                 "captcha_passed": f.captcha_passed, "checked": len(observations),
+                 "evaluated": done["degerlendirme"], "search_pages": done["arama"],
+                 "queue": len(queue), "duration_sec": int((now() - t0).total_seconds())})
     if status == "tamam":
         meta["last_ok"] = ts
+    if progress:
+        meta["last_progress"] = ts
+    f.save_cookies()
     save_json(DB_PATH, db)
     export_site(db, cfg)
     send_telegram(alerts)
-    print(f"Durum: {status}, istek: {f.requests}, engel: {f.blocked}, gözlem: {len(observations)}, "
-          f"bildirim: {len(alerts)}")
+    print(f"Durum: {status}, istek: {f.requests}, engel: {f.blocked}, ara sayfa geçildi: {f.captcha_passed}, "
+          f"değerlendirme: {done['degerlendirme']}, fiyat: {len(observations)}, bildirim: {len(alerts)}")
 
 
 if __name__ == "__main__":
