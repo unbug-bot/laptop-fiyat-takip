@@ -61,7 +61,7 @@
   },
   {
    "alerts": null,
-   "asin": "B0H2VNJ2JQ",
+   "asin": "B0FV31QF78",
    "current_price": null,
    "first_seen": "2026-11-01T19:33:29Z",
    "history": null,
@@ -76,14 +76,13 @@
    "specs": {
     "cozunurluk": {
      "degerler": [
-      "2560x1600",
-      "qhd+"
+      "2560x1600"
      ],
      "karar": "gecti"
     },
     "cpu": {
      "degerler": [
-      "ryzen 9 8945hx"
+      "core ultra 9 275hx"
      ],
      "karar": "gecti"
     },
@@ -95,24 +94,78 @@
     },
     "gpu": {
      "degerler": [
-      "rtx 5070"
+      "rtx 5080"
      ],
      "karar": "gecti"
     },
     "ram": {
      "degerler": [
-      "32"
+      "64"
      ],
      "karar": "gecti"
     },
     "yenileme": {
      "degerler": [
-      "180"
+      "240"
      ],
      "karar": "gecti"
     }
    },
-   "title": "Game Garaj Slayer R9T XL-5070 V2.12 C2 AMD Ryzen 9 8945HX 32GB RAM 2TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
+   "title": "Monster Semruk S8 V1.1.3 Intel Ultra Core 9 275HX 64 GB RAM 2 TB SSD 16 GB RTX 5080 Windows 11 Pro 18\" 240 Hz Oyun Bilgisayarı"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FV31R7FY",
+   "current_price": null,
+   "first_seen": "2026-11-01T19:33:29Z",
+   "history": null,
+   "in_stock": null,
+   "last_change_pct": null,
+   "last_checked": null,
+   "last_known_price": null,
+   "manual": null,
+   "max_price": null,
+   "min_price": null,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "3840x2160"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 9 275hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5090"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "128"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Monster Semruk S8 V1.2.4 Intel Ultra Core 9 275HX 128 GB RAM 4 TB SSD 24 GB RTX 5090 Windows 11 Pro 18\" 240 Hz Oyun Bilgisayarı"
   },
   {
    "alerts": null,
@@ -171,7 +224,7 @@
   },
   {
    "alerts": null,
-   "asin": "B0HNKKG22V",
+   "asin": "B0H2VNJ2JQ",
    "current_price": null,
    "first_seen": "2026-11-01T19:33:29Z",
    "history": null,
@@ -193,7 +246,7 @@
     },
     "cpu": {
      "degerler": [
-      "core i9-14900hx"
+      "ryzen 9 8945hx"
      ],
      "karar": "gecti"
     },
@@ -205,7 +258,7 @@
     },
     "gpu": {
      "degerler": [
-      "rtx 5070 ti"
+      "rtx 5070"
      ],
      "karar": "gecti"
     },
@@ -217,176 +270,12 @@
     },
     "yenileme": {
      "degerler": [
-      "300"
+      "180"
      ],
      "karar": "gecti"
     }
    },
-   "title": "Game Garaj Slayer X9T XL-5070Ti C4 Intel Core i9 14900HX 32GB RAM 1TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0HNKWRVMQ",
-   "current_price": null,
-   "first_seen": "2026-11-01T19:33:29Z",
-   "history": null,
-   "in_stock": null,
-   "last_change_pct": null,
-   "last_checked": null,
-   "last_known_price": null,
-   "manual": null,
-   "max_price": null,
-   "min_price": null,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "core i9-14900hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070 ti"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "64"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "300"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer X9T XL-5070Ti C6 Intel Core i9 14900HX 64GB RAM 2TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0HNKMZ2MB",
-   "current_price": null,
-   "first_seen": "2026-11-01T19:33:29Z",
-   "history": null,
-   "in_stock": null,
-   "last_change_pct": null,
-   "last_checked": null,
-   "last_known_price": null,
-   "manual": null,
-   "max_price": null,
-   "min_price": null,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "core i9-14900hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070 ti"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "300"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer X9T XL-5070Ti C5 Intel Core i9 14900HX 32GB RAM 2TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0FV31QF78",
-   "current_price": null,
-   "first_seen": "2026-11-01T19:33:29Z",
-   "history": null,
-   "in_stock": null,
-   "last_change_pct": null,
-   "last_checked": null,
-   "last_known_price": null,
-   "manual": null,
-   "max_price": null,
-   "min_price": null,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "core ultra 9 275hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5080"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "64"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Monster Semruk S8 V1.1.3 Intel Ultra Core 9 275HX 64 GB RAM 2 TB SSD 16 GB RTX 5080 Windows 11 Pro 18\" 240 Hz Oyun Bilgisayarı"
+   "title": "Game Garaj Slayer R9T XL-5070 V2.12 C2 AMD Ryzen 9 8945HX 32GB RAM 2TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
   },
   {
    "alerts": null,
@@ -445,60 +334,6 @@
   },
   {
    "alerts": null,
-   "asin": "B0FV31R7FY",
-   "current_price": null,
-   "first_seen": "2026-11-01T19:33:29Z",
-   "history": null,
-   "in_stock": null,
-   "last_change_pct": null,
-   "last_checked": null,
-   "last_known_price": null,
-   "manual": null,
-   "max_price": null,
-   "min_price": null,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "3840x2160"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "core ultra 9 275hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5090"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "128"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Monster Semruk S8 V1.2.4 Intel Ultra Core 9 275HX 128 GB RAM 4 TB SSD 24 GB RTX 5090 Windows 11 Pro 18\" 240 Hz Oyun Bilgisayarı"
-  },
-  {
-   "alerts": null,
    "asin": "B0HNKJV8G5",
    "current_price": null,
    "first_seen": "2026-11-01T19:33:29Z",
@@ -551,38 +386,34 @@
     }
    },
    "title": "Game Garaj Slayer X9T XL-5070Ti C3 Intel Core i9 14900HX 32GB RAM 1TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
-  }
- ],
- "meta": {
-  "blocked": 3,
-  "checked": 0,
-  "duration_sec": 356,
-  "last_ok": "2026-11-01T19:14:40Z",
-  "last_run": "2026-11-01T19:33:29Z",
-  "last_status": "engellendi",
-  "requests": 54
- },
- "pending": [
+  },
   {
-   "asin": "B0HFKHSHNP",
+   "alerts": null,
+   "asin": "B0HNKKG22V",
    "current_price": null,
+   "first_seen": "2026-11-01T19:33:29Z",
+   "history": null,
    "in_stock": null,
+   "last_change_pct": null,
+   "last_checked": null,
    "last_known_price": null,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
+   "manual": null,
+   "max_price": null,
+   "min_price": null,
+   "prev_price": null,
    "specs": {
     "cozunurluk": {
      "degerler": [
       "2560x1600",
-      "qhd",
-      "wqxga"
+      "qhd+"
      ],
      "karar": "gecti"
     },
     "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
+     "degerler": [
+      "core i9-14900hx"
+     ],
+     "karar": "gecti"
     },
     "ekran_boyutu": {
      "degerler": [
@@ -592,25 +423,196 @@
     },
     "gpu": {
      "degerler": [
-      "rtx 5070"
+      "rtx 5070 ti"
      ],
      "karar": "gecti"
     },
     "ram": {
      "degerler": [
-      "16",
       "32"
      ],
      "karar": "gecti"
     },
     "yenileme": {
      "degerler": [
-      "165"
+      "300"
      ],
      "karar": "gecti"
     }
    },
-   "title": "GIGABYTE GAMING A18 Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070 8GB 85W, AMD Ryzen 7 260, 16GB DDR5 RAM, 1TB SSD, Windows 11 Home"
+   "title": "Game Garaj Slayer X9T XL-5070Ti C4 Intel Core i9 14900HX 32GB RAM 1TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0HNKMZ2MB",
+   "current_price": null,
+   "first_seen": "2026-11-01T19:33:29Z",
+   "history": null,
+   "in_stock": null,
+   "last_change_pct": null,
+   "last_checked": null,
+   "last_known_price": null,
+   "manual": null,
+   "max_price": null,
+   "min_price": null,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600",
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core i9-14900hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070 ti"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "300"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer X9T XL-5070Ti C5 Intel Core i9 14900HX 32GB RAM 2TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0HNKWRVMQ",
+   "current_price": null,
+   "first_seen": "2026-11-01T19:33:29Z",
+   "history": null,
+   "in_stock": null,
+   "last_change_pct": null,
+   "last_checked": null,
+   "last_known_price": null,
+   "manual": null,
+   "max_price": null,
+   "min_price": null,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600",
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core i9-14900hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070 ti"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "64"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "300"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer X9T XL-5070Ti C6 Intel Core i9 14900HX 64GB RAM 2TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
+  }
+ ],
+ "meta": {
+  "blocked": 3,
+  "checked": 0,
+  "duration_sec": 55,
+  "last_ok": "2026-11-01T19:14:40Z",
+  "last_run": "2026-11-01T19:47:59Z",
+  "last_status": "engellendi",
+  "requests": 3
+ },
+ "pending": [
+  {
+   "asin": "B0F9FVTN56",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: hiçbir kaynakta bulunamadı",
+    "Ekran boyutu: kaynaklar çelişiyor (başlık: 18.0; teknik tablo: 16.0)",
+    "Çözünürlük: kaynaklar çelişiyor (başlık: qhd+; teknik tablo: 1920x1200)"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "1920x1200",
+      "qhd+"
+     ],
+     "karar": "celiski"
+    },
+    "cpu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "16.0",
+      "18.0"
+     ],
+     "karar": "celiski"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5090"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32",
+      "64"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "GIGABYTE NOTEBOOK GAMING INTEL 18\" I9-275HX RTX5090 W11 AORUS MASTER 18 BZHC6TRD45SP QHD+/240HZ/64GB RAM/2TB NVME"
   },
   {
    "asin": "B0FMFM78FC",
@@ -663,149 +665,6 @@
    "title": "Game Garaj Slayer R9M XL-5060 C2 AMD Ryzen 9 8940HX 32GB RAM 1TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   },
   {
-   "asin": "B0HFKD4RRQ",
-   "current_price": null,
-   "in_stock": null,
-   "last_known_price": null,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "qhd",
-      "wqxga"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070 ti"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070Ti 12GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home"
-  },
-  {
-   "asin": "B0FTM5PR7J",
-   "current_price": null,
-   "in_stock": null,
-   "last_known_price": null,
-   "reasons": [
-    "İşlemci: tanınmayan değer: ryzen ai 350",
-    "Yenileme hızı: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1440",
-      "qhd"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "ryzen ai 350"
-     ],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.3"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    }
-   },
-   "title": "Hp Omen 17-DB1019NT Amd Ryzen AI 7-350 32GB 1TB SSD 8GB RTX 5070 Freedos 17.3\" QHD Laptop CB4D7EA"
-  },
-  {
-   "asin": "B0HMNY3XQ6",
-   "current_price": null,
-   "in_stock": null,
-   "last_known_price": null,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "wqxga"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18\" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta"
-  },
-  {
    "asin": "B0FNWKBZXT",
    "current_price": null,
    "in_stock": null,
@@ -856,35 +715,86 @@
    "title": "Game Garaj Slayer R9M3D XL-5070 C2 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   },
   {
-   "asin": "B0HFKLF55S",
+   "asin": "B0FNWKMKR5",
    "current_price": null,
    "in_stock": null,
    "last_known_price": null,
    "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
+    "Ekran kartı: kaynaklar çelişiyor (başlık: rtx 5070; teknik tablo: rtx 4060)"
    ],
    "specs": {
     "cozunurluk": {
      "degerler": [
-      "2560x1600",
-      "qhd",
-      "wqxga"
+      "qhd+"
      ],
      "karar": "gecti"
     },
     "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
     },
     "ekran_boyutu": {
      "degerler": [
-      "18.0"
+      "17.0"
      ],
      "karar": "gecti"
     },
     "gpu": {
      "degerler": [
-      "rtx 5080"
+      "rtx 4060",
+      "rtx 5070"
+     ],
+     "karar": "celiski"
+    },
+    "ram": {
+     "degerler": [
+      "64"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M3D XL-5070 C4 AMD Ryzen 9 9955HX3D 64GB RAM 2TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
+  {
+   "asin": "B0FTM5PR7J",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: tanınmayan değer: ryzen ai 350",
+    "Yenileme hızı: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1440",
+      "qhd"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen ai 350"
+     ],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.3"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
      ],
      "karar": "gecti"
     },
@@ -895,13 +805,11 @@
      "karar": "gecti"
     },
     "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
+     "degerler": [],
+     "karar": "bilinmiyor"
     }
    },
-   "title": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5080 16GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home"
+   "title": "Hp Omen 17-DB1019NT Amd Ryzen AI 7-350 32GB 1TB SSD 8GB RTX 5070 Freedos 17.3\" QHD Laptop CB4D7EA"
   },
   {
    "asin": "B0H1MQBX3R",
@@ -1006,33 +914,31 @@
    "title": "ASUS ROG Strix SCAR 18 G835LXG-TQ545 - Gaming Dizüstü Bilgisayarı | NVIDIA GeForce RTX 5090 Laptop GPU 24GB GDDR7 |Intel Core Ultra 9 290HX Plus Processor 2.7 GHz | 64GB DDR5 RAM | 2TB SSD| 18 inç|DOS"
   },
   {
-   "asin": "B0F9FVTN56",
+   "asin": "B0H4LFBGRW",
    "current_price": null,
    "in_stock": null,
    "last_known_price": null,
    "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı",
-    "Ekran boyutu: kaynaklar çelişiyor (başlık: 18.0; teknik tablo: 16.0)",
-    "Çözünürlük: kaynaklar çelişiyor (başlık: qhd+; teknik tablo: 1920x1200)"
+    "İşlemci: tanınmayan değer: core ultra 9 290hx"
    ],
    "specs": {
     "cozunurluk": {
      "degerler": [
-      "1920x1200",
-      "qhd+"
+      "4k"
      ],
-     "karar": "celiski"
+     "karar": "gecti"
     },
     "cpu": {
-     "degerler": [],
+     "degerler": [
+      "core ultra 9 290hx"
+     ],
      "karar": "bilinmiyor"
     },
     "ekran_boyutu": {
      "degerler": [
-      "16.0",
       "18.0"
      ],
-     "karar": "celiski"
+     "karar": "gecti"
     },
     "gpu": {
      "degerler": [
@@ -1042,7 +948,6 @@
     },
     "ram": {
      "degerler": [
-      "32",
       "64"
      ],
      "karar": "gecti"
@@ -1054,7 +959,56 @@
      "karar": "gecti"
     }
    },
-   "title": "GIGABYTE NOTEBOOK GAMING INTEL 18\" I9-275HX RTX5090 W11 AORUS MASTER 18 BZHC6TRD45SP QHD+/240HZ/64GB RAM/2TB NVME"
+   "title": "ASUS ROG Strix Scar G18 G835LXG-TQ547 24GB GeForce RTX5090 Intel Core Ultra 9 290HX 64GB RAM 2TB SSD 18 inç 4K WQUXGA 240Hz"
+  },
+  {
+   "asin": "B0H4RF3NCF",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: tanınmayan değer: core ultra 9 290hx"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "3840x2400",
+      "4k"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 9 290hx"
+     ],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5090"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "64"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Asus ROG Strix Scar 18 G835LXG-TQ549 Ultra 9 290HX Plus 64 GB 2 TB SSD RTX5090 18\" WQUXGA Gaming Laptop"
   },
   {
    "asin": "B0H76488PB",
@@ -1107,25 +1061,24 @@
    "title": "MSI TITAN 18 HX DRAGON EDITION DRACO EPIC A2WJ-1223TR Dizüstü Bilgisayar, Intel Core ULTRA 9 290HX PLUS, 18.0 UHD+ MINILED 240Hz, 96GB RAM DDR5, RTX5090 GDDR7 24GB, 4TB SSD, W11"
   },
   {
-   "asin": "B0H4RF3NCF",
+   "asin": "B0HFKD4RRQ",
    "current_price": null,
    "in_stock": null,
    "last_known_price": null,
    "reasons": [
-    "İşlemci: tanınmayan değer: core ultra 9 290hx"
+    "İşlemci: hiçbir kaynakta bulunamadı"
    ],
    "specs": {
     "cozunurluk": {
      "degerler": [
-      "3840x2400",
-      "4k"
+      "2560x1600",
+      "qhd",
+      "wqxga"
      ],
      "karar": "gecti"
     },
     "cpu": {
-     "degerler": [
-      "core ultra 9 290hx"
-     ],
+     "degerler": [],
      "karar": "bilinmiyor"
     },
     "ekran_boyutu": {
@@ -1136,44 +1089,44 @@
     },
     "gpu": {
      "degerler": [
-      "rtx 5090"
+      "rtx 5070 ti"
      ],
      "karar": "gecti"
     },
     "ram": {
      "degerler": [
-      "64"
+      "32"
      ],
      "karar": "gecti"
     },
     "yenileme": {
      "degerler": [
-      "240"
+      "165"
      ],
      "karar": "gecti"
     }
    },
-   "title": "Asus ROG Strix Scar 18 G835LXG-TQ549 Ultra 9 290HX Plus 64 GB 2 TB SSD RTX5090 18\" WQUXGA Gaming Laptop"
+   "title": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070Ti 12GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home"
   },
   {
-   "asin": "B0H4LFBGRW",
+   "asin": "B0HFKHSHNP",
    "current_price": null,
    "in_stock": null,
    "last_known_price": null,
    "reasons": [
-    "İşlemci: tanınmayan değer: core ultra 9 290hx"
+    "İşlemci: hiçbir kaynakta bulunamadı"
    ],
    "specs": {
     "cozunurluk": {
      "degerler": [
-      "4k"
+      "2560x1600",
+      "qhd",
+      "wqxga"
      ],
      "karar": "gecti"
     },
     "cpu": {
-     "degerler": [
-      "core ultra 9 290hx"
-     ],
+     "degerler": [],
      "karar": "bilinmiyor"
     },
     "ekran_boyutu": {
@@ -1184,73 +1137,120 @@
     },
     "gpu": {
      "degerler": [
-      "rtx 5090"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "64"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "ASUS ROG Strix Scar G18 G835LXG-TQ547 24GB GeForce RTX5090 Intel Core Ultra 9 290HX 64GB RAM 2TB SSD 18 inç 4K WQUXGA 240Hz"
-  },
-  {
-   "asin": "B0FNWKMKR5",
-   "current_price": null,
-   "in_stock": null,
-   "last_known_price": null,
-   "reasons": [
-    "Ekran kartı: kaynaklar çelişiyor (başlık: rtx 5070; teknik tablo: rtx 4060)"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "ryzen 9 9955hx3d"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 4060",
       "rtx 5070"
      ],
-     "karar": "celiski"
+     "karar": "gecti"
     },
     "ram": {
      "degerler": [
-      "64"
+      "16",
+      "32"
      ],
      "karar": "gecti"
     },
     "yenileme": {
      "degerler": [
-      "240"
+      "165"
      ],
      "karar": "gecti"
     }
    },
-   "title": "Game Garaj Slayer R9M3D XL-5070 C4 AMD Ryzen 9 9955HX3D 64GB RAM 2TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+   "title": "GIGABYTE GAMING A18 Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070 8GB 85W, AMD Ryzen 7 260, 16GB DDR5 RAM, 1TB SSD, Windows 11 Home"
+  },
+  {
+   "asin": "B0HFKLF55S",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600",
+      "qhd",
+      "wqxga"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5080"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "165"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5080 16GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home"
+  },
+  {
+   "asin": "B0HMNY3XQ6",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600",
+      "wqxga"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "18.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "165"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18\" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta"
   }
  ]
 }

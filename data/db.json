@@ -2,11 +2,11 @@
  "meta": {
   "blocked": 3,
   "checked": 0,
-  "duration_sec": 356,
+  "duration_sec": 55,
   "last_ok": "2026-11-01T19:14:40Z",
-  "last_run": "2026-11-01T19:33:29Z",
+  "last_run": "2026-11-01T19:47:59Z",
   "last_status": "engellendi",
-  "requests": 54
+  "requests": 3
  },
  "products": {
   "B08KXYB95S": {
