@@ -1,0 +1,7 @@
+# Sitedeki "Onay bekleyenler" listesindeki ürünleri buradan karara bağla.
+# ASIN'i ilgili listeye ekle, kaydet. Kaydetmek taramayı hemen tetikler.
+#
+# approve: özellikleri sen doğruladın, filtreyi geçiyor
+# reject:  filtreyi geçmiyor, takipten çıkar
+approve: []
+reject: []

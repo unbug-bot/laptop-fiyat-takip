@@ -1,0 +1,52 @@
+# Filtreler. Tüm kurallar katı uygulanır; doğrulanamayan özellik "beklemede" durumuna düşer.
+max_price_tl: 120000          # Bu fiyatın üstündeki ürün sitede görünmez, bildirim almaz; takibi sürer
+alert_drop_pct: 10            # Takip süresindeki en düşük fiyatın en az bu kadar altı -> Telegram
+min_screen_inch: 17.0
+min_refresh_hz: 144
+min_ram_gb: 16
+min_resolution: [2560, 1440]  # QHD ve üstü
+
+gpu_whitelist:
+  - rtx 5060
+  - rtx 5070
+  - rtx 5070 ti
+  - rtx 5080
+  - rtx 5090
+  - rtx 4080
+  - rtx 4090
+  - rx 7600m xt
+  - rx 7700s
+  - rx 7800m
+  - rx 7900m
+
+cpu_whitelist:
+  - core ultra 7 255hx
+  - core ultra 9 275hx
+  - core ultra 9 285hx
+  - core i9-14900hx
+  - ryzen 9 8940hx
+  - ryzen 9 8945hx
+  - ryzen 9 7945hx
+  - ryzen 9 7945hx3d
+  - ryzen 9 9955hx
+  - ryzen 9 9955hx3d
+
+# Amazon.com.tr arama sorguları (her biri için 'search_pages' sayfa taranır)
+search_queries:
+  - rtx 5060 laptop
+  - rtx 5070 laptop
+  - rtx 5070 ti laptop
+  - rtx 5080 laptop
+  - rtx 5090 laptop
+  - rtx 4080 laptop
+  - rtx 4090 laptop
+  - rx 7600m xt laptop
+  - rx 7700s laptop
+  - rx 7800m laptop
+  - rx 7900m laptop
+search_pages: 2
+
+# Tarama davranışı
+request_delay_sec: [3, 6]
+max_detail_fetch_per_run: 40
+pending_recheck_hours: 24
