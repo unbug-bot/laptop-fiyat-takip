@@ -554,13 +554,13 @@
   }
  ],
  "meta": {
+  "aod_blocked_at": "2026-11-01T21:42:57Z",
   "blocked": 3,
-  "captcha_passed": 0,
+  "captcha_passed": 1,
   "checked": 0,
   "config_hash": "8e2cc4fea9d1",
-  "duration_sec": 99,
+  "duration_sec": 855,
   "eval_queue": {
-   "B096Y34V92": "MSI KATANA 15 HX B14WFK-450XTR Dizüstü Bilgisayar, Intel Core I9-14900HX, 15.6 QHD 165Hz, 32GB RAM DDR5, RTX5060 GDDR7 8GB, 1TB SSD, DOS",
    "B0F9FVTN56": "GIGABYTE NOTEBOOK GAMING INTEL 18\" I9-275HX RTX5090 W11 AORUS MASTER 18 BZHC6TRD45SP QHD+/240HZ/64GB RAM/2TB NVME",
    "B0FMFM78FC": "Game Garaj Slayer R9M XL-5060 C2 AMD Ryzen 9 8940HX 32GB RAM 1TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop",
    "B0FNWKBZXT": "Game Garaj Slayer R9M3D XL-5070 C2 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop",
@@ -579,12 +579,13 @@
    "B0HFKLF55S": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5080 16GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home",
    "B0HMNY3XQ6": "Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18\" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta"
   },
-  "evaluated": 0,
+  "evaluated": 1,
   "last_ok": "2026-11-01T19:14:40Z",
-  "last_run": "2026-11-01T20:38:36Z",
-  "last_status": "engellendi",
-  "queue": 18,
-  "requests": 3,
+  "last_progress": "2026-11-01T21:42:57Z",
+  "last_run": "2026-11-01T21:42:57Z",
+  "last_status": "anomali_arama",
+  "queue": 17,
+  "requests": 55,
   "search_pages": 0
  },
  "pending": [
