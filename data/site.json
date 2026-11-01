@@ -1,1 +1,17 @@
-{"config": {"alert_drop_pct": 10, "max_price_tl": 120000}, "items": [], "meta": {}, "pending": []}
+{
+ "config": {
+  "alert_drop_pct": 10,
+  "max_price_tl": 120000
+ },
+ "items": [],
+ "meta": {
+  "blocked": 0,
+  "checked": 0,
+  "duration_sec": 57,
+  "last_ok": "2026-11-01T19:14:40Z",
+  "last_run": "2026-11-01T19:14:40Z",
+  "last_status": "tamam",
+  "requests": 12
+ },
+ "pending": []
+}
