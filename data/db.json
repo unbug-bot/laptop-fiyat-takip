@@ -5,17 +5,17 @@
   "captcha_passed": 0,
   "checked": 18,
   "config_hash": "dc43d5a805a2",
-  "duration_sec": 1181,
+  "duration_sec": 299,
   "eval_queue": {},
   "evaluated": 0,
-  "last_ok": "2026-11-02T13:20:00Z",
-  "last_progress": "2026-11-02T13:20:00Z",
-  "last_run": "2026-11-02T13:20:00Z",
+  "last_ok": "2026-11-02T14:47:08Z",
+  "last_progress": "2026-11-02T14:47:08Z",
+  "last_run": "2026-11-02T14:47:08Z",
   "last_search_at": "2026-11-02T13:20:00Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 60,
-  "search_pages": 18
+  "requests": 19,
+  "search_pages": 0
  },
  "products": {
   "B08KXYB95S": {
@@ -498,7 +498,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -907,7 +907,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -3.63,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 10629900,
    "max_price": 11030155,
    "min_price": 10629900,
@@ -1055,7 +1055,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -1114,7 +1114,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -1253,7 +1253,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -1312,7 +1312,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -2416,7 +2416,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -2519,7 +2519,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 13649900,
    "max_price": 13649900,
    "min_price": 13649900,
@@ -2590,7 +2590,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -2694,7 +2694,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -2858,7 +2858,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -2972,7 +2972,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -3163,7 +3163,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -4558,7 +4558,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -5254,7 +5254,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -5314,7 +5314,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -5374,7 +5374,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -5434,7 +5434,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T13:20:00Z",
+   "last_checked": "2026-11-02T14:47:08Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
