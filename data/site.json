@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-01T23:26:50Z",
+   "last_checked": "2026-11-02T06:34:51Z",
    "last_known_price": 11030155,
    "manual": null,
    "max_price": 11030155,
@@ -123,168 +123,19 @@
   "aod_blocked_at": "2026-11-01T21:42:57Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 21,
+  "checked": 18,
   "config_hash": "dc43d5a805a2",
-  "duration_sec": 871,
-  "eval_queue": {
-   "B0HFKHSHNP": "GIGABYTE GAMING A18 Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070 8GB 85W, AMD Ryzen 7 260, 16GB DDR5 RAM, 1TB SSD, Windows 11 Home",
-   "B0HFKLF55S": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5080 16GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home",
-   "B0HMNY3XQ6": "Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18\" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta"
-  },
-  "evaluated": 15,
-  "last_ok": "2026-11-01T23:26:50Z",
-  "last_progress": "2026-11-01T23:26:50Z",
-  "last_run": "2026-11-01T23:26:50Z",
-  "last_search_at": "2026-11-01T23:26:50Z",
+  "duration_sec": 698,
+  "eval_queue": {},
+  "evaluated": 4,
+  "last_ok": "2026-11-02T06:34:51Z",
+  "last_progress": "2026-11-02T06:34:51Z",
+  "last_run": "2026-11-02T06:34:51Z",
+  "last_search_at": "2026-11-02T06:34:51Z",
   "last_status": "tamam",
-  "queue": 3,
-  "requests": 59,
+  "queue": 0,
+  "requests": 45,
   "search_pages": 18
  },
- "pending": [
-  {
-   "asin": "B0HFKHSHNP",
-   "current_price": 8750000,
-   "in_stock": true,
-   "last_known_price": 8750000,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "qhd",
-      "wqxga"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "16",
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "GIGABYTE GAMING A18 Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5070 8GB 85W, AMD Ryzen 7 260, 16GB DDR5 RAM, 1TB SSD, Windows 11 Home"
-  },
-  {
-   "asin": "B0HFKLF55S",
-   "current_price": 14229900,
-   "in_stock": true,
-   "last_known_price": 14229900,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "qhd",
-      "wqxga"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5080"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "GIGABYTE GAMING A18 PRO Slim Gaming Notebook, 18 inç 165Hz QHD 16:10 3ms IPS Ekran, NVIDIA GeForce RTX 5080 16GB 115W, Intel Core 7 240H, 32GB DDR5 RAM, 1TB SSD, Windows 11 Home"
-  },
-  {
-   "asin": "B0HMNY3XQ6",
-   "current_price": 17920204,
-   "in_stock": true,
-   "last_known_price": 17920204,
-   "reasons": [
-    "İşlemci: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600",
-      "wqxga"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "18.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "165"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Acer Nitro 18 Aı Ryzen Aı 9 365 Rtx 5070 8Gb 115W 32Gb Ram 1Tb Ssd 18\" Wqxga (2560X1600) 165Hz Win11 Home Nh.Qyjey.002P321 Gaming Laptop + Per4 Çanta"
-  }
- ]
+ "pending": []
 }
