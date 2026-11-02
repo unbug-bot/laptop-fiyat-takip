@@ -76,7 +76,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -3.63,
-   "last_checked": "2026-11-02T12:14:23Z",
+   "last_checked": "2026-11-02T13:20:00Z",
    "last_known_price": 10629900,
    "manual": null,
    "max_price": 11030155,
@@ -129,17 +129,17 @@
   "captcha_passed": 0,
   "checked": 18,
   "config_hash": "dc43d5a805a2",
-  "duration_sec": 298,
+  "duration_sec": 1181,
   "eval_queue": {},
   "evaluated": 0,
-  "last_ok": "2026-11-02T12:14:23Z",
-  "last_progress": "2026-11-02T12:14:23Z",
-  "last_run": "2026-11-02T12:14:23Z",
-  "last_search_at": "2026-11-02T06:34:51Z",
+  "last_ok": "2026-11-02T13:20:00Z",
+  "last_progress": "2026-11-02T13:20:00Z",
+  "last_run": "2026-11-02T13:20:00Z",
+  "last_search_at": "2026-11-02T13:20:00Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 19,
-  "search_pages": 0
+  "requests": 60,
+  "search_pages": 18
  },
  "pending": []
 }
