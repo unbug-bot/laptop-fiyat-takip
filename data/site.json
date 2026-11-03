@@ -80,7 +80,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-03T16:16:08Z",
+   "last_checked": "2026-11-03T19:13:14Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -128,6 +128,65 @@
   },
   {
    "alerts": null,
+   "asin": "B0FYY34Q8X",
+   "current_price": 8829900,
+   "first_seen": "2026-11-03T16:16:08Z",
+   "history": [
+    [
+     "2026-11-03T16:16:08Z",
+     8829900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-03T19:13:14Z",
+   "last_known_price": 8829900,
+   "manual": null,
+   "max_price": 8829900,
+   "min_price": 8829900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 8940hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M XL-5060 C7 AMD Ryzen 9 8940HX 16GB RAM 1TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
+  {
+   "alerts": null,
    "asin": "B0H2VH51K2",
    "current_price": 12199900,
    "first_seen": "2026-11-02T19:52:16Z",
@@ -139,7 +198,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-03T16:16:08Z",
+   "last_checked": "2026-11-03T19:13:14Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -198,7 +257,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-03T16:16:08Z",
+   "last_checked": "2026-11-03T19:13:14Z",
    "last_known_price": 13649900,
    "manual": null,
    "max_price": 13649900,
@@ -244,65 +303,6 @@
     }
    },
    "title": "Game Garaj Slayer R9T XL-5070 V2.12 C1 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0FYY34Q8X",
-   "current_price": 8829900,
-   "first_seen": "2026-11-03T16:16:08Z",
-   "history": [
-    [
-     "2026-11-03T16:16:08Z",
-     8829900
-    ]
-   ],
-   "in_stock": true,
-   "last_change_pct": null,
-   "last_checked": "2026-11-03T16:16:08Z",
-   "last_known_price": 8829900,
-   "manual": null,
-   "max_price": 8829900,
-   "min_price": 8829900,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "ryzen 9 8940hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5060"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "16"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer R9M XL-5060 C7 AMD Ryzen 9 8940HX 16GB RAM 1TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -312,17 +312,17 @@
   "captcha_passed": 0,
   "checked": 21,
   "config_hash": "11412bb343d8",
-  "duration_sec": 879,
+  "duration_sec": 378,
   "eval_queue": {},
-  "evaluated": 13,
-  "last_ok": "2026-11-03T16:16:08Z",
-  "last_progress": "2026-11-03T16:16:08Z",
-  "last_run": "2026-11-03T16:16:08Z",
+  "evaluated": 0,
+  "last_ok": "2026-11-03T19:13:14Z",
+  "last_progress": "2026-11-03T19:13:14Z",
+  "last_run": "2026-11-03T19:13:14Z",
   "last_search_at": "2026-11-03T16:16:08Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 57,
-  "search_pages": 18
+  "requests": 22,
+  "search_pages": 0
  },
  "pending": []
 }
