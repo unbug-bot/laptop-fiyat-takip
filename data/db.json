@@ -1,17 +1,18 @@
 {
  "meta": {
   "aod_blocked_at": "2026-11-01T21:42:57Z",
+  "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
   "checked": 19,
   "config_hash": "dc43d5a805a2",
-  "duration_sec": 639,
+  "duration_sec": 664,
   "eval_queue": {},
   "evaluated": 1,
-  "last_ok": "2026-11-02T19:52:16Z",
-  "last_progress": "2026-11-02T19:52:16Z",
-  "last_run": "2026-11-02T19:52:16Z",
-  "last_search_at": "2026-11-02T19:52:16Z",
+  "last_ok": "2026-11-03T05:07:27Z",
+  "last_progress": "2026-11-03T05:07:27Z",
+  "last_run": "2026-11-03T05:07:27Z",
+  "last_search_at": "2026-11-03T05:07:27Z",
   "last_status": "tamam",
   "queue": 0,
   "requests": 43,
@@ -498,7 +499,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -690,6 +691,17 @@
    ],
    "status": "red",
    "title": "ASUS ROG Zephyrus G14 GA403UH-QS038 AMD Ryzen 9 270 16GB 1TB SSD RTX5050 Freedos 14 OLED 120Hz Taşınabilir Bilgisayar - 1 TB - 16 GB"
+  },
+  "B0FLD65L7P": {
+   "asin": "B0FLD65L7P",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "Ekran kartı: filtreyi geçmiyor: rtx 5050 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Asus Rog Strix G16 G615JH-RV053 Intel Core I5-13450HX 32GB 512GB SSD+512GB 8GB/RTX5050 Gddr7 115W 16\" Wuxga 165Hz 3ms IPS Freedos Gaming Laptop WRX053F10+ZETTAÇANTA"
   },
   "B0FLD8YLNV": {
    "asin": "B0FLD8YLNV",
@@ -918,7 +930,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -3.63,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 10629900,
    "max_price": 11030155,
    "min_price": 10629900,
@@ -1066,7 +1078,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -1125,7 +1137,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -1264,7 +1276,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -1323,7 +1335,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -1742,6 +1754,17 @@
    ],
    "status": "red",
    "title": "Lenovo E14 21SX007CTX006 Ultra7 255H 32GB 1TBSSD 14\" WUXGA FreeDOS Dizüstü Bilgisayar"
+  },
+  "B0FYQVF335": {
+   "asin": "B0FYQVF335",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: core i5-1334u (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "HP 250 G10 B39W3AT i5-1334U 16GB 512GB SSD 15.6″ FDOS"
   },
   "B0FYXXJML8": {
    "asin": "B0FYXXJML8",
@@ -2449,7 +2472,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -2563,7 +2586,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 12199900,
    "max_price": 12199900,
    "min_price": 12199900,
@@ -2622,7 +2645,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 13649900,
    "max_price": 13649900,
    "min_price": 13649900,
@@ -2693,7 +2716,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -2797,7 +2820,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -2961,7 +2984,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -3075,7 +3098,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -3248,6 +3271,17 @@
    "status": "red",
    "title": "Game Garaj Slayer R9M-5060 C7 AMD R9 8940HX 16GB RAM 1TB SSD RTX5060 16\" 240Hz QHD+ IPS FreeDOS Gaming Laptop"
   },
+  "B0H5R8PJ5T": {
+   "asin": "B0H5R8PJ5T",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 16.0 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer R9M-5060 C8 AMD R9 8940HX 16GB RAM 500GB SSD RTX5060 16\" 240Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
   "B0H6NGNXQC": {
    "asin": "B0H6NGNXQC",
    "auto_status": "red",
@@ -3277,7 +3311,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -3384,6 +3418,55 @@
    "status": "red",
    "title": "Acer Aspire NX.DLQEY.001 AMD Ryzen 7 5825U 16GB 512GB 15.6\" FHD Laptop"
   },
+  "B0H7W4B2FG": {
+   "asin": "B0H7W4B2FG",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 16.0"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core i9-14900hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "16.0"
+     ],
+     "karar": "kaldi"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "red",
+   "title": "MSI CROSSHAIR 16 HX E14WGK-046XTR Dizüstü Bilgisayar, Intel Core I9-14900HX, 16.0 QHD+ 240Hz, 16GB RAM DDR5, RTX5070 GDDR7 8GB, 1TB SSD, DOS"
+  },
   "B0H7W7H6HB": {
    "asin": "B0H7W7H6HB",
    "auto_status": "red",
@@ -3460,6 +3543,17 @@
    ],
    "status": "red",
    "title": "Lenovo Loq 15Irx10 Intel Core İ7 13645Hx Rtx 5060 8Gb 100W 8Gb Ram 1Tb Ssd 15.6\" Fhd (1920X1080) Ips 300Nits 144Hz Freedos 83Je01Betrp303 Gaming Laptop + Per4 Çanta"
+  },
+  "B0HC73Z27N": {
+   "asin": "B0HC73Z27N",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: core i7-14650hx (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer X7T2-5070 C3 Intel Core i7 14650HX 32GB RAM 1TB SSD RTX5070 15.3\" 180Hz QHD+ FreeDOS Gaming Laptop"
   },
   "B0HC773Y6P": {
    "asin": "B0HC773Y6P",
@@ -3769,6 +3863,17 @@
    "status": "red",
    "title": "Lenovo Loq 15Iph11 Core Ultra 7 356H Rtx 5060 8Gb 115W 8Gb Ram 256Gb Ssd 15.3\" Wuxga (1920X1200) Ips 300Nits 165Hz Win11 Pro 83Sl001Atrp421 Gaming Laptop + Per4 Çanta"
   },
+  "B0HC7LWZX7": {
+   "asin": "B0HC7LWZX7",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: core i7-14650hx (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer X7T2-5060 C4 Intel Core i7 14650HX 32GB RAM 1TB SSD RTX5060 15.3\" 165Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
   "B0HC7M4FV1": {
    "asin": "B0HC7M4FV1",
    "auto_status": "red",
@@ -3911,6 +4016,17 @@
    ],
    "status": "red",
    "title": "Asus Tuf Gaming A16 Amd Ryzen 7 8745Hx Rtx 5070 8Gb 115W 32Gb Ram 256Gb Ssd 16\" Wuxga (1920X1200) Ips 165Hz Freedos Fa608Pprv15P319 Gaming Laptop + Per4 Çanta"
+  },
+  "B0HCNDQ553": {
+   "asin": "B0HCNDQ553",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 260 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Acer Nitro V17 Aı Ryzen 7 260 24Gb 1Tb Ssd Rtx5070/8Gb 85W 17.3\" Qhd 165Hz Fdos Gaming Laptop"
   },
   "B0HCNGYDZB": {
    "asin": "B0HCNGYDZB",
@@ -4273,6 +4389,17 @@
    ],
    "status": "red",
    "title": "ASUS ROG Strix G16 AMD Ryzen 9 8940HX 40 GB DDR5 4 TB SSD RTX 5080 16GB 16'' WUXGA IPS 165Hz Windows 11 Pro Oyuncu Dizüstü Bilgisayar G614PW-RV036RNP16"
+  },
+  "B0HFW78W1P": {
+   "asin": "B0HFW78W1P",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 16.0 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "ASUS ROG Strix G16 AMD Ryzen 9 8940HX 80 GB DDR5 2 TB SSD RTX 5080 16GB 16'' WUXGA IPS 165Hz Windows 11 Pro Oyuncu Dizüstü Bilgisayar G614PW-RV036RNP27"
   },
   "B0HFW8527V": {
    "asin": "B0HFW8527V",
@@ -4681,6 +4808,17 @@
    "status": "red",
    "title": "Steelwave 16 D i7-14700HX 16GB DDR5 1TB NVMe RTX5060 8GB GDDR7 16\" IPS FHD Gaming Notebook"
   },
+  "B0HHXLMZGD": {
+   "asin": "B0HHXLMZGD",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "Ekran kartı: filtreyi geçmiyor: rtx 5050 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "ACER Nitro V15 ANV15-52 NH.QZ7EY.003A007 i5 13420H 16GB 1TBSSD RTX5050 W11P 15.6'' Taşınabilir Bilgisayar"
+  },
   "B0HK49LTTF": {
    "asin": "B0HK49LTTF",
    "auto_status": "red",
@@ -4738,7 +4876,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -4829,6 +4967,17 @@
    "status": "red",
    "title": "LENOVO LOQ 15AHP11 83TN00AATR AMD Ryzen 7 250 16GB 512GB SSD RTX5070 8GB TGP 115W 15.3\" WUXGA IPS 165Hz FreeDOS Surge Green Taşınabilir Bilgisayar"
   },
+  "B0HLPV7HXG": {
+   "asin": "B0HLPV7HXG",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: core ultra 7 255h (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "HP OMEN CK9L2EA504, Ultra7 255H, 32GB RAM, 2TB SSD, RTX5070, 16\" FHD, Windows 11 Pro, Oyuncu Dizüstü Bilgisayarı"
+  },
   "B0HLQ1Z8F1": {
    "asin": "B0HLQ1Z8F1",
    "auto_status": "red",
@@ -4905,6 +5054,17 @@
    ],
    "status": "red",
    "title": "Game Garaj Slayer R9T2-5070 C5 AMD Ryzen 9 8945HX 32GB RAM 2TB SSD RTX5070 15.3\" 180Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  "B0HMJGXTP4": {
+   "asin": "B0HMJGXTP4",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 255 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer SR7T-5060 C6 AMD Ryzen 7 255 32GB RAM 1TB SSD RTX5060 15.3\" QHD+ 300Hz IPS FreeDOS Gaming Laptop"
   },
   "B0HMJHGNCX": {
    "asin": "B0HMJHGNCX",
@@ -5082,6 +5242,17 @@
    "status": "red",
    "title": "Lenovo Loq 15Irx10 Intel Core İ7 13645Hx Rtx 5060 8Gb 100W 24Gb Ram 256Gb Ssd 15.6\" Fhd (1920X1080) Ips 300Nits 144Hz Freedos 83Je01Betrp313 Gaming Laptop + Per4 Çanta"
   },
+  "B0HMLR7FYM": {
+   "asin": "B0HMLR7FYM",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 350 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Acer Nitro V 16S Amd Ryzen 7 350 Rtx 5070 8Gb 85W 96Gb Ram 1Tb Ssd 16\" Wqxga 180Hz Win11 Pro Nhqxney003P351 Gaming Laptop + Per4 Çanta"
+  },
   "B0HMLVTKSJ": {
    "asin": "B0HMLVTKSJ",
    "auto_status": "red",
@@ -5103,6 +5274,17 @@
    ],
    "status": "red",
    "title": "Hp Omen 17 Ryzen Aı 7 350 Rtx 5060 8Gb 48Gb Ram 4Tb Ssd 17.3\" Fhd (1920X1080) 144Hz Win11 Home C2Ez3Eap335 Gaming Laptop + Per4 Çanta"
+  },
+  "B0HMM35DJT": {
+   "asin": "B0HMM35DJT",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 8745hx (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Asus Tuf Gaming A16 Amd Ryzen 7 8745Hx Rtx 5070 8Gb 115W 24Gb Ram 512Gb Ssd 16\" Wuxga (1920X1200) Ips 165Hz Win11 Home Fa608Pprv15P374 Gaming Laptop + Per4 Çanta"
   },
   "B0HMM7FZBJ": {
    "asin": "B0HMM7FZBJ",
@@ -5434,7 +5616,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -5494,7 +5676,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -5554,7 +5736,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -5614,7 +5796,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-02T19:52:16Z",
+   "last_checked": "2026-11-03T05:07:27Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
@@ -5738,6 +5920,17 @@
    "status": "red",
    "title": "LENOVO LOQ-E Ryzen 7 170 16GB 512GB SSD 15.6\" FHD 144Hz RTX 4050 6GB GDDR6 FreeDOS 83S000DATR"
   },
+  "B0HPS7FRX8": {
+   "asin": "B0HPS7FRX8",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: core i3-7020u (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Acer A315-53G NX.H9JEY.007 i3-7020U 4GB 128SSD 2GB MX130 15.6\" HD FreeDOS Taşınabilir Bilgisayar"
+  },
   "B0HPTC5BHN": {
    "asin": "B0HPTC5BHN",
    "auto_status": "red",
@@ -5814,6 +6007,17 @@
    ],
    "status": "red",
    "title": "Asus ROG Zephyrus G16 G615LW-TS286 Ultra9 290HX 64GB 1TBSSD RTX5080 16\" WUXGA FreeDOS Dizüstü Bilgisayar"
+  },
+  "B0HPWRS8NZ": {
+   "asin": "B0HPWRS8NZ",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-03T05:07:27Z",
+   "first_seen": "2026-11-03T05:07:27Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 5 240 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "HyperX HP OMEN 15-GB0015NT D62C9EA AMD Ryzen5 240 32GB 512SSD RTX5060 15.3\" FreeDOS Taşınabilir Bilgisayar"
   }
  }
 }
