@@ -204,7 +204,7 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
   $("#criteria").textContent = `Yalnızca yeni ürün teklifleri sayılır. ${d.config.max_price_tl.toLocaleString("tr-TR")} TL üstü listeden çıkar. Takip edilen en düşük fiyatın %${d.config.alert_drop_pct} altına inen ürün Telegram bildirimi alır.`;
   const dv=m.discovery;
   if(dv){
-    const k = dv.kontrol_bilinen ? ` Kontrol: stokta olduğu bilinen ${dv.kontrol_bilinen} onaylı ürünün ${dv.kontrol_bulunan} tanesi bu taramada yeniden görüldü${dv.kontrol_kacan.length?` (görülmeyen: ${dv.kontrol_kacan.join(", ")})`:""}.` : "";
+    const k = dv.kontrol_bilinen ? ` Kontrol: stokta olduğu bilinen ${dv.kontrol_bilinen} onaylı ürünün ${dv.kontrol_bulunan} tanesi bu taramada yeniden görüldü${dv.kontrol_kategori!=null?` (kategori taramasında ${dv.kontrol_kategori}, anahtar kelime aramasında ${dv.kontrol_anahtar_kelime})`:""}${dv.kontrol_kacan.length?`; görülmeyen: ${dv.kontrol_kacan.join(", ")}`:""}.` : "";
     $("#discovery").textContent = `Son keşif ${dt(dv.at)}: ${dv.kategori_sayfa} kategori ve ${dv.anahtar_kelime_sayfa} arama sayfasında ${dv.gorulen_ilan.toLocaleString("tr-TR")} farklı ilan görüldü, ${dv.yeni_aday} yeni aday çıktı. Başlığında ekran kartı ya da 17″ ve üstü ekran geçmeyen ${dv.atlanan} ilan değerlendirmeye alınmadı.${k}`;
   }
   render(); if(location.hash==="#onay-bekleyenler") tab("pending");
