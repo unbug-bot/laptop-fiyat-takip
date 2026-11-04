@@ -6,17 +6,17 @@
   "captcha_passed": 0,
   "checked": 21,
   "config_hash": "11412bb343d8",
-  "duration_sec": 696,
+  "duration_sec": 373,
   "eval_queue": {},
-  "evaluated": 1,
-  "last_ok": "2026-11-04T06:45:41Z",
-  "last_progress": "2026-11-04T06:45:41Z",
-  "last_run": "2026-11-04T06:45:41Z",
-  "last_search_at": "2026-11-04T06:45:41Z",
+  "evaluated": 0,
+  "last_ok": "2026-11-04T13:20:03Z",
+  "last_progress": "2026-11-04T13:20:03Z",
+  "last_run": "2026-11-04T13:20:03Z",
+  "last_search_at": "2026-11-04T12:59:48Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 45,
-  "search_pages": 20
+  "requests": 23,
+  "search_pages": 0
  },
  "products": {
   "B08KXYB95S": {
@@ -525,7 +525,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -709,7 +709,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 13399900,
    "max_price": 13399900,
    "min_price": 13399900,
@@ -1041,7 +1041,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 10049900,
    "max_price": 11030155,
    "min_price": 10049900,
@@ -1200,7 +1200,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -1259,7 +1259,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -1398,7 +1398,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -1457,7 +1457,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -1956,7 +1956,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 8829900,
    "max_price": 8829900,
    "min_price": 8829900,
@@ -2067,6 +2067,17 @@
    ],
    "status": "red",
    "title": "Game Raider FLUX GR16 AMD Ryzen 9-8940HX 16GB DDR5 1TB SSD RTX 5060 8GB 115W 16 inç 2.5K QHD+ 180Hz FDos Laptop"
+  },
+  "B0G49JSQZ4": {
+   "asin": "B0G49JSQZ4",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 16.0 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Raider IGNIA GR16 i9-14900HX 32GB DDR5 1TB SSD RTX 5070Ti 12GB 140W 16inç 300Hz FDos Laptop"
   },
   "B0G5874VSH": {
    "asin": "B0G5874VSH",
@@ -2730,7 +2741,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -2844,7 +2855,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 12199900,
    "max_price": 12199900,
    "min_price": 12199900,
@@ -2974,7 +2985,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -3078,7 +3089,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -3242,7 +3253,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -3356,7 +3367,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -3569,7 +3580,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -3901,6 +3912,17 @@
    "status": "red",
    "title": "Asus Tuf Gaming A16 Amd Ryzen 7 8745Hx Rtx 5070 8Gb 115W 8Gb Ram 1Tb Ssd 16\" Wuxga (1920X1200) Ips 165Hz Win11 Home Fa608Pprv15P363 Gaming Laptop + Per4 Çanta"
   },
+  "B0HC7BN11C": {
+   "asin": "B0HC7BN11C",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 15.3 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer X9T2-5070 C2 Intel Core i9 14900HX 16GB RAM 1TB SSD RTX5070 15.3\" 180Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
   "B0HC7BSGCP": {
    "asin": "B0HC7BSGCP",
    "auto_status": "red",
@@ -4131,6 +4153,17 @@
    ],
    "status": "red",
    "title": "Game Garaj Slayer X7T2-5060 C4 Intel Core i7 14650HX 32GB RAM 1TB SSD RTX5060 15.3\" 165Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  "B0HC7LXK37": {
+   "asin": "B0HC7LXK37",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 8745hx (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Asus Tuf Gaming A16 Amd Ryzen 7 8745Hx Rtx 5070 8Gb 115W 128Gb Ram 512Gb Ssd 16\" Wuxga (1920X1200) Ips 165Hz Win11 Home Fa608Pprv15P416 Gaming Laptop + Per4 Çanta"
   },
   "B0HC7M4FV1": {
    "asin": "B0HC7M4FV1",
@@ -4625,6 +4658,17 @@
    ],
    "status": "red",
    "title": "Lenovo Legion 5 Intel Core i7-13650HX 16 GB DDR5 512 GB SSD RTX 5060 8 GB 15.3'' WUXGA IPS 165Hz Windows 11 Pro Oyuncu Dizüstü Bilgisayar 83LY00PYTRRNP01"
+  },
+  "B0HFW56SKZ": {
+   "asin": "B0HFW56SKZ",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen 7 260 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "ASUS TUF Gaming A16 AMD Ryzen 7 260 48 GB DDR5 2 TB SSD RTX 5060 8GB 16'' WUXGA IPS 165Hz Windows 11 Pro Gaming Laptop FA608UM-RV131RNP19"
   },
   "B0HFW57HDP": {
    "asin": "B0HFW57HDP",
@@ -5134,7 +5178,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -5268,6 +5312,17 @@
    ],
    "status": "red",
    "title": "Game Garaj Slayer R9T XL-5060 C6 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5060 18\" 144Hz WUXGA IPS FreeDOS Oyuncu Laptop"
+  },
+  "B0HMJ8YVP2": {
+   "asin": "B0HMJ8YVP2",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "Ekran kartı: filtreyi geçmiyor: rtx 5050 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Game Garaj Slayer R9T-5050 C6 AMD Ryzen 9 7845HX 32GB RAM 1TB SSD RTX5050 16\" 180Hz QHD+ FreeDOS Gaming Laptop"
   },
   "B0HMJ96GCS": {
    "asin": "B0HMJ96GCS",
@@ -5478,6 +5533,17 @@
    "status": "red",
    "title": "Lenovo Loq 15Iph11 Core Ultra 7 356H Rtx 5060 8Gb 115W 16Gb Ram 256Gb Ssd 15.3\" Wuxga (1920X1200) Ips 300Nits 165Hz Win11 Pro 83Sl001Atrp427 Gaming Laptop + Per4 Çanta"
   },
+  "B0HML87C4Y": {
+   "asin": "B0HML87C4Y",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen ai 7 350 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Hp Omen 17 Ryzen Aı 7 350 Rtx 5060 8Gb 8Gb Ram 512Gb Ssd 17.3\" Fhd (1920X1080) 144Hz Freedos C2Ez3Eap302 Gaming Laptop + Per4 Çanta"
+  },
   "B0HMLJLD79": {
    "asin": "B0HMLJLD79",
    "auto_status": "red",
@@ -5620,6 +5686,17 @@
    ],
    "status": "red",
    "title": "Lenovo Loq 15Irx10 Intel Core İ7 13645Hx Rtx 5060 8Gb 100W 16Gb Ram 1Tb Ssd 15.6\" Fhd (1920X1080) Ips 300Nits 144Hz Freedos 83Je01Betrp309 Gaming Laptop + Per4 Çanta"
+  },
+  "B0HMMFTQTY": {
+   "asin": "B0HMMFTQTY",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "İşlemci: filtreyi geçmiyor: ryzen ai 7 350 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Hp Omen 17 Ryzen Aı 7 350 Rtx 5060 8Gb 8Gb Ram 256Gb Ssd 17.3\" Fhd (1920X1080) 144Hz Win11 Pro C2Ez3Eap301 Gaming Laptop + Per4 Çanta"
   },
   "B0HMMFZ7LV": {
    "asin": "B0HMMFZ7LV",
@@ -5951,7 +6028,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 31099900,
    "max_price": 31099900,
    "min_price": 31099900,
@@ -6022,17 +6099,21 @@
   "B0HNKJV8G5": {
    "asin": "B0HNKJV8G5",
    "auto_status": "onayli",
-   "current_price": 15499900,
+   "current_price": null,
    "evaluated_at": "2026-11-01T19:33:29Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "history": [
     [
      "2026-11-01T23:26:50Z",
      15499900
+    ],
+    [
+     "2026-11-04T13:20:03Z",
+     null
     ]
    ],
-   "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "in_stock": false,
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -6082,7 +6163,7 @@
   "B0HNKKG22V": {
    "asin": "B0HNKKG22V",
    "auto_status": "onayli",
-   "current_price": 15399900,
+   "current_price": null,
    "evaluated_at": "2026-11-01T19:33:29Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "history": [
@@ -6097,10 +6178,14 @@
     [
      "2026-11-04T06:45:41Z",
      15399900
+    ],
+    [
+     "2026-11-04T13:20:03Z",
+     null
     ]
    ],
-   "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "in_stock": false,
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -6160,7 +6245,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -6220,7 +6305,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T06:45:41Z",
+   "last_checked": "2026-11-04T13:20:03Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
@@ -6332,6 +6417,17 @@
    ],
    "status": "red",
    "title": "MSI KATANA 15 HX B14WFK-450XTR503 i9-14900HX 32GB 2TBSSD RTX5060 15.6\" QHD FreeDOS Dizüstü Bilgisaya"
+  },
+  "B0HP5HH8DN": {
+   "asin": "B0HP5HH8DN",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T12:59:48Z",
+   "first_seen": "2026-11-04T12:59:48Z",
+   "reasons": [
+    "Ekran boyutu: filtreyi geçmiyor: 16.0 (arama başlığından)"
+   ],
+   "status": "red",
+   "title": "Asus Rog Strix G16 G614PW-RV043 Amd Ryzen9 8940HX 32GB 1TBSSD+1TBSSD RTX5080 16\" Wuxga W11P Taşınabilir Bilgisaya"
   },
   "B0HPBMNR75": {
    "asin": "B0HPBMNR75",
