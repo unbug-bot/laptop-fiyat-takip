@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -139,7 +139,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -198,7 +198,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -257,7 +257,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -362,6 +362,124 @@
     }
    },
    "title": "Game Garaj Slayer R9T XL-5070 V2.12 C1 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FGDPHVW8",
+   "current_price": 12799900,
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12799900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 12799900,
+   "manual": null,
+   "max_price": 12799900,
+   "min_price": 12799900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer5 7XL-5060 C2 Intel Ultra 7 255HX 32GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FMFL91NB",
+   "current_price": 12399900,
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12399900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 12399900,
+   "manual": null,
+   "max_price": 12399900,
+   "min_price": 12399900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 8940hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M XL-5060 C3 AMD Ryzen 9 8940HX 32GB RAM 2TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -369,24 +487,66 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 21,
-  "config_hash": "11412bb343d8",
-  "duration_sec": 369,
-  "eval_queue": {
-   "B0FGDPHVW8": "B0FGDPHVW8 (varyant: B0FGDP4C8W)",
-   "B0FMFL91NB": "B0FMFL91NB (varyant: B0FMFM78FC)",
-   "B0FNWGDPD1": "B0FNWGDPD1 (varyant: B0FNWKBZXT)",
-   "B0FWKN5HW4": "B0FWKN5HW4 (varyant: B0FGDP4C8W)"
-  },
-  "evaluated": 0,
-  "last_ok": "2026-11-04T14:43:36Z",
-  "last_progress": "2026-11-04T14:43:36Z",
-  "last_run": "2026-11-04T14:43:36Z",
-  "last_search_at": "2026-11-04T12:59:48Z",
+  "checked": 25,
+  "config_hash": "0d338151ca54",
+  "duration_sec": 687,
+  "eval_queue": {},
+  "evaluated": 15,
+  "laptop_node": "12601898031",
+  "last_ok": "2026-11-04T15:14:21Z",
+  "last_progress": "2026-11-04T15:14:21Z",
+  "last_run": "2026-11-04T15:14:21Z",
   "last_status": "tamam",
-  "queue": 4,
-  "requests": 23,
+  "queue": 0,
+  "requests": 42,
   "search_pages": 0
  },
- "pending": []
+ "pending": [
+  {
+   "asin": "B0FWKN5HW4",
+   "current_price": 11249900,
+   "in_stock": true,
+   "last_known_price": 11249900,
+   "reasons": [
+    "Çözünürlük: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer5 7XL-5060 C1 Intel Ultra 7 255HX 16GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
+  }
+ ]
 }
