@@ -80,6 +80,7 @@ code{font-size:13px;background:color-mix(in srgb,var(--muted) 15%,transparent);p
     <h1>Laptop fiyat takibi</h1>
     <p class="status" id="status">Veriler yükleniyor…</p>
     <p class="criteria" id="criteria"></p>
+    <p class="criteria" id="discovery"></p>
   </header>
   <nav role="tablist">
     <button role="tab" id="tab-list" aria-selected="true">Takip listesi</button>
@@ -201,6 +202,11 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
     + (m.last_status!=="tamam" && m.last_ok ? ` Son eksiksiz tarama ${dt(m.last_ok)}.` : "")
     + (m.last_status!=="tamam" && m.last_progress && m.last_progress!==m.last_run ? ` Son veri toplanan tur ${dt(m.last_progress)}.` : "");
   $("#criteria").textContent = `Yalnızca yeni ürün teklifleri sayılır. ${d.config.max_price_tl.toLocaleString("tr-TR")} TL üstü listeden çıkar. Takip edilen en düşük fiyatın %${d.config.alert_drop_pct} altına inen ürün Telegram bildirimi alır.`;
+  const dv=m.discovery;
+  if(dv){
+    const k = dv.kontrol_bilinen ? ` Kontrol: stokta olduğu bilinen ${dv.kontrol_bilinen} onaylı ürünün ${dv.kontrol_bulunan} tanesi bu taramada yeniden görüldü${dv.kontrol_kacan.length?` (görülmeyen: ${dv.kontrol_kacan.join(", ")})`:""}.` : "";
+    $("#discovery").textContent = `Son keşif ${dt(dv.at)}: ${dv.kategori_sayfa} kategori ve ${dv.anahtar_kelime_sayfa} arama sayfasında ${dv.gorulen_ilan.toLocaleString("tr-TR")} farklı ilan görüldü, ${dv.yeni_aday} yeni aday çıktı. Başlığında ekran kartı ya da 17″ ve üstü ekran geçmeyen ${dv.atlanan} ilan değerlendirmeye alınmadı.${k}`;
+  }
   render(); if(location.hash==="#onay-bekleyenler") tab("pending");
 }).catch(()=>{$("#status").textContent="data.json okunamadı. İlk tarama tamamlandığında veriler burada görünür.";});
 </script>
