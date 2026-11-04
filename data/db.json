@@ -4,8 +4,8 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 25,
-  "config_hash": "0d338151ca54",
+  "checked": 26,
+  "config_hash": "a6209ff7bf22",
   "discovery": {
    "anahtar_kelime_sayfa": 51,
    "at": "2026-11-04T16:14:35Z",
@@ -34,22 +34,10 @@
    "notlar": [],
    "yeni_aday": 136
   },
-  "duration_sec": 1744,
+  "duration_sec": 842,
   "eval_queue": {
    "B07DHS2Z7M": "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
    "B07K6KRVLY": "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
-   "B0999JKHC2": "ASUS PROART-RTX5090-O32G NVIDIA",
-   "B09CL88J27": "ASUS ROG Astral GeForce RTX 5090 32GB BTF OC Edition Gaming Ekran Kartı",
-   "B09CL8ZFJ5": "ASUS ProArt GeForce RTX 5080 16GB GDDR7 OC Edition Ekran Kartı",
-   "B0BSN91TGK": "MSI VGA GEFORCE RTX 5080 16G VENTUS 3X OC PLUS RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0BT9R5XNN": "MSI VGA GEFORCE RTX 5080 16G SHADOW 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0BYZFH47F": "ASUS DUAL Radeon RX 9060 XT 16GB GDDR6 Gaming Ekran Kartı",
-   "B0DRPPXB5X": "SAPPHIRE NITRO+ AMD RADEON™ RX 9070 XT GAMING OC 16GB DUAL HDMI/DUAL DP GPU Ekran Kartı",
-   "B0DS65KD1C": "ASUS TUF Gaming GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DS65VMC6": "ASUS PRIME GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DSG52H7D": "ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC Edition Gaming Ekran Kartı",
-   "B0DSQ1RCZV": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5080 GAMING OC GV-N5080GAMING OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
-   "B0DT6S77JK": "MSI VGA GEFORCE RTX 5090 32G VENTUS 3X OC RTX5090 32GB GDRR7 512B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
    "B0DT78YM6P": "GIGABYTE Radeon RX 9070 Gaming OC 16G Grafik Kartı - 16 GB GDDR6, 256 Bit, PCI-E 5.0, 2700 MHz Çekirdek Frekansı, 2 x DisplayPort, 2 x HDMI, GV-R9070GAMING OC-16GD",
    "B0DT9WQW4T": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 GAMING OC GV-N5090GAMING OC-32GD 512BIT/3XDP/1XHDMI/3XFAN",
    "B0DT9YQR11": "GIGABYTE GeForce RTX 5090 AORUS MASTER 32G Ekran Kartı 32 GB GDDR7 512-Bit PCIe 5.0 MAX-Covered Cooling RGB Fusion 3x DisplayPort 1x HDMI",
@@ -80,7 +68,6 @@
    "B0F8MZNF4W": "ZOTAC GAM GeForce RTX 5070 Twin Edge OC",
    "B0F8VQ4N8L": "Zotac RTX 5070 Gaming Twin Edge ZT-B50700E-10P 192 Bit GDDR7 12 GB Ekran Kartı",
    "B0FFMWXCQD": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3XDP/1XHDMI/3XFAN",
-   "B0FPMH5CW8": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop",
    "B0FQCR9QQZ": "ASUS ProArt GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Ekran Kartı",
    "B0FSLDFHZ8": "Mack Business X MCC-807 18\" Laptop Sırt Çantası, Mackbook Çantası, USB Şarj Portlu Bilgisayar Çantası, Notebook Çantası, Seyahat Sırt Çantası, Gaming Laptop Çantası, Gaming Laptop Çantası, Siyah",
    "B0FSRX65BW": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Dizüstü Bilgisayar Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Laptop Stant | S4",
@@ -150,14 +137,14 @@
   },
   "evaluated": 25,
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-04T16:14:35Z",
-  "last_progress": "2026-11-04T16:14:35Z",
-  "last_run": "2026-11-04T16:14:35Z",
+  "last_ok": "2026-11-04T17:29:18Z",
+  "last_progress": "2026-11-04T17:29:18Z",
+  "last_run": "2026-11-04T17:29:18Z",
   "last_search_at": "2026-11-04T16:14:35Z",
   "last_status": "tamam",
-  "queue": 111,
-  "requests": 154,
-  "search_pages": 1
+  "queue": 98,
+  "requests": 53,
+  "search_pages": 0
  },
  "products": {
   "B00OGX70F0": {
@@ -229,7 +216,7 @@
   "B096Y34V92": {
    "asin": "B096Y34V92",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 15.6"
@@ -332,6 +319,18 @@
    "specs": {},
    "status": "red",
    "title": "MSI VGA GEFORCE RTX 5060 8G GAMING OC RTX5060 8GB GDDR7 128B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)"
+  },
+  "B0999JKHC2": {
+   "asin": "B0999JKHC2",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS PROART-RTX5090-O32G NVIDIA"
   },
   "B099PV5NXG": {
    "asin": "B099PV5NXG",
@@ -499,6 +498,30 @@
    "status": "red",
    "title": "ASUS TUF Gaming A16 FA608UHI-TU277 - Gaming Dizüstü Bilgisayar AMD Ryzen 7 260 3.8GHz| NVIDIA GeForce RTX 5050 8GB | 16GB DDR5 RAM | 512GB SSD | 16 inç FHD 1920x1200 165Hz | DOS"
   },
+  "B09CL88J27": {
+   "asin": "B09CL88J27",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS ROG Astral GeForce RTX 5090 32GB BTF OC Edition Gaming Ekran Kartı"
+  },
+  "B09CL8ZFJ5": {
+   "asin": "B09CL8ZFJ5",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS ProArt GeForce RTX 5080 16GB GDDR7 OC Edition Ekran Kartı"
+  },
   "B09CMF65V5": {
    "asin": "B09CMF65V5",
    "auto_status": "red",
@@ -566,6 +589,30 @@
    "status": "red",
    "title": "MSI VGA GEFORCE RTX 3050 VENTUS 2X E 6G OC RTX3050 6GB GDDR6 96B DX12 PCIE 4.0 X8 (1XDP 2XHDMI)"
   },
+  "B0BSN91TGK": {
+   "asin": "B0BSN91TGK",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "MSI VGA GEFORCE RTX 5080 16G VENTUS 3X OC PLUS RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)"
+  },
+  "B0BT9R5XNN": {
+   "asin": "B0BT9R5XNN",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "MSI VGA GEFORCE RTX 5080 16G SHADOW 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)"
+  },
   "B0BTNPVX2X": {
    "asin": "B0BTNPVX2X",
    "auto_status": "red",
@@ -587,6 +634,18 @@
    ],
    "status": "red",
    "title": "MSI CYBORG 15 A13VE-1478XTR Dizüstü Bilgisayar, Core I5-13420H, 15.6 FHD 144Hz, 16GB RAM, RTX4050 GDDR6 6GB, 1TB SSD, DOS"
+  },
+  "B0BYZFH47F": {
+   "asin": "B0BYZFH47F",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS DUAL Radeon RX 9060 XT 16GB GDDR6 Gaming Ekran Kartı"
   },
   "B0C1Z45PK9": {
    "asin": "B0C1Z45PK9",
@@ -820,6 +879,42 @@
    "status": "red",
    "title": "Asus VivoBook Go 15 E1504FA-NJ118A2 Ryzen5 7520U 8GB 1TBSSD 15.6\" FHD FreeDOS Dizüstü Bilgisayar-CNT003"
   },
+  "B0DRPPXB5X": {
+   "asin": "B0DRPPXB5X",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "SAPPHIRE NITRO+ AMD RADEON™ RX 9070 XT GAMING OC 16GB DUAL HDMI/DUAL DP GPU Ekran Kartı"
+  },
+  "B0DS65KD1C": {
+   "asin": "B0DS65KD1C",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS TUF Gaming GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı"
+  },
+  "B0DS65VMC6": {
+   "asin": "B0DS65VMC6",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS PRIME GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı"
+  },
   "B0DSBPXXHD": {
    "asin": "B0DSBPXXHD",
    "auto_status": "red",
@@ -830,6 +925,30 @@
    ],
    "status": "red",
    "title": "NB V15 82YY0012TR RYZEN7 7730U 8GB 512SSD O/B 15.6 DOS"
+  },
+  "B0DSG52H7D": {
+   "asin": "B0DSG52H7D",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC Edition Gaming Ekran Kartı"
+  },
+  "B0DSQ1RCZV": {
+   "asin": "B0DSQ1RCZV",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5080 GAMING OC GV-N5080GAMING OC-16GD 256BIT/3XDP/1XHDMI/3XFAN"
   },
   "B0DT178DPD": {
    "asin": "B0DT178DPD",
@@ -852,6 +971,18 @@
    ],
    "status": "red",
    "title": "Lenovo V15 83A100A5TR i5-13420H 16GB 512GB SSD 15.6\" Full HD FreeDOS Notebook"
+  },
+  "B0DT6S77JK": {
+   "asin": "B0DT6S77JK",
+   "auto_status": "red",
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "reasons": [
+    "kategori dizüstü bilgisayar değil (Bilgisayar › Bileşenler › Dahili Bileşenler › Ekran Kartları)"
+   ],
+   "specs": {},
+   "status": "red",
+   "title": "MSI VGA GEFORCE RTX 5090 32G VENTUS 3X OC RTX5090 32GB GDRR7 512B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)"
   },
   "B0DT7B79K9": {
    "asin": "B0DT7B79K9",
@@ -1565,7 +1696,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -1948,7 +2079,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 13399900,
    "max_price": 13399900,
    "min_price": 13399900,
@@ -2007,7 +2138,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12799900,
    "max_price": 12799900,
    "min_price": 12799900,
@@ -2462,7 +2593,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12399900,
    "max_price": 12399900,
    "min_price": 12399900,
@@ -2530,7 +2661,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 10049900,
    "max_price": 11030155,
    "min_price": 10049900,
@@ -2822,7 +2953,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 15299900,
    "max_price": 15299900,
    "min_price": 15299900,
@@ -2881,7 +3012,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -2940,7 +3071,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -2986,6 +3117,65 @@
    "status": "onayli",
    "title": "Game Garaj Slayer R9M3D XL-5070 C4 AMD Ryzen 9 9955HX3D 64GB RAM 2TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   },
+  "B0FPMH5CW8": {
+   "asin": "B0FPMH5CW8",
+   "auto_status": "onayli",
+   "current_price": 12649900,
+   "evaluated_at": "2026-11-04T17:29:18Z",
+   "first_seen": "2026-11-04T17:29:18Z",
+   "history": [
+    [
+     "2026-11-04T17:29:18Z",
+     12649900
+    ]
+   ],
+   "in_stock": true,
+   "last_checked": "2026-11-04T17:29:18Z",
+   "last_known_price": 12649900,
+   "max_price": 12649900,
+   "min_price": 12649900,
+   "reasons": [],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "onayli",
+   "title": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
   "B0FS219ZLG": {
    "asin": "B0FS219ZLG",
    "auto_status": "red",
@@ -3011,7 +3201,7 @@
   "B0FTM5PR7J": {
    "asin": "B0FTM5PR7J",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: ryzen ai 7 350"
@@ -3090,7 +3280,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -3149,7 +3339,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -3395,9 +3585,9 @@
   },
   "B0FWKN5HW4": {
    "asin": "B0FWKN5HW4",
-   "auto_status": "beklemede",
+   "auto_status": "onayli",
    "current_price": 11249900,
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-04T15:14:21Z",
    "history": [
     [
@@ -3406,17 +3596,17 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 11249900,
    "max_price": 11249900,
    "min_price": 11249900,
-   "reasons": [
-    "Çözünürlük: hiçbir kaynakta bulunamadı"
-   ],
+   "reasons": [],
    "specs": {
     "cozunurluk": {
-     "degerler": [],
-     "karar": "bilinmiyor"
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
     },
     "cpu": {
      "degerler": [
@@ -3449,7 +3639,7 @@
      "karar": "gecti"
     }
    },
-   "status": "beklemede",
+   "status": "onayli",
    "title": "Game Garaj Slayer5 7XL-5060 C1 Intel Ultra 7 255HX 16GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
   },
   "B0FWPMZ78T": {
@@ -4004,7 +4194,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 8829900,
    "max_price": 8829900,
    "min_price": 8829900,
@@ -6529,7 +6719,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -6654,7 +6844,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12199900,
    "max_price": 12199900,
    "min_price": 12199900,
@@ -6784,7 +6974,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -6899,7 +7089,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -6959,7 +7149,7 @@
   "B0H4GWXTHS": {
    "asin": "B0H4GWXTHS",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -7008,7 +7198,7 @@
   "B0H4H1GZ8Z": {
    "asin": "B0H4H1GZ8Z",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -7074,7 +7264,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -7188,7 +7378,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -7249,7 +7439,7 @@
   "B0H4Z6DRKG": {
    "asin": "B0H4Z6DRKG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -7512,7 +7702,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -7562,7 +7752,7 @@
   "B0H7CZBX5P": {
    "asin": "B0H7CZBX5P",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-02T06:34:51Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -7622,7 +7812,7 @@
   "B0H7W4B2FG": {
    "asin": "B0H7W4B2FG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-03T05:07:27Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -9651,7 +9841,7 @@
   "B0HFKD4RRQ": {
    "asin": "B0HFKD4RRQ",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: core 7 240h"
@@ -9700,7 +9890,7 @@
   "B0HFKHSHNP": {
    "asin": "B0HFKHSHNP",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -9752,7 +9942,7 @@
   "B0HFKLF55S": {
    "asin": "B0HFKLF55S",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -10915,7 +11105,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -13539,7 +13729,7 @@
   "B0HMNY3XQ6": {
    "asin": "B0HMNY3XQ6",
    "auto_status": "red",
-   "evaluated_at": "2026-11-04T15:14:21Z",
+   "evaluated_at": "2026-11-04T17:29:18Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -13822,7 +14012,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 31099900,
    "max_price": 31099900,
    "min_price": 31099900,
@@ -13907,7 +14097,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -13979,7 +14169,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -14039,7 +14229,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -14099,7 +14289,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
