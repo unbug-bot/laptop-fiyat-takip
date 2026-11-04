@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T15:14:21Z",
+   "last_checked": "2026-11-04T16:14:35Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -120,6 +120,124 @@
   },
   {
    "alerts": null,
+   "asin": "B0FGDPHVW8",
+   "current_price": 12799900,
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12799900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T16:14:35Z",
+   "last_known_price": 12799900,
+   "manual": null,
+   "max_price": 12799900,
+   "min_price": 12799900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer5 7XL-5060 C2 Intel Ultra 7 255HX 32GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FMFL91NB",
+   "current_price": 12399900,
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12399900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T16:14:35Z",
+   "last_known_price": 12399900,
+   "manual": null,
+   "max_price": 12399900,
+   "min_price": 12399900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 8940hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M XL-5060 C3 AMD Ryzen 9 8940HX 32GB RAM 2TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
+  {
+   "alerts": null,
    "asin": "B0FMFM78FC",
    "current_price": 10049900,
    "first_seen": "2026-11-01T19:33:29Z",
@@ -139,7 +257,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T15:14:21Z",
+   "last_checked": "2026-11-04T16:14:35Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -198,7 +316,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T15:14:21Z",
+   "last_checked": "2026-11-04T16:14:35Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -257,7 +375,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T15:14:21Z",
+   "last_checked": "2026-11-04T16:14:35Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -362,124 +480,6 @@
     }
    },
    "title": "Game Garaj Slayer R9T XL-5070 V2.12 C1 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0FGDPHVW8",
-   "current_price": 12799900,
-   "first_seen": "2026-11-04T15:14:21Z",
-   "history": [
-    [
-     "2026-11-04T15:14:21Z",
-     12799900
-    ]
-   ],
-   "in_stock": true,
-   "last_change_pct": null,
-   "last_checked": "2026-11-04T15:14:21Z",
-   "last_known_price": 12799900,
-   "manual": null,
-   "max_price": 12799900,
-   "min_price": 12799900,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "2560x1600"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "core ultra 7 255hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5060"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer5 7XL-5060 C2 Intel Ultra 7 255HX 32GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0FMFL91NB",
-   "current_price": 12399900,
-   "first_seen": "2026-11-04T15:14:21Z",
-   "history": [
-    [
-     "2026-11-04T15:14:21Z",
-     12399900
-    ]
-   ],
-   "in_stock": true,
-   "last_change_pct": null,
-   "last_checked": "2026-11-04T15:14:21Z",
-   "last_known_price": 12399900,
-   "manual": null,
-   "max_price": 12399900,
-   "min_price": 12399900,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "ryzen 9 8940hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5060"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer R9M XL-5060 C3 AMD Ryzen 9 8940HX 32GB RAM 2TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -489,17 +489,158 @@
   "captcha_passed": 0,
   "checked": 25,
   "config_hash": "0d338151ca54",
-  "duration_sec": 687,
-  "eval_queue": {},
-  "evaluated": 15,
+  "discovery": {
+   "anahtar_kelime_sayfa": 51,
+   "at": "2026-11-04T16:14:35Z",
+   "atlanan": 13,
+   "atlanan_ornek": [
+    "Anypay A2 15.6 İ5 5nesil 8 Ram 128g Msata Tek Ekran Siyah",
+    "Kodpos Eco 1655 15,6 8am 128 Ssd İ5 Dokunmatik 5 nesil + Arka Ekran",
+    "TOSHIBA Portege R30-A-131 i5 4300M 2.60 GHz 8GB 500GB 13.3 HD Led Tümleş ik VGA W7/W8 Pro ",
+    "Kurumsal MB-O13B - Intel Core I3 13100F | 16GB Ram | 512GB SSD | W11PRO | Ofis OEM PAKET",
+    "NVIDIA RTX PRO 2000 Blackwell 16GB Grafik Kartı",
+    "PNY NVIDIA RTX PRO 6000 Blackwell İş İstasyonu Sürümü",
+    "PNY NVIDIA RTX PRO 5000 Blackwell",
+    "Antec PCIe 5.0 Riser Kablo ve Dikey GPU Braketi, RTX50 Uyumlu, 200mm, 32 GT/s, 90° Dikey M",
+    "Coverzone Alüminyum Laptop Standı 7 Kademeli Katlanabilir Ayarlanabilir",
+    "Lenovo Legion 17 Zoll Armored Backpack II, Gaming-Laptoptasche, doppellagiger Schutz, spez",
+    "Kuzey's Store Hızlı Soğutma Profesyonel Dizüstü Bilgisayar Notebook Soğutucu Macbook ile U",
+    "fiigo Laptop Standı Katlanabilir Çok Fonksiyonlu Metal Grey",
+    "Dell Gaming Notebook Çantası 17 Siyah 460-BCYY"
+   ],
+   "basliktan_red": 658,
+   "gorulen_ilan": 1177,
+   "kategori_sayfa": 9,
+   "kontrol_bilinen": 11,
+   "kontrol_bulunan": 11,
+   "kontrol_kacan": [],
+   "notlar": [],
+   "yeni_aday": 136
+  },
+  "duration_sec": 1744,
+  "eval_queue": {
+   "B07DHS2Z7M": "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
+   "B07K6KRVLY": "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
+   "B0999JKHC2": "ASUS PROART-RTX5090-O32G NVIDIA",
+   "B09CL88J27": "ASUS ROG Astral GeForce RTX 5090 32GB BTF OC Edition Gaming Ekran Kartı",
+   "B09CL8ZFJ5": "ASUS ProArt GeForce RTX 5080 16GB GDDR7 OC Edition Ekran Kartı",
+   "B0BSN91TGK": "MSI VGA GEFORCE RTX 5080 16G VENTUS 3X OC PLUS RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0BT9R5XNN": "MSI VGA GEFORCE RTX 5080 16G SHADOW 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0BYZFH47F": "ASUS DUAL Radeon RX 9060 XT 16GB GDDR6 Gaming Ekran Kartı",
+   "B0DRPPXB5X": "SAPPHIRE NITRO+ AMD RADEON™ RX 9070 XT GAMING OC 16GB DUAL HDMI/DUAL DP GPU Ekran Kartı",
+   "B0DS65KD1C": "ASUS TUF Gaming GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
+   "B0DS65VMC6": "ASUS PRIME GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
+   "B0DSG52H7D": "ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC Edition Gaming Ekran Kartı",
+   "B0DSQ1RCZV": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5080 GAMING OC GV-N5080GAMING OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
+   "B0DT6S77JK": "MSI VGA GEFORCE RTX 5090 32G VENTUS 3X OC RTX5090 32GB GDRR7 512B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0DT78YM6P": "GIGABYTE Radeon RX 9070 Gaming OC 16G Grafik Kartı - 16 GB GDDR6, 256 Bit, PCI-E 5.0, 2700 MHz Çekirdek Frekansı, 2 x DisplayPort, 2 x HDMI, GV-R9070GAMING OC-16GD",
+   "B0DT9WQW4T": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 GAMING OC GV-N5090GAMING OC-32GD 512BIT/3XDP/1XHDMI/3XFAN",
+   "B0DT9YQR11": "GIGABYTE GeForce RTX 5090 AORUS MASTER 32G Ekran Kartı 32 GB GDDR7 512-Bit PCIe 5.0 MAX-Covered Cooling RGB Fusion 3x DisplayPort 1x HDMI",
+   "B0DTGNB9Q5": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI WINDFORCE OC SFF GV-N507TWF3OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
+   "B0DTGNTQ3C": "GIGABYTE VGA NVIDIA 12GB GDDR7 RTX5070 GAMING OC GV-N5070GAMING OC-12GD 192BIT/3XDP/1XHDMI/3XFAN",
+   "B0DTGP4M7J": "GIGABYTE VGA NVIDIA 12GB GDDR7 RTX5070 EAGLE OC SFF GV-N5070EAGLE OC-12GD",
+   "B0DTGPPVVT": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI EAGLE OC SFF GV-N507TEAGLE OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
+   "B0DTGPW43H": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI EAGLE OC ICE SFF GV-N507TEAGLEOC ICE-16GD 256BIT/3XDP/1XHDMI/3XFAN",
+   "B0DTHV8THW": "ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition Gaming Ekran Kartı",
+   "B0DTHWSR1X": "ASUS TUF Gaming GeForce RTX 5090 32GB GDDR7 OC Edition Gaming Ekran Kartı",
+   "B0DTJFZ4YS": "PNY GeForce RTX 5080 16GB Overclocked GDDR7 256Bit (VCG508016TFXPB1-O) Gaming (Oyuncu) Ekran Kartı",
+   "B0DVCB1NN1": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS MASTER ICE GV-N5090AORUSM ICE-32GD 512BIT/3XDP/1XHDMI/3XFAN",
+   "B0DVGVZZYY": "ASUS PRIME GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Gaming Ekran Kartı",
+   "B0DVH1Y9VN": "ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Ekran Kartı",
+   "B0DVTFDHX7": "Inno3D Nvidia GeForce RTX5080 x3 OC 16GB 256Bit GDDR7 Reflex 2 Ekran Kartı N50803-16D7X-17603930",
+   "B0DX7GG91F": "MSI GeForce RTX 5070 12G Ventus 3X OC",
+   "B0DX7L67J9": "MSI VGA GEFORCE RTX 5070 12G VENTUS 2X OC WHITE RTX5070 12GB GDRR7 192B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0DXVG3V54": "PNY GeForce RTX 5080 16GB OC GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K/8K Ultra Gaming Ekran Kartı – VCG508016TFXPB1-O",
+   "B0DXVQVBSJ": "Inno3D Nvidia GeForce RTX5070Ti x3 16GB 256Bit GDDR7 Ekran Kartı N507T3-16D7-176068N",
+   "B0DXVS9RHY": "Inno3D Nvidia GeForce RTX5070Ti x3 OC 16GB 256Bit GDDR7 Ekran Kartı N507T3-16D7X-176068N",
+   "B0DZD6QV9L": "MSI VGA GEFORCE RTX 5070 TI 16G SHADOW 3X OC RTX5070TI 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0DZNP5S42": "Inno3D GeForce RTX5070 Twin x2 12GB 192Bit GDDR7 Ekran Kartı N50702-12D7-195064N",
+   "B0DZX7Y2N4": "MSI VGA GEFORCE RTX 5070 12G SHADOW 3X OC RTX5070 12GB GDRR7 192B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0F1NJF1K4": "MSI VGA GEFORCE RTX 5070 TI 16G GAMING TRIO OC RTX5070TI 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
+   "B0F2P87KC8": "Gigabyte GeForce RTX 5070 Ti WINDFORCE SFF 16G Grafik Kartı - 16GB GDDR7, 256bit, PCI-E 5.0, 2452 MHz Çekirdek Saat, 3 x DP 2.1b, 1 x HDMI 2.1b, NVIDIA DLSS 4, GV-N507TWF3-16GD",
+   "B0F7HTR8DQ": "GIGABYTE VGA AMD 16GB GDDR6 RX9060XT GAMING OC GV-R9060XTGAMING OC-16GD 128BIT/2XDP/1XHDMI/3XFAN",
+   "B0F8H4RWB8": "Ganiward RTX 5060 Ghost 8GB GDDR7 128Bit NE75060019P1-GB2063B Ekran Kartı",
+   "B0F8MZNF4W": "ZOTAC GAM GeForce RTX 5070 Twin Edge OC",
+   "B0F8VQ4N8L": "Zotac RTX 5070 Gaming Twin Edge ZT-B50700E-10P 192 Bit GDDR7 12 GB Ekran Kartı",
+   "B0FFMWXCQD": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3XDP/1XHDMI/3XFAN",
+   "B0FPMH5CW8": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop",
+   "B0FQCR9QQZ": "ASUS ProArt GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Ekran Kartı",
+   "B0FSLDFHZ8": "Mack Business X MCC-807 18\" Laptop Sırt Çantası, Mackbook Çantası, USB Şarj Portlu Bilgisayar Çantası, Notebook Çantası, Seyahat Sırt Çantası, Gaming Laptop Çantası, Gaming Laptop Çantası, Siyah",
+   "B0FSRX65BW": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Dizüstü Bilgisayar Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Laptop Stant | S4",
+   "B0FSRXPCKG": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Dizüstü Bilgisayar ve Laptop Stant | S13",
+   "B0FSRZBB7B": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Dizüstü Bilgisayar ve Laptop Stant | X2",
+   "B0FSS64KGB": "Coverzone 360 Derece Döner Taşınabilir Katlanabilir Folding Alüminyum Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif 11 inç 17 İnç Dizüstü Bilgisayar ve Laptop Stant | WG3",
+   "B0FSS6MWW6": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Dizüstü Bilgisayar ve Laptop Stant | L98C",
+   "B0FX5HGF39": "McStorey Katlanabilir Ayarlanabilir Alüminyum Laptop Standı, Taşınabilir Ergonomik Notebook Yükseltici, 6 Kademeli Yükseklik Ayarlı, MacBook Tablet Uyumlu, 10-17 İnç, Siyah",
+   "B0G39NMSX9": "PNY GeForce RTX 5060 8GB GDDR6 128-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 1080p/1440p Gaming Ekran Kartı – VCG50608DFXPB1",
+   "B0G6Z7Z6HS": "PNY Dual GeForce RTX 5060 OC 8GB GDDR7 128Bit HDMI/DP Ekran Kartı",
+   "B0G6ZC86B7": "PNY GeForce RTX 5070 Ti 16GB GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K Ultra Gaming Ekran Kartı – VCG5070T16TFXPB1",
+   "B0G6ZGLZWM": "PNY GeForce RTX 5070 Ti 16GB OC GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K Ultra Gaming Ekran Kartı – VCG5070T16TFXPB1-O",
+   "B0G6ZRCRTK": "PNY Epic-X Triple GeForce RTX 5070 Ti OC 16GB GDDR7 256Bit HDMI/DP Ekran Kartı",
+   "B0GMW3XYNN": "DRAGOS DRx7955 Ryzen 7 9800X3D 32GB DDR5 2TB 4.0 NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GMWNHNMS": "DRAGOS DRx7958 Ryzen 7 9800X3D 32GB DDR5 2TB 4.0 NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GMWPHZRS": "DRAGOS DRx7956 Ryzen 9 9950X 32GB DDR5 2TB 4.0 NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYYR6ZBX": "DRAGOS DRx9751 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYYRBRBH": "DRAGOS DRx9641 Ultra 9 285K 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYYRCTT6": "DRAGOS DRx8793 Ryzen 5 7500X3D 16GB DDR5 512GB NVMe 16GB RTX5080 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYYVMWQV": "DRAGOS DRx9737 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYYXQ9NB": "DRAGOS DRx9618 Ultra 7 265KF 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYYXQPNN": "DRAGOS DRx9752 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYYXZPGL": "DRAGOS DRx9774 Ultra 9 285K 32GB DDR5 1TB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYYY31F1": "DRAGOS DRx9606 Ultra 7 265KF 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZ3H1DW": "DRAGOS DRx9763 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ3H1DX": "DRAGOS DRx9739 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ4GL68": "DRAGOS DRx9754 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ4QP2V": "DRAGOS DRx9738 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZ5BKK3": "DRAGOS DRx9777 Ultra 9 285K 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7J3KB": "DRAGOS DRx9766 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7J7WG": "DRAGOS DRx9773 Ultra 9 285K 16GB DDR5 512GB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZ7LCF1": "DRAGOS DRx9740 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7LRH8": "DRAGOS DRx9069 Ryzen 7 9800X3D 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7Q86L": "DRAGOS DRx9593 Ultra 7 265KF 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZ7VCWW": "DRAGOS DRx9762 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZ7WSSS": "DRAGOS DRx9753 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7XTRL": "DRAGOS DRx9629 Ultra 9 285K 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZ7Y1RH": "DRAGOS DRx8937 Ryzen 7 7800X3D 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7Y7SY": "DRAGOS DRx8962 Ryzen 9 9950X 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ7YMKS": "DRAGOS DRx9617 Ultra 7 265KF 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZ81QGL": "DRAGOS DRx9032 Ryzen 5 7500X3D 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ837YR": "DRAGOS DRx8960 Ryzen 9 9950X 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZ9VZ3K": "DRAGOS DRx9742 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZBB572": "DRAGOS DRx9741 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZCYLZ7": "DRAGOS DRx9657 Ultra 9 285K 16GB DDR5 512GB NVMe 16GB RTX5080 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZFQVTM": "DRAGOS DRx9642 Ultra 9 285K 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZHZVDX": "DRAGOS DRx9594 Ultra 7 265KF 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZJ4K9V": "DRAGOS DRx9749 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZJ6Z7Y": "DRAGOS DRx9776 Ultra 9 285K 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZK6YXR": "DRAGOS DRx9765 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZKF7NG": "DRAGOS DRx9006 Ryzen 7 9800X3D 32GB DDR5 1TB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZL4MT9": "DRAGOS DRx9630 Ultra 9 285K 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZM7Y2B": "DRAGOS DRx8909 Ryzen 5 7500X3D 16GB DDR5 512GB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZMT82D": "DRAGOS DRx9775 Ultra 9 285K 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZN48ZX": "DRAGOS DRx9022 Ryzen 9 9950X 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZQ6B5L": "DRAGOS DRx9750 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0GYZQ9X5D": "DRAGOS DRx9778 Ultra 9 285K 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZR52WS": "DRAGOS DRx9764 Ultra 7 265KF 32GB DDR5 1TB NVMe 32GB RTX5090 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
+   "B0GYZSY7KM": "DRAGOS DRx9081 Ryzen 9 9950X 16GB DDR5 512GB NVMe 32GB RTX5090 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
+   "B0GYZW9F85": "DRAGOS DRx9605 Ultra 7 265KF 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+   "B0GYZZJPZ7": "DRAGOS DRx9761 Ultra 7 265KF 16GB DDR5 512GB NVMe 32GB RTX5090 Oyuncu Oem Paket",
+   "B0H1X77HTF": "GIGABYTE AORUS INFINITY GeForce RTX 5090 32G GAMING Ekran Kartı",
+   "B0HGBHTCGC": "PCH Giant RTX5080 AMD RYZEN 7 7800X3D 16 GB DDR5 1 TB M2 SSD 850W PSU OEM PAKET",
+   "B0HGBKS2HG": "PCH Giant RTX5070Ti AMD RYZEN 7 7800X3D 16 GB DDR5 1 TB M2 SSD 750W PSU OEM PAKET",
+   "B0HGGKCDRR": "Kuzey's Store Profesyonel Dizüstü Bilgisayar MACbook ile Uyumlu Notebook Soğutucu Laptop Stand Işıklı Oyuncu PC lere Özel 1 Büyük Fan İle Hızlı Soğutma 2 USB Girişli 12-17 inç Ekran",
+   "B0HND6BJJ4": "Game Garaj Prime R18 AMD R7 5700 RTX5060 16GB RAM 500GB SSD FreeDOS Oyuncu OEM Paket"
+  },
+  "evaluated": 25,
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-04T15:14:21Z",
-  "last_progress": "2026-11-04T15:14:21Z",
-  "last_run": "2026-11-04T15:14:21Z",
+  "last_ok": "2026-11-04T16:14:35Z",
+  "last_progress": "2026-11-04T16:14:35Z",
+  "last_run": "2026-11-04T16:14:35Z",
+  "last_search_at": "2026-11-04T16:14:35Z",
   "last_status": "tamam",
-  "queue": 0,
-  "requests": 42,
-  "search_pages": 0
+  "queue": 111,
+  "requests": 154,
+  "search_pages": 1
  },
  "pending": [
   {
