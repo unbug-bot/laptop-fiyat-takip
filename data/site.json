@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -190,7 +190,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 12399900,
    "manual": null,
    "max_price": 12399900,
@@ -257,7 +257,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -305,6 +305,65 @@
   },
   {
    "alerts": null,
+   "asin": "B0FPMH5CW8",
+   "current_price": 12649900,
+   "first_seen": "2026-11-04T17:29:18Z",
+   "history": [
+    [
+     "2026-11-04T17:29:18Z",
+     12649900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T18:03:16Z",
+   "last_known_price": 12649900,
+   "manual": null,
+   "max_price": 12649900,
+   "min_price": 12649900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
+  {
+   "alerts": null,
    "asin": "B0FWKN5HW4",
    "current_price": 11249900,
    "first_seen": "2026-11-04T15:14:21Z",
@@ -316,7 +375,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -375,7 +434,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -434,7 +493,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
+   "last_checked": "2026-11-04T18:03:16Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -539,65 +598,6 @@
     }
    },
    "title": "Game Garaj Slayer R9T XL-5070 V2.12 C1 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
-  },
-  {
-   "alerts": null,
-   "asin": "B0FPMH5CW8",
-   "current_price": 12649900,
-   "first_seen": "2026-11-04T17:29:18Z",
-   "history": [
-    [
-     "2026-11-04T17:29:18Z",
-     12649900
-    ]
-   ],
-   "in_stock": true,
-   "last_change_pct": null,
-   "last_checked": "2026-11-04T17:29:18Z",
-   "last_known_price": 12649900,
-   "manual": null,
-   "max_price": 12649900,
-   "min_price": 12649900,
-   "prev_price": null,
-   "specs": {
-    "cozunurluk": {
-     "degerler": [
-      "qhd+"
-     ],
-     "karar": "gecti"
-    },
-    "cpu": {
-     "degerler": [
-      "ryzen 9 9955hx3d"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5070"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "32"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -635,35 +635,10 @@
    "notlar": [],
    "yeni_aday": 136
   },
-  "duration_sec": 842,
+  "duration_sec": 902,
   "eval_queue": {
    "B07DHS2Z7M": "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
    "B07K6KRVLY": "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
-   "B0DT78YM6P": "GIGABYTE Radeon RX 9070 Gaming OC 16G Grafik Kartı - 16 GB GDDR6, 256 Bit, PCI-E 5.0, 2700 MHz Çekirdek Frekansı, 2 x DisplayPort, 2 x HDMI, GV-R9070GAMING OC-16GD",
-   "B0DT9WQW4T": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 GAMING OC GV-N5090GAMING OC-32GD 512BIT/3XDP/1XHDMI/3XFAN",
-   "B0DT9YQR11": "GIGABYTE GeForce RTX 5090 AORUS MASTER 32G Ekran Kartı 32 GB GDDR7 512-Bit PCIe 5.0 MAX-Covered Cooling RGB Fusion 3x DisplayPort 1x HDMI",
-   "B0DTGNB9Q5": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI WINDFORCE OC SFF GV-N507TWF3OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
-   "B0DTGNTQ3C": "GIGABYTE VGA NVIDIA 12GB GDDR7 RTX5070 GAMING OC GV-N5070GAMING OC-12GD 192BIT/3XDP/1XHDMI/3XFAN",
-   "B0DTGP4M7J": "GIGABYTE VGA NVIDIA 12GB GDDR7 RTX5070 EAGLE OC SFF GV-N5070EAGLE OC-12GD",
-   "B0DTGPPVVT": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI EAGLE OC SFF GV-N507TEAGLE OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
-   "B0DTGPW43H": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5070TI EAGLE OC ICE SFF GV-N507TEAGLEOC ICE-16GD 256BIT/3XDP/1XHDMI/3XFAN",
-   "B0DTHV8THW": "ASUS ROG Astral GeForce RTX 5090 32GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DTHWSR1X": "ASUS TUF Gaming GeForce RTX 5090 32GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DTJFZ4YS": "PNY GeForce RTX 5080 16GB Overclocked GDDR7 256Bit (VCG508016TFXPB1-O) Gaming (Oyuncu) Ekran Kartı",
-   "B0DVCB1NN1": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS MASTER ICE GV-N5090AORUSM ICE-32GD 512BIT/3XDP/1XHDMI/3XFAN",
-   "B0DVGVZZYY": "ASUS PRIME GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DVH1Y9VN": "ASUS TUF Gaming GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Ekran Kartı",
-   "B0DVTFDHX7": "Inno3D Nvidia GeForce RTX5080 x3 OC 16GB 256Bit GDDR7 Reflex 2 Ekran Kartı N50803-16D7X-17603930",
-   "B0DX7GG91F": "MSI GeForce RTX 5070 12G Ventus 3X OC",
-   "B0DX7L67J9": "MSI VGA GEFORCE RTX 5070 12G VENTUS 2X OC WHITE RTX5070 12GB GDRR7 192B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0DXVG3V54": "PNY GeForce RTX 5080 16GB OC GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K/8K Ultra Gaming Ekran Kartı – VCG508016TFXPB1-O",
-   "B0DXVQVBSJ": "Inno3D Nvidia GeForce RTX5070Ti x3 16GB 256Bit GDDR7 Ekran Kartı N507T3-16D7-176068N",
-   "B0DXVS9RHY": "Inno3D Nvidia GeForce RTX5070Ti x3 OC 16GB 256Bit GDDR7 Ekran Kartı N507T3-16D7X-176068N",
-   "B0DZD6QV9L": "MSI VGA GEFORCE RTX 5070 TI 16G SHADOW 3X OC RTX5070TI 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0DZNP5S42": "Inno3D GeForce RTX5070 Twin x2 12GB 192Bit GDDR7 Ekran Kartı N50702-12D7-195064N",
-   "B0DZX7Y2N4": "MSI VGA GEFORCE RTX 5070 12G SHADOW 3X OC RTX5070 12GB GDRR7 192B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0F1NJF1K4": "MSI VGA GEFORCE RTX 5070 TI 16G GAMING TRIO OC RTX5070TI 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0F2P87KC8": "Gigabyte GeForce RTX 5070 Ti WINDFORCE SFF 16G Grafik Kartı - 16GB GDDR7, 256bit, PCI-E 5.0, 2452 MHz Çekirdek Saat, 3 x DP 2.1b, 1 x HDMI 2.1b, NVIDIA DLSS 4, GV-N507TWF3-16GD",
    "B0F7HTR8DQ": "GIGABYTE VGA AMD 16GB GDDR6 RX9060XT GAMING OC GV-R9060XTGAMING OC-16GD 128BIT/2XDP/1XHDMI/3XFAN",
    "B0F8H4RWB8": "Ganiward RTX 5060 Ghost 8GB GDDR7 128Bit NE75060019P1-GB2063B Ekran Kartı",
    "B0F8MZNF4W": "ZOTAC GAM GeForce RTX 5070 Twin Edge OC",
@@ -738,12 +713,12 @@
   },
   "evaluated": 25,
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-04T17:29:18Z",
-  "last_progress": "2026-11-04T17:29:18Z",
-  "last_run": "2026-11-04T17:29:18Z",
+  "last_ok": "2026-11-04T18:03:16Z",
+  "last_progress": "2026-11-04T18:03:16Z",
+  "last_run": "2026-11-04T18:03:16Z",
   "last_search_at": "2026-11-04T16:14:35Z",
   "last_status": "tamam",
-  "queue": 98,
+  "queue": 73,
   "requests": 53,
   "search_pages": 0
  },
