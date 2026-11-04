@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -190,7 +190,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12399900,
    "manual": null,
    "max_price": 12399900,
@@ -257,7 +257,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -305,6 +305,65 @@
   },
   {
    "alerts": null,
+   "asin": "B0FWKN5HW4",
+   "current_price": 11249900,
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     11249900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T17:29:18Z",
+   "last_known_price": 11249900,
+   "manual": null,
+   "max_price": 11249900,
+   "min_price": 11249900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer5 7XL-5060 C1 Intel Ultra 7 255HX 16GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
    "asin": "B0FYY34Q8X",
    "current_price": 8829900,
    "first_seen": "2026-11-03T16:16:08Z",
@@ -316,7 +375,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -375,7 +434,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-04T16:14:35Z",
+   "last_checked": "2026-11-04T17:29:18Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -480,6 +539,65 @@
     }
    },
    "title": "Game Garaj Slayer R9T XL-5070 V2.12 C1 AMD Ryzen 9 8945HX 32GB RAM 1TB SSD RTX5070 18\" 180Hz QHD+ IPS FeeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FPMH5CW8",
+   "current_price": 12649900,
+   "first_seen": "2026-11-04T17:29:18Z",
+   "history": [
+    [
+     "2026-11-04T17:29:18Z",
+     12649900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-04T17:29:18Z",
+   "last_known_price": 12649900,
+   "manual": null,
+   "max_price": 12649900,
+   "min_price": 12649900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -487,8 +605,8 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 25,
-  "config_hash": "0d338151ca54",
+  "checked": 26,
+  "config_hash": "a6209ff7bf22",
   "discovery": {
    "anahtar_kelime_sayfa": 51,
    "at": "2026-11-04T16:14:35Z",
@@ -517,22 +635,10 @@
    "notlar": [],
    "yeni_aday": 136
   },
-  "duration_sec": 1744,
+  "duration_sec": 842,
   "eval_queue": {
    "B07DHS2Z7M": "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
    "B07K6KRVLY": "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
-   "B0999JKHC2": "ASUS PROART-RTX5090-O32G NVIDIA",
-   "B09CL88J27": "ASUS ROG Astral GeForce RTX 5090 32GB BTF OC Edition Gaming Ekran Kartı",
-   "B09CL8ZFJ5": "ASUS ProArt GeForce RTX 5080 16GB GDDR7 OC Edition Ekran Kartı",
-   "B0BSN91TGK": "MSI VGA GEFORCE RTX 5080 16G VENTUS 3X OC PLUS RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0BT9R5XNN": "MSI VGA GEFORCE RTX 5080 16G SHADOW 3X OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
-   "B0BYZFH47F": "ASUS DUAL Radeon RX 9060 XT 16GB GDDR6 Gaming Ekran Kartı",
-   "B0DRPPXB5X": "SAPPHIRE NITRO+ AMD RADEON™ RX 9070 XT GAMING OC 16GB DUAL HDMI/DUAL DP GPU Ekran Kartı",
-   "B0DS65KD1C": "ASUS TUF Gaming GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DS65VMC6": "ASUS PRIME GeForce RTX 5080 16GB GDDR7 OC Edition Gaming Ekran Kartı",
-   "B0DSG52H7D": "ASUS PRIME Radeon RX 9070 XT 16GB GDDR6 OC Edition Gaming Ekran Kartı",
-   "B0DSQ1RCZV": "GIGABYTE VGA NVIDIA 16GB GDDR7 RTX5080 GAMING OC GV-N5080GAMING OC-16GD 256BIT/3XDP/1XHDMI/3XFAN",
-   "B0DT6S77JK": "MSI VGA GEFORCE RTX 5090 32G VENTUS 3X OC RTX5090 32GB GDRR7 512B DX12 PCIE 5.0 X16 (3XDP 1XHDMI)",
    "B0DT78YM6P": "GIGABYTE Radeon RX 9070 Gaming OC 16G Grafik Kartı - 16 GB GDDR6, 256 Bit, PCI-E 5.0, 2700 MHz Çekirdek Frekansı, 2 x DisplayPort, 2 x HDMI, GV-R9070GAMING OC-16GD",
    "B0DT9WQW4T": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 GAMING OC GV-N5090GAMING OC-32GD 512BIT/3XDP/1XHDMI/3XFAN",
    "B0DT9YQR11": "GIGABYTE GeForce RTX 5090 AORUS MASTER 32G Ekran Kartı 32 GB GDDR7 512-Bit PCIe 5.0 MAX-Covered Cooling RGB Fusion 3x DisplayPort 1x HDMI",
@@ -563,7 +669,6 @@
    "B0F8MZNF4W": "ZOTAC GAM GeForce RTX 5070 Twin Edge OC",
    "B0F8VQ4N8L": "Zotac RTX 5070 Gaming Twin Edge ZT-B50700E-10P 192 Bit GDDR7 12 GB Ekran Kartı",
    "B0FFMWXCQD": "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3XDP/1XHDMI/3XFAN",
-   "B0FPMH5CW8": "Game Garaj Slayer R9M3D XL-5070 C6 AMD Ryzen 9 9955HX3D 32GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop",
    "B0FQCR9QQZ": "ASUS ProArt GeForce RTX 5070 Ti 16GB GDDR7 OC Edition Ekran Kartı",
    "B0FSLDFHZ8": "Mack Business X MCC-807 18\" Laptop Sırt Çantası, Mackbook Çantası, USB Şarj Portlu Bilgisayar Çantası, Notebook Çantası, Seyahat Sırt Çantası, Gaming Laptop Çantası, Gaming Laptop Çantası, Siyah",
    "B0FSRX65BW": "Coverzone Taşınabilir Katlanabilir Folding Alüminyum Dizüstü Bilgisayar Notebook Stand Alüminyum Ayarlanabilir Açı Ve Katlanabilir Portatif Rahat Kullanım 11 inç 17 İnç Laptop Stant | S4",
@@ -633,61 +738,14 @@
   },
   "evaluated": 25,
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-04T16:14:35Z",
-  "last_progress": "2026-11-04T16:14:35Z",
-  "last_run": "2026-11-04T16:14:35Z",
+  "last_ok": "2026-11-04T17:29:18Z",
+  "last_progress": "2026-11-04T17:29:18Z",
+  "last_run": "2026-11-04T17:29:18Z",
   "last_search_at": "2026-11-04T16:14:35Z",
   "last_status": "tamam",
-  "queue": 111,
-  "requests": 154,
-  "search_pages": 1
+  "queue": 98,
+  "requests": 53,
+  "search_pages": 0
  },
- "pending": [
-  {
-   "asin": "B0FWKN5HW4",
-   "current_price": 11249900,
-   "in_stock": true,
-   "last_known_price": 11249900,
-   "reasons": [
-    "Çözünürlük: hiçbir kaynakta bulunamadı"
-   ],
-   "specs": {
-    "cozunurluk": {
-     "degerler": [],
-     "karar": "bilinmiyor"
-    },
-    "cpu": {
-     "degerler": [
-      "core ultra 7 255hx"
-     ],
-     "karar": "gecti"
-    },
-    "ekran_boyutu": {
-     "degerler": [
-      "17.0"
-     ],
-     "karar": "gecti"
-    },
-    "gpu": {
-     "degerler": [
-      "rtx 5060"
-     ],
-     "karar": "gecti"
-    },
-    "ram": {
-     "degerler": [
-      "16"
-     ],
-     "karar": "gecti"
-    },
-    "yenileme": {
-     "degerler": [
-      "240"
-     ],
-     "karar": "gecti"
-    }
-   },
-   "title": "Game Garaj Slayer5 7XL-5060 C1 Intel Ultra 7 255HX 16GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
-  }
- ]
+ "pending": []
 }
