@@ -4,23 +4,18 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 21,
-  "config_hash": "11412bb343d8",
-  "duration_sec": 369,
-  "eval_queue": {
-   "B0FGDPHVW8": "B0FGDPHVW8 (varyant: B0FGDP4C8W)",
-   "B0FMFL91NB": "B0FMFL91NB (varyant: B0FMFM78FC)",
-   "B0FNWGDPD1": "B0FNWGDPD1 (varyant: B0FNWKBZXT)",
-   "B0FWKN5HW4": "B0FWKN5HW4 (varyant: B0FGDP4C8W)"
-  },
-  "evaluated": 0,
-  "last_ok": "2026-11-04T14:43:36Z",
-  "last_progress": "2026-11-04T14:43:36Z",
-  "last_run": "2026-11-04T14:43:36Z",
-  "last_search_at": "2026-11-04T12:59:48Z",
+  "checked": 25,
+  "config_hash": "0d338151ca54",
+  "duration_sec": 687,
+  "eval_queue": {},
+  "evaluated": 15,
+  "laptop_node": "12601898031",
+  "last_ok": "2026-11-04T15:14:21Z",
+  "last_progress": "2026-11-04T15:14:21Z",
+  "last_run": "2026-11-04T15:14:21Z",
   "last_status": "tamam",
-  "queue": 4,
-  "requests": 23,
+  "queue": 0,
+  "requests": 42,
   "search_pages": 0
  },
  "products": {
@@ -38,7 +33,7 @@
   "B096Y34V92": {
    "asin": "B096Y34V92",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 15.6"
@@ -530,7 +525,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -714,7 +709,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 13399900,
    "max_price": 13399900,
    "min_price": 13399900,
@@ -759,6 +754,65 @@
    },
    "status": "onayli",
    "title": "Game Garaj Slayer5 7XL-5060 C3 Intel Ultra 7 255HX 32GB RAM 2TB SSD RTX5060 17\" 240Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  "B0FGDPHVW8": {
+   "asin": "B0FGDPHVW8",
+   "auto_status": "onayli",
+   "current_price": 12799900,
+   "evaluated_at": "2026-11-04T15:14:21Z",
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12799900
+    ]
+   ],
+   "in_stock": true,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 12799900,
+   "max_price": 12799900,
+   "min_price": 12799900,
+   "reasons": [],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "2560x1600"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "onayli",
+   "title": "Game Garaj Slayer5 7XL-5060 C2 Intel Ultra 7 255HX 32GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
   },
   "B0FHWLNTV9": {
    "asin": "B0FHWLNTV9",
@@ -1024,6 +1078,65 @@
    "status": "red",
    "title": "Game Garaj Slayer X7T-5070 C3 Intel Core i7 14650HX 32GB RAM 2TB SSD RTX5070 16\" QHD+ 180Hz IPS FreeDOS Oyuncu Laptop"
   },
+  "B0FMFL91NB": {
+   "asin": "B0FMFL91NB",
+   "auto_status": "onayli",
+   "current_price": 12399900,
+   "evaluated_at": "2026-11-04T15:14:21Z",
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     12399900
+    ]
+   ],
+   "in_stock": true,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 12399900,
+   "max_price": 12399900,
+   "min_price": 12399900,
+   "reasons": [],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 8940hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "onayli",
+   "title": "Game Garaj Slayer R9M XL-5060 C3 AMD Ryzen 9 8940HX 32GB RAM 2TB SSD RTX5060 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
   "B0FMFM78FC": {
    "asin": "B0FMFM78FC",
    "auto_status": "onayli",
@@ -1046,7 +1159,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 10049900,
    "max_price": 11030155,
    "min_price": 10049900,
@@ -1192,6 +1305,65 @@
    "status": "red",
    "title": "Casper Excalibur G915 i7-13620H 64GB 1TB 8GB RTX5070 165Hz 16\" Freedos Gaming Laptop G915.1362-EF70X-C"
   },
+  "B0FNWGDPD1": {
+   "asin": "B0FNWGDPD1",
+   "auto_status": "onayli",
+   "current_price": 15299900,
+   "evaluated_at": "2026-11-04T15:14:21Z",
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     15299900
+    ]
+   ],
+   "in_stock": true,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 15299900,
+   "max_price": 15299900,
+   "min_price": 15299900,
+   "reasons": [],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "onayli",
+   "title": "Game Garaj Slayer R9M3D XL-5070 C3 AMD Ryzen 9 9955HX3D 32GB RAM 2TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
+  },
   "B0FNWKBZXT": {
    "asin": "B0FNWKBZXT",
    "auto_status": "onayli",
@@ -1205,7 +1377,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -1264,7 +1436,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -1324,7 +1496,7 @@
   "B0FTM5PR7J": {
    "asin": "B0FTM5PR7J",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: ryzen ai 7 350"
@@ -1403,7 +1575,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -1462,7 +1634,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -1705,6 +1877,65 @@
    ],
    "status": "red",
    "title": "MSI CYBORG 15 B13WFKG-494XTR Dizüstü Bilgisayar, GeForce RTX5060 GDDR7 8GB, Intel Core I7-13620H, 15.6 FHD 144Hz, 16GB RAM DDR5, 1TB SSD, DOS"
+  },
+  "B0FWKN5HW4": {
+   "asin": "B0FWKN5HW4",
+   "auto_status": "beklemede",
+   "current_price": 11249900,
+   "evaluated_at": "2026-11-04T15:14:21Z",
+   "first_seen": "2026-11-04T15:14:21Z",
+   "history": [
+    [
+     "2026-11-04T15:14:21Z",
+     11249900
+    ]
+   ],
+   "in_stock": true,
+   "last_checked": "2026-11-04T15:14:21Z",
+   "last_known_price": 11249900,
+   "max_price": 11249900,
+   "min_price": 11249900,
+   "reasons": [
+    "Çözünürlük: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "cpu": {
+     "degerler": [
+      "core ultra 7 255hx"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "status": "beklemede",
+   "title": "Game Garaj Slayer5 7XL-5060 C1 Intel Ultra 7 255HX 16GB RAM 1TB SSD RTX5060 17\" 240Hz QHD+IPS FreeDOS Gaming Laptop"
   },
   "B0FWQ1MMGG": {
    "asin": "B0FWQ1MMGG",
@@ -1961,7 +2192,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 8829900,
    "max_price": 8829900,
    "min_price": 8829900,
@@ -2746,7 +2977,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -2860,7 +3091,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 12199900,
    "max_price": 12199900,
    "min_price": 12199900,
@@ -2990,7 +3221,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -3094,7 +3325,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -3154,7 +3385,7 @@
   "B0H4GWXTHS": {
    "asin": "B0H4GWXTHS",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -3203,7 +3434,7 @@
   "B0H4H1GZ8Z": {
    "asin": "B0H4H1GZ8Z",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -3258,7 +3489,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -3372,7 +3603,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -3422,7 +3653,7 @@
   "B0H4Z6DRKG": {
    "asin": "B0H4Z6DRKG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -3585,7 +3816,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -3635,7 +3866,7 @@
   "B0H7CZBX5P": {
    "asin": "B0H7CZBX5P",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-02T06:34:51Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -3695,7 +3926,7 @@
   "B0H7W4B2FG": {
    "asin": "B0H7W4B2FG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-03T05:07:27Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -4492,7 +4723,7 @@
   "B0HFKD4RRQ": {
    "asin": "B0HFKD4RRQ",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: core 7 240h"
@@ -4541,7 +4772,7 @@
   "B0HFKHSHNP": {
    "asin": "B0HFKHSHNP",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -4593,7 +4824,7 @@
   "B0HFKLF55S": {
    "asin": "B0HFKLF55S",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -5183,7 +5414,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -5882,7 +6113,7 @@
   "B0HMNY3XQ6": {
    "asin": "B0HMNY3XQ6",
    "auto_status": "red",
-   "evaluated_at": "2026-11-03T16:16:08Z",
+   "evaluated_at": "2026-11-04T15:14:21Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -6033,7 +6264,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 31099900,
    "max_price": 31099900,
    "min_price": 31099900,
@@ -6118,7 +6349,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -6190,7 +6421,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -6250,7 +6481,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -6310,7 +6541,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-04T14:43:36Z",
+   "last_checked": "2026-11-04T15:14:21Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
