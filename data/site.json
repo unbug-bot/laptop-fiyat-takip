@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -248,7 +248,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 11841905,
    "manual": null,
    "max_price": 12399900,
@@ -315,7 +315,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -378,7 +378,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 13895155,
    "manual": null,
    "max_price": 14549900,
@@ -437,7 +437,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 12649900,
    "manual": null,
    "max_price": 12649900,
@@ -496,7 +496,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -555,7 +555,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -614,7 +614,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T20:51:44Z",
+   "last_checked": "2026-11-05T21:51:51Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -732,41 +732,40 @@
    "anahtar_kelime_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
     "son_tamamlanan": null,
-    "sorgu": 32,
+    "sorgu": 35,
     "toplam_sorgu": 36
    },
    "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-05T20:51:44Z",
+   "at": "2026-11-05T21:51:51Z",
    "atlanan": 9,
    "atlanan_ornek": [
     "DRAGOS DRx8083 Ryzen 5 7500X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu ",
-    "MINISFORUM G1 Pro Mini PC AMD Ryzen 9 8945HX(16C/32T, 5.4GHz'e kadar) 32GB DDR5 1TB PCIe4.",
-    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 96GB 512GB SSD+512GB SSD 12GB/RTX5070T",
-    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 80GB 4tb+4tb SSD 12GB/RTX5070Tİ Gddr7 ",
-    "MINISFORUM MS-A2 Mini İş İstasyonu AMD Ryzen 9 9955HX(16C/32T, 5.4GHz'e kadar) 32GB RAM 1T",
-    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 80GB 2tb+2tb SSD 12GB/RTX5070Tİ Gddr7 ",
-    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 96GB 512GB SSD 12GB/RTX5070Tİ Gddr7 14",
-    "Ryzen 9 9950X3D 5.0ghz 128MB 170W Am5 Fansız Tray",
-    "AMD Ryzen 9950X3D işlemci, 3D V-Cache™, 16 çekirdek/32 Threads, 144 MB Önbellek, TDP 170 W"
+    "2 YIL LENOVO TÜRKİYE GARANTİLİ - ADINIZA FATURALI - AYNI GÜN KARGO",
+    "Kuzey's Store Profesyonel Dizüstü Bilgisayar MACbook ile Uyumlu Notebook Soğutucu Laptop S",
+    "Lenovo Legion 17 Zoll Armored Backpack II, Gaming-Laptoptasche, doppellagiger Schutz, spez",
+    "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
+    "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
+    "Dell Gaming Notebook Çantası 17 Siyah 460-BCYY",
+    "McStorey Katlanabilir Ayarlanabilir Alüminyum Laptop Standı, Taşınabilir Ergonomik Noteboo",
+    "Mack Business X MCC-807 18\" Laptop Sırt Çantası, Mackbook Çantası, USB Şarj Portlu Bilgisa"
    ],
-   "basliktan_red": 383,
-   "gorulen_ilan": 923,
+   "basliktan_red": 282,
+   "gorulen_ilan": 878,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
-    "kalan_aralik": 51,
-    "sayfa": 150,
+    "kalan_aralik": 49,
+    "sayfa": 180,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "90943-91791 TL: 233 görüldü, Amazon 235 bildirdi; ikiye bölündü",
-    "91792-92640 TL: 260 görüldü, Amazon 265 bildirdi; ikiye bölündü"
+    "92641-93489 TL: 240 görüldü, Amazon 262 bildirdi; ikiye bölündü"
    ],
-   "yeni_aday": 3
+   "yeni_aday": 1
   },
-  "duration_sec": 1499,
+  "duration_sec": 1289,
   "eval_queue": {},
-  "evaluated": 19,
+  "evaluated": 1,
   "kw": {
    "cycle_ok_seen": [
     "B0FMFM78FC",
@@ -781,12 +780,13 @@
     "B0FGDPHVW8",
     "B0FMFL91NB",
     "B0FPMH5CW8",
-    "B0FNWGDPD1"
+    "B0FNWGDPD1",
+    "B0FNWKMKR5"
    ],
-   "cycle_pages": 75,
+   "cycle_pages": 90,
    "cycle_started": "2026-11-05T06:13:31Z",
-   "i": 32,
-   "page": 2,
+   "i": 35,
+   "page": 4,
    "queries": [
     "rtx 5060 laptop",
     "rtx5060",
@@ -827,20 +827,20 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-05T20:51:44Z",
-  "last_progress": "2026-11-05T20:51:44Z",
-  "last_run": "2026-11-05T20:51:44Z",
+  "last_ok": "2026-11-05T21:51:51Z",
+  "last_progress": "2026-11-05T21:51:51Z",
+  "last_run": "2026-11-05T21:51:51Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 98,
+  "requests": 179,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
     "B0FYY34Q8X"
    ],
-   "cycle_pages": 150,
-   "cycle_seen": 3449,
+   "cycle_pages": 180,
+   "cycle_seen": 4135,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1186,25 +1186,11 @@
      null
     ],
     [
-     92641,
+     93065,
      93489,
-     1,
-     0,
-     null
-    ],
-    [
-     92216,
-     92640,
-     1,
-     0,
-     null
-    ],
-    [
-     91792,
-     92215,
-     3,
-     50,
-     123
+     5,
+     96,
+     127
     ]
    ]
   }
@@ -1342,6 +1328,51 @@
     }
    },
    "title": "Lexus x610 Ryzen 5 8400F 32GB Ram 1TB M.2 NVMe SSD 8GB RTX5060 Sıvı Soğutmalı Oyuncu Tavsiye Sistem"
+  },
+  {
+   "asin": "B0H26JK5ZD",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: hiçbir kaynakta bulunamadı",
+    "Ekran boyutu: hiçbir kaynakta bulunamadı",
+    "Yenileme hızı: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "3840x2160",
+      "4k"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    }
+   },
+   "title": "Lexus x570 Ryzen 5 7500F 32GB Ram 1TB M.2 NVMe SSD 8GB RTX5060 Sıvı Soğutmalı Beyaz Oyuncu Tavsiye Sistem"
   }
  ]
 }
