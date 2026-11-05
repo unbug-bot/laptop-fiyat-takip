@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -244,7 +244,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 12399900,
    "manual": null,
    "max_price": 12399900,
@@ -311,7 +311,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -370,7 +370,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 12649900,
    "manual": null,
    "max_price": 12649900,
@@ -429,7 +429,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -488,7 +488,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -547,7 +547,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T16:17:37Z",
+   "last_checked": "2026-11-05T17:17:48Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -665,46 +665,34 @@
    "anahtar_kelime_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
     "son_tamamlanan": null,
-    "sorgu": 22,
+    "sorgu": 26,
     "toplam_sorgu": 36
    },
    "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-05T16:17:37Z",
-   "atlanan": 28,
+   "at": "2026-11-05T17:17:48Z",
+   "atlanan": 3,
    "atlanan_ornek": [
-    "DRAGOS DRx9139 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
-    "DRAGOS DRx9141 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
-    "DRAGOS DRx9153 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
-    "DRAGOS DRx9151 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
-    "DRAGOS DRx9127 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu Oem Paket",
-    "DRAGOS DRx9129 i7 14700KF 16GB 512GB NVMe 8GB RTX5060 24.5 İnç 300Hz 1ms Oyuncu Oem Paket",
     "DRAGOS DRx9150 i7 14700KF 32GB 1TB NVMe 8GB RTX5060 Oyuncu Oem Paket",
     "DRAGOS DRx9138 i7 14700KF 32GB 1TB NVMe 8GB RTX5060 Oyuncu Oem Paket",
-    "GIGABYTE VGA AMD 16GB GDDR6 RX9060XT GAMING OC GV-R9060XTGAMING OC-16GD 128BIT/2XDP/1XHDMI",
-    "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3",
-    "Ayarlanabilir Ekran Kartı Tutucu GPU Destek Aparatı - Sarkma Önleyici Vida Mekanizmalı Siy",
-    "ASUS ROG Herculx grafik kartı tutucu (destek yüksekliği 72 – 128 mm, aletsiz montaj, enteg",
-    "MSI VGA GEFORCE RTX 5080 16G GAMING TRIO OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3X",
-    "NVIDIA RTX PRO 2000 Blackwell 16GB Grafik Kartı",
-    "Nvidia Logolu Ayarlanabilir Ekran Kartı Tutucu - GPU Sarkma Önleyici Yükseklik Ayarlı Dest"
+    "GamersArena Asga RX 9060 XT RYZEN 5 7500X3D 16 GB RAM 1 TB M2 SSD 650W OEM PAKET"
    ],
-   "basliktan_red": 487,
-   "gorulen_ilan": 724,
+   "basliktan_red": 416,
+   "gorulen_ilan": 977,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
-    "kalan_aralik": 51,
-    "sayfa": 90,
+    "kalan_aralik": 50,
+    "sayfa": 120,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "89245-90093 TL: 240 görüldü, Amazon 280 bildirdi; ikiye bölündü"
+    "90094-91791 TL: 240 görüldü, Amazon 475 bildirdi; ikiye bölündü"
    ],
-   "yeni_aday": 1
+   "yeni_aday": 0
   },
-  "duration_sec": 1203,
+  "duration_sec": 1195,
   "eval_queue": {},
-  "evaluated": 1,
+  "evaluated": 0,
   "kw": {
    "cycle_ok_seen": [
     "B0FMFM78FC",
@@ -718,10 +706,10 @@
     "B0FWKN5HW4",
     "B0FGDPHVW8"
    ],
-   "cycle_pages": 45,
+   "cycle_pages": 60,
    "cycle_started": "2026-11-05T06:13:31Z",
-   "i": 22,
-   "page": 2,
+   "i": 26,
+   "page": 1,
    "queries": [
     "rtx 5060 laptop",
     "rtx5060",
@@ -762,20 +750,20 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-05T16:17:37Z",
-  "last_progress": "2026-11-05T16:17:37Z",
-  "last_run": "2026-11-05T16:17:37Z",
+  "last_ok": "2026-11-05T17:17:48Z",
+  "last_progress": "2026-11-05T17:17:48Z",
+  "last_run": "2026-11-05T17:17:48Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 78,
+  "requests": 155,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
     "B0FYY34Q8X"
    ],
-   "cycle_pages": 90,
-   "cycle_seen": 2064,
+   "cycle_pages": 120,
+   "cycle_seen": 2769,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1128,18 +1116,11 @@
      null
     ],
     [
-     90094,
+     90943,
      91791,
-     1,
-     0,
-     null
-    ],
-    [
-     89669,
-     90093,
-     2,
-     24,
-     153
+     5,
+     96,
+     235
     ]
    ]
   }
