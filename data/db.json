@@ -5,7 +5,7 @@
   "blocked": 0,
   "captcha_passed": 0,
   "checked": 28,
-  "config_hash": "fce6fd75641f",
+  "config_hash": "4156fe49040c",
   "discovery": {
    "anahtar_kelime_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
@@ -35,9 +35,9 @@
    ],
    "yeni_aday": 0
   },
-  "duration_sec": 1195,
+  "duration_sec": 754,
   "eval_queue": {},
-  "evaluated": 0,
+  "evaluated": 16,
   "kw": {
    "cycle_ok_seen": [
     "B0FMFM78FC",
@@ -95,14 +95,14 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-05T17:17:48Z",
-  "last_progress": "2026-11-05T17:17:48Z",
-  "last_run": "2026-11-05T17:17:48Z",
+  "last_ok": "2026-11-05T20:16:24Z",
+  "last_progress": "2026-11-05T20:16:24Z",
+  "last_run": "2026-11-05T20:16:24Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 155,
-  "search_pages": 1,
+  "requests": 48,
+  "search_pages": 0,
   "sweep": {
    "cycle_ok_seen": [
     "B0FYY34Q8X"
@@ -606,7 +606,7 @@
   "B096Y34V92": {
    "asin": "B096Y34V92",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 15.6"
@@ -883,7 +883,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 2.16,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 18429900,
    "max_price": 18429900,
    "min_price": 18039900,
@@ -12165,7 +12165,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 29943815,
    "max_price": 29943815,
    "min_price": 29943815,
@@ -15959,7 +15959,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 13399900,
    "max_price": 13399900,
    "min_price": 13399900,
@@ -16018,7 +16018,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 12799900,
    "max_price": 12799900,
    "min_price": 12799900,
@@ -20205,7 +20205,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 12399900,
    "max_price": 12399900,
    "min_price": 12399900,
@@ -20273,7 +20273,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 10049900,
    "max_price": 11030155,
    "min_price": 10049900,
@@ -21038,7 +21038,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 15299900,
    "max_price": 15299900,
    "min_price": 15299900,
@@ -21088,7 +21088,7 @@
    "asin": "B0FNWH45VG",
    "auto_status": "beklemede",
    "current_price": 32434225,
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-05T06:13:31Z",
    "history": [
     [
@@ -21097,7 +21097,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 32434225,
    "max_price": 32434225,
    "min_price": 32434225,
@@ -21155,7 +21155,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 14549900,
    "max_price": 14549900,
    "min_price": 14549900,
@@ -21214,7 +21214,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 18149900,
    "max_price": 18149900,
    "min_price": 18149900,
@@ -21284,7 +21284,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 12649900,
    "max_price": 12649900,
    "min_price": 12649900,
@@ -21454,7 +21454,7 @@
   "B0FTM5PR7J": {
    "asin": "B0FTM5PR7J",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: ryzen ai 7 350"
@@ -21533,7 +21533,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 31599900,
    "max_price": 31599900,
    "min_price": 31599900,
@@ -21592,7 +21592,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 46099900,
    "max_price": 46099900,
    "min_price": 46099900,
@@ -21893,7 +21893,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 11249900,
    "max_price": 11249900,
    "min_price": 11249900,
@@ -26319,7 +26319,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 8829900,
    "max_price": 8829900,
    "min_price": 8829900,
@@ -49766,7 +49766,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 18099900,
    "max_price": 18099900,
    "min_price": 18099900,
@@ -49935,7 +49935,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 12199900,
    "max_price": 12199900,
    "min_price": 12199900,
@@ -50065,7 +50065,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 14349900,
    "max_price": 14349900,
    "min_price": 14349900,
@@ -50180,7 +50180,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 42800000,
    "max_price": 42800000,
    "min_price": 42800000,
@@ -50310,7 +50310,7 @@
   "B0H4GWXTHS": {
    "asin": "B0H4GWXTHS",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -50359,7 +50359,7 @@
   "B0H4H1GZ8Z": {
    "asin": "B0H4H1GZ8Z",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -50425,7 +50425,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 43199900,
    "max_price": 43199900,
    "min_price": 43199900,
@@ -50550,7 +50550,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 43989900,
    "max_price": 43989900,
    "min_price": 43989900,
@@ -50622,7 +50622,7 @@
   "B0H4Z6DRKG": {
    "asin": "B0H4Z6DRKG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -50870,7 +50870,7 @@
   "B0H6MSMKFM": {
    "asin": "B0H6MSMKFM",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-05T06:13:31Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -51051,7 +51051,7 @@
   "B0H72LNS2G": {
    "asin": "B0H72LNS2G",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T10:49:43Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-05T10:49:43Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -51775,7 +51775,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 1.06,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 56003105,
    "max_price": 56003105,
    "min_price": 55414127,
@@ -51924,7 +51924,7 @@
   "B0H7CZBX5P": {
    "asin": "B0H7CZBX5P",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-02T06:34:51Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -52116,7 +52116,7 @@
   "B0H7W4B2FG": {
    "asin": "B0H7W4B2FG",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-03T05:07:27Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -52187,7 +52187,7 @@
   "B0H7WHHFG7": {
    "asin": "B0H7WHHFG7",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-05T06:13:31Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -60871,7 +60871,7 @@
   "B0HFKD2RR9": {
    "asin": "B0HFKD2RR9",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-05T06:13:31Z",
    "reasons": [
     "Ekran boyutu: filtreyi geçmiyor: 16.0"
@@ -60920,7 +60920,7 @@
   "B0HFKD4RRQ": {
    "asin": "B0HFKD4RRQ",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "reasons": [
     "İşlemci: filtreyi geçmiyor: core 7 240h"
@@ -60980,7 +60980,7 @@
   "B0HFKHSHNP": {
    "asin": "B0HFKHSHNP",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -61032,7 +61032,7 @@
   "B0HFKLF55S": {
    "asin": "B0HFKLF55S",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -63691,7 +63691,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 79999900,
    "max_price": 79999900,
    "min_price": 79999900,
@@ -69308,7 +69308,7 @@
   "B0HMNY3XQ6": {
    "asin": "B0HMNY3XQ6",
    "auto_status": "red",
-   "evaluated_at": "2026-11-05T06:13:31Z",
+   "evaluated_at": "2026-11-05T20:16:24Z",
    "first_seen": "2026-11-01T19:33:29Z",
    "in_stock": true,
    "last_checked": "2026-11-01T23:26:50Z",
@@ -69701,7 +69701,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 31099900,
    "max_price": 31099900,
    "min_price": 31099900,
@@ -70105,7 +70105,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 15499900,
    "max_price": 15499900,
    "min_price": 15499900,
@@ -70177,7 +70177,7 @@
     ]
    ],
    "in_stock": false,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 15399900,
    "max_price": 15399900,
    "min_price": 15399900,
@@ -70237,7 +70237,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 16099896,
    "max_price": 16099896,
    "min_price": 16099896,
@@ -70297,7 +70297,7 @@
     ]
    ],
    "in_stock": true,
-   "last_checked": "2026-11-05T17:17:48Z",
+   "last_checked": "2026-11-05T20:16:24Z",
    "last_known_price": 18949896,
    "max_price": 18949896,
    "min_price": 18949896,
