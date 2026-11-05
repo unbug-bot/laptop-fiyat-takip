@@ -204,8 +204,11 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
   $("#criteria").textContent = `Yalnızca yeni ürün teklifleri sayılır. ${d.config.max_price_tl.toLocaleString("tr-TR")} TL üstü listeden çıkar. Takip edilen en düşük fiyatın %${d.config.alert_drop_pct} altına inen ürün Telegram bildirimi alır.`;
   const dv=m.discovery;
   if(dv){
-    const k = dv.kontrol_bilinen ? ` Kontrol: stokta olduğu bilinen ${dv.kontrol_bilinen} onaylı ürünün ${dv.kontrol_bulunan} tanesi bu taramada yeniden görüldü${dv.kontrol_kategori!=null?` (kategori taramasında ${dv.kontrol_kategori}, anahtar kelime aramasında ${dv.kontrol_anahtar_kelime})`:""}${dv.kontrol_kacan.length?`; görülmeyen: ${dv.kontrol_kacan.join(", ")}`:""}.` : "";
-    $("#discovery").textContent = `Son keşif ${dt(dv.at)}: ${dv.kategori_sayfa} kategori ve ${dv.anahtar_kelime_sayfa} arama sayfasında ${dv.gorulen_ilan.toLocaleString("tr-TR")} farklı ilan görüldü, ${dv.yeni_aday} yeni aday çıktı. Başlığında ekran kartı ya da 17″ ve üstü ekran geçmeyen ${dv.atlanan} ilan değerlendirmeye alınmadı.${k}`;
+    const kc=dv.kategori_dongu||{}, kw=dv.anahtar_kelime_dongu||{};
+    const ctl=(c,ad)=> c ? ` Son tamamlanan ${ad} döngüsünde (${dt(c.finished)}) bilinen ${c.kontrol_bilinen} onaylı ürünün ${c.kontrol_bulunan} tanesi görüldü${c.kontrol_kacan&&c.kontrol_kacan.length?` (görülmeyen: ${c.kontrol_kacan.join(", ")})`:""}.` : "";
+    $("#discovery").textContent =
+      `Keşif: kategori taraması ${kc.sayfa||0} sayfa ilerledi, ${kc.kalan_aralik||0} fiyat aralığı kaldı; anahtar kelime aramasında ${kw.sorgu||0}/${kw.toplam_sorgu||0} sorgu tamamlandı.`
+      + ctl(kc.son_tamamlanan,"kategori") + ctl(kw.son_tamamlanan,"anahtar kelime");
   }
   render(); if(location.hash==="#onay-bekleyenler") tab("pending");
 }).catch(()=>{$("#status").textContent="data.json okunamadı. İlk tarama tamamlandığında veriler burada görünür.";});
