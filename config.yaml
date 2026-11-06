@@ -1,5 +1,6 @@
+# Ayarlar yalnızca bu dosyadan okunur (Mac'teki program klasörü). Her tur başında yeniden okunur.
 # Filtreler. Tüm kurallar katı uygulanır; doğrulanamayan özellik "beklemede" durumuna düşer.
-max_price_tl: 120000          # Bu fiyatın üstündeki ürün sitede görünmez, bildirim almaz; takibi sürer
+max_price_tl: 140000          # Bu fiyatın üstündeki ürün sitede görünmez, bildirim almaz; takibi sürer
 alert_drop_pct: 10            # Takip süresindeki en düşük fiyatın en az bu kadar altı -> Telegram
 min_screen_inch: 17.0
 min_refresh_hz: 144
@@ -32,24 +33,29 @@ cpu_whitelist:
   - ryzen 9 9955hx
   - ryzen 9 9955hx3d
 
-# Amazon.com.tr arama sorguları (her biri için 'search_pages' sayfa taranır)
+# Anahtar kelime aramaları: gpu_whitelist ve cpu_whitelist'teki her model için OTOMATİK üretilir
+# ("rtx 5070 laptop", "rtx5070", "9955hx3d", "275hx" ...). Buraya yalnızca ek genel sorgular yazılır.
 search_queries:
-  - rtx 5060 laptop
-  - rtx 5070 laptop
-  - rtx 5070 ti laptop
-  - rtx 5080 laptop
-  - rtx 5090 laptop
-  - rtx 4080 laptop
-  - rtx 4090 laptop
-  - rx 7600m xt laptop
-  - rx 7700s laptop
-  - rx 7800m laptop
-  - rx 7900m laptop
-search_pages: 2
+  - oyuncu laptop 17 inç
+  - oyuncu laptop 18 inç
+  - gaming laptop 18
+search_pages: 5
+
+# Kategori taraması: "Dizüstü Bilgisayarlar" kategorisi fiyat aralıklarına bölünerek gezilir.
+# Her tur bir parça ilerler, kaldığı yeri hatırlar; döngü bitince baştan başlar.
+sweep_min_tl: 85000             # bu fiyatın altı taranmaz
+sweep_order: artan              # artan: ucuzdan pahalıya | azalan: pahalıdan ucuza
+sweep_max_factor: 1.25          # üst sınır = max_price_tl x bu katsayı (sınır yakınındakilerin geçmişi için)
+sweep_pages_per_run: 30         # her turda kategori taramasına ayrılan sayfa
+keyword_pages_per_run: 15       # her turda anahtar kelime aramalarına ayrılan sayfa
+amazon_result_cap: 480          # Amazon'un bir sorguda gösterdiği en fazla ilan (4 Kasım verisiyle ölçüldü)
+sweep_max_pages_per_band: 10
+# laptop_node: "123456789"      # boş bırak: ürün sayfalarının kategori yolundan otomatik öğrenilir
 
 # Tarama davranışı
-fetcher: tarayici               # tarayici (Chromium, JavaScript çalışır) | http (eski yöntem)
+kesif: true                     # false: yeni ürün aranmaz, yalnızca veritabanındakilerin fiyatı kontrol edilir
 request_delay_sec: [8, 20]
-max_detail_fetch_per_run: 15
-search_every_hours: 6           # arama (keşif) sıklığı; fiyat kontrolü her turda
+max_detail_fetch_per_run: 25
+mac_interval_min: 60            # Mac'te turlar arası süre (dakika)
+human_wait_min: 15              # doğrulama çıktığında kullanıcıyı bekleme süresi (dakika)
 pending_recheck_hours: 24
