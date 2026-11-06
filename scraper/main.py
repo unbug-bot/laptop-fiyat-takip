@@ -8,15 +8,18 @@ import requests
 import yaml
 
 from . import specs
-from .fetch import BASE, Blocked, Fetcher, save_debug
+from .discover import discover, priority, worth_detail
+from .fetch import BASE, Blocked, save_debug
 
 
 def make_fetcher(cfg):
-    if cfg.get("fetcher", "tarayici") == "tarayici":
-        from .browser import BrowserFetcher
-        return BrowserFetcher(tuple(cfg["request_delay_sec"]))
-    return Fetcher(tuple(cfg["request_delay_sec"]))
-from .parse import parse_offers, parse_product, parse_product_price, parse_search
+    """Tek başına çalıştırıldığında (python -m scraper.main) Mac tarayıcısını açar."""
+    from .browser import BrowserFetcher
+    return BrowserFetcher(tuple(cfg["request_delay_sec"]), human_wait_min=int(cfg.get("human_wait_min", 15)))
+
+
+from .parse import (parse_offers, parse_product, parse_product_price, parse_search,
+                    parse_variant_asins, parse_laptop_node)
 
 DB_PATH = "data/db.json"
 SITE_PATH = "data/site.json"
@@ -134,7 +137,7 @@ def send_telegram(alerts):
 
 
 # ---------------------------------------------------------------- Site verisi
-def export_site(db, cfg):
+def export_site(db, cfg, path=SITE_PATH):
     items, pending = [], []
     for p in db["products"].values():
         if p.get("status") == "onayli" and visible(p, cfg):
@@ -145,7 +148,7 @@ def export_site(db, cfg):
         elif p.get("status") == "beklemede":
             pending.append({k: p.get(k) for k in (
                 "asin", "title", "reasons", "specs", "current_price", "last_known_price", "in_stock")})
-    save_json(SITE_PATH, {"meta": db["meta"], "items": items, "pending": pending,
+    save_json(path, {"meta": db["meta"], "items": items, "pending": pending,
                           "config": {"max_price_tl": cfg["max_price_tl"],
                                      "alert_drop_pct": cfg["alert_drop_pct"]}})
 
@@ -163,7 +166,7 @@ def evaluate_detail(f, asin, cfg):
         return None
     status, reasons, summary = specs.evaluate(
         data["title"], data["table"], data["bullets"], data["breadcrumb"], cfg)
-    return {"status": status, "reasons": reasons, "specs": summary, "title": data["title"]}
+    return {"status": status, "reasons": reasons, "specs": summary, "title": data["title"], "html": html}
 
 
 def apply_overrides(db, ov):
@@ -188,8 +191,12 @@ def is_detail_red(p):
         for r in p.get("reasons") or [])
 
 
-def run():
+def run(fetcher=None, cfg_override=None):
+    """Bir tarama turu. 'fetcher' verilirse (Mac modu) tarayıcı tur sonunda kapatılmaz.
+    cfg_override: config.yaml üzerine uygulanacak geçici ayarlar (ör. {"kesif": False})."""
     cfg = load_yaml("config.yaml")
+    cfg.update(cfg_override or {})
+    discovery_on = cfg.get("kesif", True)
     ov = load_yaml("overrides.yaml")
     db = load_db()
     t0 = now()
@@ -198,7 +205,7 @@ def run():
     meta["last_run"] = ts
     products = db["products"]
     alerts = []
-    f = make_fetcher(cfg)
+    f = fetcher or make_fetcher(cfg)
     blocked = False
     observations = {}
     done = {"arama": 0, "degerlendirme": 0}
@@ -208,6 +215,25 @@ def run():
 
     # Kalıcı değerlendirme kuyruğu: engellenen tur yarım kalan işi sonraki tura bırakır
     queue = meta.setdefault("eval_queue", {})          # asin -> başlık
+    for asin in ov.get("track") or []:                 # overrides.yaml'da elle eklenen ürünler
+        asin = str(asin).strip().upper()
+        if asin not in products:
+            queue.setdefault(asin, asin)
+
+    def learn_node(html):
+        if html and not meta.get("laptop_node"):
+            node = parse_laptop_node(html)
+            if node:
+                meta["laptop_node"] = node
+                print(f"Dizüstü kategori numarası öğrenildi: {node}; kategori taraması sonraki turda başlayacak")
+
+    def add_variants(html, source):
+        """Değerlendirilen ya da fiyatı okunan ürünün diğer varyantlarını kuyruğa ekler."""
+        if source.get("status") not in ("onayli", "beklemede"):
+            return
+        for v in parse_variant_asins(html or ""):
+            if v not in products and v not in queue:
+                queue[v] = f"{v} (varyant: {source.get('asin')})"
 
     cfg_hash = hashlib.sha1((json.dumps(cfg, sort_keys=True) + str(specs.RULES_VERSION))
                             .encode()).hexdigest()[:12]
@@ -222,38 +248,23 @@ def run():
             queue.setdefault(asin, p.get("title") or asin)
 
     try:
-        # 1) Keşif: yalnızca 'search_every_hours' dolduysa
-        last_search = meta.get("last_search_at")
-        if not last_search or t0 - parse_iso(last_search) >= timedelta(hours=cfg["search_every_hours"]):
+        # 1) Keşif: her turda kategori ve anahtar kelime taramasından birer parça (kaldığı yerden)
+        if discovery_on:
             search_ran = True
-            for q in cfg["search_queries"]:
-                for page in range(1, cfg["search_pages"] + 1):
-                    html = f.search(q, page)
-                    res = parse_search(html) if html else None
-                    if not res:
-                        if html and page == 1:   # 2. sayfanın boş olması normaldir
-                            save_debug(f"arama_{q.replace(' ', '_')}_{page}.html", html)
-                        break
-                    done["arama"] += 1
-                    for asin, title in res:
-                        candidates_found += 1
-                        if asin in products or asin in queue:
-                            continue
-                        why = specs.title_prefilter(title, cfg)
-                        if why:
-                            products[asin] = {"asin": asin, "title": title, "auto_status": "red",
-                                              "status": "red", "reasons": [why],
-                                              "evaluated_at": ts, "first_seen": ts}
-                        else:
-                            queue[asin] = title
-                    if len(res) < 10:
-                        break
-            if candidates_found:
-                meta["last_search_at"] = ts
-            print(f"Arama: {candidates_found} sonuç, kuyrukta {len(queue)} ürün")
+            candidates_found = discover(f, cfg, meta, products, queue, ts)
+            done["arama"] += 1 if candidates_found else 0
+        else:
+            print("Keşif kapalı: yalnızca veritabanındaki ürünler kontrol ediliyor.", flush=True)
 
         # 2) Özellik doğrulama (kuyruktan, tur başına sınırlı)
-        for asin in list(queue)[: cfg["max_detail_fetch_per_run"]]:
+        # Laptop olmadığı başlığından belli olanlar (ekran kartı, çanta, masaüstü paket) her turda ayıklanır
+        for a, t in list(queue.items()):
+            if t and not t.startswith(a) and not worth_detail(t, cfg):
+                queue.pop(a)
+        order = sorted(queue, key=lambda a: (priority(queue[a]), a))
+        if not discovery_on:          # keşif kapalıyken yalnızca veritabanında olan ürünler yeniden değerlendirilir
+            order = [a for a in order if a in products]
+        for asin in order[: cfg["max_detail_fetch_per_run"]]:
             r = evaluate_detail(f, asin, cfg)
             if r is None:
                 continue
@@ -267,6 +278,8 @@ def run():
                 for k in ("history", "current_price", "min_price", "max_price"):
                     p.pop(k, None)
             print(f"  {asin}: {r['status']} {'; '.join(r['reasons'])[:160]}")
+            add_variants(r.get("html"), p)
+            learn_node(r.get("html"))
 
         apply_overrides(db, ov)
 
@@ -299,6 +312,8 @@ def run():
             if res is None:
                 html = f.product(asin)
                 res = parse_product_price(html) if html else None
+                add_variants(html, products[asin])
+                learn_node(html)
                 if res is None and html:
                     save_debug(f"urun_fiyat_{asin}.html", html)
             if res is None:
@@ -341,7 +356,7 @@ def run():
     if progress:
         meta["last_progress"] = ts
     f.save_cookies()
-    if hasattr(f, "close"):
+    if fetcher is None and hasattr(f, "close"):
         f.close()
     save_json(DB_PATH, db)
     export_site(db, cfg)
@@ -351,4 +366,5 @@ def run():
 
 
 if __name__ == "__main__":
-    sys.exit(run())
+    run()
+    sys.exit(0)
