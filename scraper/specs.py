@@ -9,7 +9,7 @@ Her özellik için her kaynaktan bulunan değerler toplanır. Karar kuralı:
 """
 import re
 
-RULES_VERSION = 2  # değişince bekleyen ve detaydan reddedilen ürünler yeniden değerlendirilir
+RULES_VERSION = 3  # değişince bekleyen ve detaydan reddedilen ürünler yeniden değerlendirilir
 
 ATTRS = ["gpu", "cpu", "ekran_boyutu", "cozunurluk", "yenileme", "ram"]
 ATTR_LABELS = {
@@ -174,8 +174,9 @@ RES_KEYWORDS = {
     "fhd+": "kaldi", "fhd": "kaldi", "full hd": "kaldi", "wuxga": "kaldi",
     "1080p": "kaldi", "hd+": "kaldi",
 }
+# Sağında harf/rakam olmamalı; ama satıcıların bitişik yazdığı "QHD+IPS", "QHDIPS", "4KOLED" kabul edilir
 RE_RES_KW = re.compile(r"(?<![a-z0-9])(" + "|".join(
-    re.escape(k) for k in sorted(RES_KEYWORDS, key=len, reverse=True)) + r")(?![a-z0-9+])")
+    re.escape(k) for k in sorted(RES_KEYWORDS, key=len, reverse=True)) + r")(?=$|[^a-z0-9+]|ips|oled|led|ekran|panel)")
 
 
 def find_res(text, check_ports=False):
