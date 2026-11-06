@@ -81,6 +81,7 @@ code{font-size:13px;background:color-mix(in srgb,var(--muted) 15%,transparent);p
     <p class="status" id="status">Veriler yükleniyor…</p>
     <p class="criteria" id="criteria"></p>
     <p class="criteria" id="discovery"></p>
+    <p class="criteria" id="github"></p>
   </header>
   <nav role="tablist">
     <button role="tab" id="tab-list" aria-selected="true">Takip listesi</button>
@@ -209,6 +210,11 @@ fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{
     $("#discovery").textContent =
       `Keşif: kategori taraması ${kc.sayfa||0} sayfa ilerledi, ${kc.kalan_aralik||0} fiyat aralığı kaldı; anahtar kelime aramasında ${kw.sorgu||0}/${kw.toplam_sorgu||0} sorgu tamamlandı.`
       + ctl(kc.son_tamamlanan,"kategori") + ctl(kw.son_tamamlanan,"anahtar kelime");
+  }
+  const gh=m.github;
+  if(gh){
+    const GS={tamam:"tamamlandı", kismen:"Amazon yarıda engelledi", engellendi:"Amazon engelledi, fiyat okunamadı"};
+    $("#github").textContent = `GitHub fiyat kontrolü: son çalışma ${dt(gh.last_run)}, ${GS[gh.status]||gh.status}; onaylı ${gh.tracked} ürünün ${gh.checked} tanesinin fiyatı okundu.`;
   }
   render(); if(location.hash==="#onay-bekleyenler") tab("pending");
 }).catch(()=>{$("#status").textContent="data.json okunamadı. İlk tarama tamamlandığında veriler burada görünür.";});
