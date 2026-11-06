@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -248,7 +248,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 11841905,
    "manual": null,
    "max_price": 12399900,
@@ -315,7 +315,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -378,7 +378,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 13895155,
    "manual": null,
    "max_price": 14549900,
@@ -437,7 +437,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 12649900,
    "manual": null,
    "max_price": 12649900,
@@ -496,7 +496,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -555,7 +555,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -614,7 +614,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-05T21:51:51Z",
+   "last_checked": "2026-11-05T22:56:42Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -726,44 +726,44 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 28,
+  "checked": 29,
   "config_hash": "ab0e9f103c97",
   "discovery": {
    "anahtar_kelime_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
-    "son_tamamlanan": null,
-    "sorgu": 35,
+    "son_tamamlanan": {
+     "finished": "2026-11-05T22:56:42Z",
+     "kontrol_bilinen": 14,
+     "kontrol_bulunan": 14,
+     "kontrol_kacan": [],
+     "pages": 92,
+     "sorgu": 36,
+     "started": "2026-11-05T06:13:31Z"
+    },
+    "sorgu": 36,
     "toplam_sorgu": 36
    },
-   "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-05T21:51:51Z",
-   "atlanan": 9,
-   "atlanan_ornek": [
-    "DRAGOS DRx8083 Ryzen 5 7500X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu ",
-    "2 YIL LENOVO TÜRKİYE GARANTİLİ - ADINIZA FATURALI - AYNI GÜN KARGO",
-    "Kuzey's Store Profesyonel Dizüstü Bilgisayar MACbook ile Uyumlu Notebook Soğutucu Laptop S",
-    "Lenovo Legion 17 Zoll Armored Backpack II, Gaming-Laptoptasche, doppellagiger Schutz, spez",
-    "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
-    "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri",
-    "Dell Gaming Notebook Çantası 17 Siyah 460-BCYY",
-    "McStorey Katlanabilir Ayarlanabilir Alüminyum Laptop Standı, Taşınabilir Ergonomik Noteboo",
-    "Mack Business X MCC-807 18\" Laptop Sırt Çantası, Mackbook Çantası, USB Şarj Portlu Bilgisa"
-   ],
-   "basliktan_red": 282,
-   "gorulen_ilan": 878,
+   "anahtar_kelime_sayfa": 2,
+   "at": "2026-11-05T22:56:42Z",
+   "atlanan": 0,
+   "atlanan_ornek": [],
+   "basliktan_red": 348,
+   "gorulen_ilan": 420,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
-    "kalan_aralik": 49,
-    "sayfa": 180,
+    "kalan_aralik": 48,
+    "sayfa": 210,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "92641-93489 TL: 240 görüldü, Amazon 262 bildirdi; ikiye bölündü"
+    "93490-94338 TL sayfa 3: okunamadı, aralık sonraki döngüye kaldı",
+    "94339-95187 TL: 249 görüldü, Amazon 263 bildirdi; ikiye bölündü",
+    "Anahtar kelime döngüsü tamamlandı: 36 sorgu, 92 sayfa"
    ],
    "yeni_aday": 1
   },
-  "duration_sec": 1289,
+  "duration_sec": 30580,
   "eval_queue": {},
   "evaluated": 1,
   "kw": {
@@ -783,10 +783,19 @@
     "B0FNWGDPD1",
     "B0FNWKMKR5"
    ],
-   "cycle_pages": 90,
+   "cycle_pages": 92,
    "cycle_started": "2026-11-05T06:13:31Z",
-   "i": 35,
-   "page": 4,
+   "i": 36,
+   "last_cycle": {
+    "finished": "2026-11-05T22:56:42Z",
+    "kontrol_bilinen": 14,
+    "kontrol_bulunan": 14,
+    "kontrol_kacan": [],
+    "pages": 92,
+    "sorgu": 36,
+    "started": "2026-11-05T06:13:31Z"
+   },
+   "page": 1,
    "queries": [
     "rtx 5060 laptop",
     "rtx5060",
@@ -827,20 +836,20 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-05T21:51:51Z",
-  "last_progress": "2026-11-05T21:51:51Z",
-  "last_run": "2026-11-05T21:51:51Z",
+  "last_ok": "2026-11-05T22:56:42Z",
+  "last_progress": "2026-11-05T22:56:42Z",
+  "last_run": "2026-11-05T22:56:42Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 179,
+  "requests": 250,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
     "B0FYY34Q8X"
    ],
-   "cycle_pages": 180,
-   "cycle_seen": 4135,
+   "cycle_pages": 210,
+   "cycle_seen": 4756,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1172,25 +1181,18 @@
      null
     ],
     [
-     95188,
+     96037,
      96885,
      1,
      0,
      null
     ],
     [
-     93490,
-     95187,
-     1,
-     0,
-     null
-    ],
-    [
-     93065,
-     93489,
-     5,
-     96,
-     127
+     95188,
+     96036,
+     2,
+     24,
+     246
     ]
    ]
   }
@@ -1240,6 +1242,51 @@
     }
    },
    "title": "HP 18\" ZBOOK FURY 18 G1i C65G8ES ULTRA 7 255HX-32GB DDR5 RAM-1TB NVME-12GB RTX PRO 3000-W11 PRO 2560X1600"
+  },
+  {
+   "asin": "B0H26JK5ZD",
+   "current_price": null,
+   "in_stock": null,
+   "last_known_price": null,
+   "reasons": [
+    "İşlemci: hiçbir kaynakta bulunamadı",
+    "Ekran boyutu: hiçbir kaynakta bulunamadı",
+    "Yenileme hızı: hiçbir kaynakta bulunamadı"
+   ],
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "3840x2160",
+      "4k"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "ekran_boyutu": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5060"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "32"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [],
+     "karar": "bilinmiyor"
+    }
+   },
+   "title": "Lexus x570 Ryzen 5 7500F 32GB Ram 1TB M.2 NVMe SSD 8GB RTX5060 Sıvı Soğutmalı Beyaz Oyuncu Tavsiye Sistem"
   },
   {
    "asin": "B0H26K4KLH",
@@ -1330,22 +1377,20 @@
    "title": "Lexus x610 Ryzen 5 8400F 32GB Ram 1TB M.2 NVMe SSD 8GB RTX5060 Sıvı Soğutmalı Oyuncu Tavsiye Sistem"
   },
   {
-   "asin": "B0H26JK5ZD",
-   "current_price": null,
-   "in_stock": null,
-   "last_known_price": null,
+   "asin": "B0G651Q4PF",
+   "current_price": 9454661,
+   "in_stock": true,
+   "last_known_price": 9454661,
    "reasons": [
     "İşlemci: hiçbir kaynakta bulunamadı",
     "Ekran boyutu: hiçbir kaynakta bulunamadı",
+    "Çözünürlük: hiçbir kaynakta bulunamadı",
     "Yenileme hızı: hiçbir kaynakta bulunamadı"
    ],
    "specs": {
     "cozunurluk": {
-     "degerler": [
-      "3840x2160",
-      "4k"
-     ],
-     "karar": "gecti"
+     "degerler": [],
+     "karar": "bilinmiyor"
     },
     "cpu": {
      "degerler": [],
@@ -1372,7 +1417,7 @@
      "karar": "bilinmiyor"
     }
    },
-   "title": "Lexus x570 Ryzen 5 7500F 32GB Ram 1TB M.2 NVMe SSD 8GB RTX5060 Sıvı Soğutmalı Beyaz Oyuncu Tavsiye Sistem"
+   "title": "DRAGOS DRx7489 i5 14400F 32GB DDR5 Ram 1TB NVMe SSD 8GB RTX5060 Oyuncu Hazır Sistem"
   }
  ]
 }
