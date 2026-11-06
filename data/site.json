@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -248,7 +248,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 11841905,
    "manual": null,
    "max_price": 12399900,
@@ -315,7 +315,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -378,7 +378,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -4.5,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 13895155,
    "manual": null,
    "max_price": 14549900,
@@ -437,7 +437,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 12649900,
    "manual": null,
    "max_price": 12649900,
@@ -496,7 +496,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -555,7 +555,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -614,7 +614,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-06T07:26:30Z",
+   "last_checked": "2026-11-06T09:08:35Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -726,7 +726,7 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 29,
+  "checked": 30,
   "config_hash": "ab0e9f103c97",
   "discovery": {
    "anahtar_kelime_dongu": {
@@ -740,47 +740,46 @@
      "sorgu": 36,
      "started": "2026-11-05T06:13:31Z"
     },
-    "sorgu": 4,
+    "sorgu": 9,
     "toplam_sorgu": 36
    },
    "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-06T07:26:30Z",
-   "atlanan": 21,
+   "at": "2026-11-06T09:08:35Z",
+   "atlanan": 27,
    "atlanan_ornek": [
-    "DRAGOS DRx8179 Ryzen 7 7800X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu ",
-    "DRAGOS DRx8181 Ryzen 7 7800X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 300Hz 1ms Oyuncu ",
-    "DRAGOS DRx8251 Ryzen 7 7800X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu ",
-    "DRAGOS DRx8107 Ryzen 7 7800X3D 16GB DDR5 512GB NVMe 8GB RTX5060 24.5 İnç 200Hz 1ms Oyuncu ",
-    "Game Garaj Prime R18 AMD R7 5700 RTX5060 16GB RAM 500GB SSD FreeDOS Oyuncu OEM Paket",
-    "GIGABYTE VGA NVIDIA 8GB GDDR7 RTX5060 AERO OC GV-N5060AERO OC-8GD",
-    "İncehesap IH ADKO V6 R5-7500F 16 GB 1TB SSD 8 GB RTX5060 OEM Paket",
-    "Ganiward RTX 5060 Ghost 8GB GDDR7 128Bit NE75060019P1-GB2063B Ekran Kartı",
-    "GIGABYTE VGA AMD 16GB GDDR6 RX9060XT GAMING OC GV-R9060XTGAMING OC-16GD 128BIT/2XDP/1XHDMI",
     "PNY GeForce RTX 5070 Ti 16GB GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K Ultra Gaming",
-    "PNY Epic-X Triple GeForce RTX 5070 Ti OC 16GB GDDR7 256Bit HDMI/DP Ekran Kartı",
-    "Zotac RTX 5070 Gaming Twin Edge ZT-B50700E-10P 192 Bit GDDR7 12 GB Ekran Kartı",
-    "PNY GeForce RTX 5060 8GB GDDR6 128-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 1080p/1440p Gaming ",
+    "PALIT RTX5070Ti GamingPro-S 16GB 256Bit GDDR7 Ekran Kartı NE7507T019T2-GB2031U",
     "PNY GeForce RTX 5070 Ti 16GB OC GDDR7 256-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 4K Ultra Gam",
-    "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3"
+    "GIGABYTE VGA AMD 16GB GDDR6 RX9060XT GAMING OC GV-R9060XTGAMING OC-16GD 128BIT/2XDP/1XHDMI",
+    "PCH Giant RTX5070Ti AMD RYZEN 7 7800X3D 16 GB DDR5 1 TB M2 SSD 750W PSU OEM PAKET",
+    "PCH Giant RTX5080 AMD RYZEN 7 7800X3D 16 GB DDR5 1 TB M2 SSD 850W PSU OEM PAKET",
+    "GIGABYTE VGA NVIDIA 32GB GDDR7 RTX5090 AORUS STEALTH ICE GV-N5090AORUSST ICE-32GD 512BIT/3",
+    "MSI VGA GEFORCE RTX 5080 16G GAMING TRIO OC RTX5080 16GB GDRR7 256 B DX12 PCIE 5.0 X16 (3X",
+    "DRAGOS DRx9605 Ultra 7 265KF 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+    "PNY GeForce RTX 5060 8GB GDDR6 128-Bit, DLSS 4, Ray Tracing, PCIe 5.0, 1080p/1440p Gaming ",
+    "DRAGOS DRx9630 Ultra 9 285K 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+    "NVIDIA RTX PRO 2000 Blackwell 16GB Grafik Kartı",
+    "DRAGOS DRx9606 Ultra 7 265KF 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+    "DRAGOS DRx9618 Ultra 7 265KF 32GB DDR5 1TB NVMe 16GB RTX5080 Oyuncu Oem Paket",
+    "DRAGOS DRx9593 Ultra 7 265KF 16GB DDR5 512GB NVMe 16GB RTX5080 Oyuncu Oem Paket"
    ],
-   "basliktan_red": 487,
-   "gorulen_ilan": 940,
+   "basliktan_red": 282,
+   "gorulen_ilan": 891,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
     "kalan_aralik": 48,
-    "sayfa": 240,
+    "sayfa": 270,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "95188-96036 TL: 240 görüldü, Amazon 246 bildirdi; ikiye bölündü",
-    "96037-96885 TL: 240 görüldü, Amazon 278 bildirdi; ikiye bölündü"
+    "96886-97734 TL: 246 görüldü, Amazon 269 bildirdi; ikiye bölündü"
    ],
-   "yeni_aday": 1
+   "yeni_aday": 0
   },
-  "duration_sec": 1236,
+  "duration_sec": 1198,
   "eval_queue": {},
-  "evaluated": 1,
+  "evaluated": 0,
   "kw": {
    "cycle_ok_seen": [
     "B0FYY34Q8X",
@@ -788,11 +787,12 @@
     "B0FGDP4C8W",
     "B0H2VNJ2JQ",
     "B0FNWKBZXT",
-    "B0H2VM1Y18"
+    "B0H2VM1Y18",
+    "B0H2VH51K2"
    ],
-   "cycle_pages": 15,
+   "cycle_pages": 30,
    "cycle_started": "2026-11-06T07:26:30Z",
-   "i": 4,
+   "i": 9,
    "last_cycle": {
     "finished": "2026-11-05T22:56:42Z",
     "kontrol_bilinen": 14,
@@ -843,20 +843,20 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-06T07:26:30Z",
-  "last_progress": "2026-11-06T07:26:30Z",
-  "last_run": "2026-11-06T07:26:30Z",
+  "last_ok": "2026-11-06T09:08:35Z",
+  "last_progress": "2026-11-06T09:08:35Z",
+  "last_run": "2026-11-06T09:08:35Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 332,
+  "requests": 81,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
     "B0FYY34Q8X"
    ],
-   "cycle_pages": 240,
-   "cycle_seen": 5458,
+   "cycle_pages": 270,
+   "cycle_seen": 6122,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1181,25 +1181,25 @@
      null
     ],
     [
-     96886,
+     97735,
      98584,
      1,
      0,
      null
     ],
     [
-     96461,
-     96885,
+     97310,
+     97734,
      1,
      0,
      null
     ],
     [
-     96037,
-     96460,
-     1,
-     0,
-     null
+     96886,
+     97309,
+     7,
+     148,
+     145
     ]
    ]
   }
