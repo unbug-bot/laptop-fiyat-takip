@@ -1,79 +1,164 @@
-"""Gerçek tarayıcı (Chromium) ile sayfa çekme.
+"""Mac'te gerçek Chrome ile sayfa çekme.
 
-Amazon.com.tr, JavaScript çalıştırmayan istemcilere iki tür sayfa gönderiyor:
-  - Akamai doğrulama sayfası (bm-verify): tarayıcıda küçük bir hesap yapıp sonucu
-    /_sec/verify adresine gönderen ve sayfayı yenileyen script.
-  - Ürün alanı boş ürün sayfası.
-Gerçek bir tarayıcı bu scriptleri normal kullanıcı gibi çalıştırır; ek bir "çözücü" yoktur.
-"Alışverişe devam et" ara sayfasında ise butona tıklanır.
+- Bu programa özel kalıcı bir Chrome profili (state/chrome-profil) görünür pencerede açılır.
+  Bilgisayardaki Google Chrome kullanılır; yoksa Playwright'ın Chromium'u.
+- "Alışverişe devam et" butonuna program kendisi tıklar.
+- Amazon başka bir doğrulama isterse (resimli CAPTCHA, boş sayfa vb.) Mac bildirimi gelir, pencere öne
+  çıkar; kullanıcı çözer ya da sayfayı yeniler, tarama kaldığı yerden devam eder.
 """
-import json
 import os
 import random
+import subprocess
 import time
 from urllib.parse import quote_plus
 
 from .fetch import BASE, Blocked, save_debug
 from .parse import is_blocked
 
-STATE_PATH = "state/browser_state.json"
+PROFILE_DIR = "state/chrome-profil"
 READY = {
-    "arama": 'div[data-component-type="s-search-result"], .s-no-outline, .s-main-slot',
+    "arama": 'div[data-component-type="s-search-result"], .s-main-slot',
     "urun": "#productTitle",
     "giris": "#nav-logo, #navbar",
 }
 
 
+def notify(title, text):
+    """Mac bildirimi + ses; ayrıca terminale yazar."""
+    print(f"\n*** {title}: {text}\n", flush=True)
+    script = f'display notification "{text}" with title "{title}" sound name "Glass"'
+    try:
+        subprocess.run(["osascript", "-e", script], check=False)
+    except Exception:
+        pass                                # osascript yoksa (Mac dışı test ortamı) yalnızca terminal
+
+
 class BrowserFetcher:
-    def __init__(self, delay_range, headless=None):
+    def __init__(self, delay_range, human_wait_min=15, on_human_needed=None,
+                 profile_dir=PROFILE_DIR, debug_dir="debug"):
         from playwright.sync_api import sync_playwright
+        self.profile_dir, self.debug_dir = profile_dir, debug_dir
         self.delay = delay_range
-        self.requests = 0
-        self.blocked = 0
-        self.captcha_passed = 0
-        self.consecutive_blocks = 0
-        if headless is None:
-            # GitHub'da xvfb-run ile görünür (headful) çalışır: HEADLESS=0
-            headless = os.environ.get("HEADLESS", "1") != "0"
+        self.human_wait = human_wait_min * 60
+        self.on_human_needed = on_human_needed
+        self.requests = self.blocked = self.captcha_passed = self.consecutive_blocks = 0
+        self.human_solved = 0
         self._pw = sync_playwright().start()
-        # channel="chromium": ayrı "headless shell" yerine tam Chromium'un yeni başsız modu
-        self.browser = self._pw.chromium.launch(
-            headless=headless, channel="chromium",
-            args=["--disable-blink-features=AutomationControlled"])
-        major = self.browser.version.split(".")[0]
-        ua = (f"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
-              f"Chrome/{major}.0.0.0 Safari/537.36")
-        kwargs = dict(user_agent=ua, locale="tr-TR", timezone_id="Europe/Istanbul",
-                      viewport={"width": 1366, "height": 850},
-                      extra_http_headers={"Accept-Language": "tr-TR,tr;q=0.9,en;q=0.5"})
-        if os.path.exists(STATE_PATH):
-            kwargs["storage_state"] = STATE_PATH
-            print(f"Tarayıcı oturumu yüklendi ({STATE_PATH}).")
-        self.ctx = self.browser.new_context(**kwargs)
-        # Görsel, yazı tipi ve video gereksiz: atlanır (scriptler ve XHR çalışır)
-        self.ctx.route("**/*", lambda r: r.abort()
-                       if r.request.resource_type in ("image", "media", "font") else r.continue_())
-        self.page = self.ctx.new_page()
+        self._open()
+
+    # ------------------------------------------------ tarayıcıyı aç
+    def _open(self):
+        os.makedirs(self.profile_dir, exist_ok=True)
+        last_err = None
+        for channel in ("chrome", "chromium"):          # önce bilgisayardaki Google Chrome
+            try:
+                self.ctx = self._pw.chromium.launch_persistent_context(
+                    self.profile_dir, channel=channel, headless=False, no_viewport=True,
+                    locale="tr-TR", timezone_id="Europe/Istanbul",
+                    args=["--disable-blink-features=AutomationControlled"])
+                print(f"Tarayıcı açıldı ({'Google Chrome' if channel == 'chrome' else 'Chromium'}).")
+                break
+            except Exception as e:
+                last_err = e
+        else:
+            raise last_err
+        self.page = self.ctx.pages[0] if self.ctx.pages else self.ctx.new_page()
         self.page.set_default_timeout(30000)
 
+    def alive(self):
+        try:
+            return not self.page.is_closed() and self.page.evaluate("1") == 1
+        except Exception:
+            return False
+
+    def reopen_if_closed(self):
+        """Kullanıcı pencereyi kapattıysa yeniden aç."""
+        if not self.alive():
+            print("Tarayıcı penceresi kapanmış; yeniden açılıyor.")
+            try:
+                self.ctx.close()
+            except Exception:
+                pass
+            self._open()
+
     # ------------------------------------------------ yardımcılar
-    def _settle(self, tag):
+    def _ready(self, tag):
+        try:
+            return self.page.locator(READY[tag]).first.count() > 0
+        except Exception:
+            return False
+
+    def _settle(self, tag, seconds=25):
         """Doğrulama sayfaları kendini yeniler; hedef içerik görünene kadar bekle."""
-        deadline = time.time() + 25
+        deadline = time.time() + seconds
         clicked = False
         while time.time() < deadline:
+            if self._ready(tag):
+                return
             try:
-                if self.page.locator(READY[tag]).first.count():
-                    return
-                btn = self.page.locator('form[action*="validateCaptcha"] button[type="submit"]')
-                if not clicked and btn.count():
+                form = self.page.locator('form[action*="alidateCaptcha"]')
+                # Yalnızca kodu hazır gelen "Alışverişe devam et" formu otomatik geçilir;
+                # resimli/yazılı CAPTCHA kullanıcıya bırakılır
+                auto = form.count() and not form.locator('img, input[type="text"], input:not([type])').count()
+                btn = form.locator('button[type="submit"], input[type="submit"]')
+                if not clicked and auto and btn.count():
                     btn.first.click()
                     clicked = True
                     self.captcha_passed += 1
                     print("  'Alışverişe devam et' butonuna tıklandı")
             except Exception:
-                pass                    # sayfa o sırada yenileniyor olabilir
+                pass
             self.page.wait_for_timeout(1000)
+
+    def _content(self):
+        for _ in range(3):
+            try:
+                return self.page.content()
+            except Exception:              # sayfa o sırada yenileniyor
+                self.page.wait_for_timeout(1500)
+        return ""
+
+    def _ask_human(self, url, tag):
+        """Doğrulamayı kullanıcıya çözdürür. Çözülünce sayfanın içeriğini döndürür.
+        human_wait_min=0 ise (GitHub'da, başında kimse yok) beklemeden vazgeçer."""
+        if self.human_wait <= 0:
+            print("  Amazon doğrulama istedi; bu ortamda çözecek kimse yok, bekleme yapılmadı.", flush=True)
+            return None
+        notify("Laptop fiyat takibi", "Amazon doğrulama istiyor. Chrome penceresinde çöz ya da sayfayı yenile.")
+        if self.on_human_needed:
+            try:
+                self.on_human_needed()
+            except Exception:
+                pass
+        try:
+            self.page.bring_to_front()
+        except Exception:
+            pass
+        print(f"  Kullanıcı bekleniyor (en fazla {self.human_wait // 60} dakika)...", flush=True)
+        deadline = time.time() + self.human_wait
+        while time.time() < deadline:
+            self.page.wait_for_timeout(3000)
+            if not self.alive():
+                self.reopen_if_closed()
+                return None
+            html = self._content()
+            if not html or is_blocked(html):
+                continue
+            # Doğrulama geçildi: Amazon başka sayfaya yönlendirmiş olabilir, hedefi tekrar aç
+            if not self._ready(tag):
+                try:
+                    self.page.goto(url, wait_until="domcontentloaded")
+                except Exception:
+                    continue
+                self._settle(tag, 15)
+                html = self._content()
+                if is_blocked(html) or not self._ready(tag):
+                    continue
+            self.human_solved += 1
+            print("  Doğrulama çözüldü, tarama devam ediyor.", flush=True)
+            return html
+        print("  Süre doldu, doğrulama çözülmedi.")
+        return None
 
     def _get(self, url, tag):
         time.sleep(random.uniform(*self.delay))
@@ -84,55 +169,50 @@ class BrowserFetcher:
                 status = resp.status if resp else 0
             except Exception as e:
                 print(f"  sayfa açılamadı: {e}")
+                self.reopen_if_closed()
                 time.sleep(5)
                 continue
             if status == 404:
                 return ""
             self._settle(tag)
-            try:
-                html = self.page.content()
-            except Exception:           # içerik okunurken sayfa yenilendi
-                self.page.wait_for_timeout(3000)
-                html = self.page.content()
-            if is_blocked(html) or status in (429, 503):
-                self.blocked += 1
-                self.consecutive_blocks += 1
-                print(f"  engel ({tag}): HTTP {status} {url}")
-                if self.blocked <= 3:
-                    save_debug(f"engel_tarayici_{tag}_{self.blocked}.html", html)
-                if self.consecutive_blocks >= 3:
-                    raise Blocked(url)
-                time.sleep(20 + 20 * attempt)
-                continue
-            self.consecutive_blocks = 0
-            return html
+            html = self._content()
+            if not (is_blocked(html) or status in (429, 503)):
+                if not self._ready(tag) and tag != "giris" and attempt == 0:
+                    continue                # başka sayfaya yönlendirildi: hedefi bir kez daha aç
+                self.consecutive_blocks = 0
+                return html
+            self.blocked += 1
+            print(f"  engel ({tag}): HTTP {status} {url}")
+            if self.blocked <= 3:
+                save_debug(f"engel_tarayici_{tag}_{self.blocked}.html", html, self.debug_dir)
+            html = self._ask_human(url, tag)
+            if html is not None:
+                self.consecutive_blocks = 0
+                return html
+            raise Blocked(url)              # kullanıcı çözmedi: bu tur burada biter
         return None
 
-    # ------------------------------------------------ Fetcher arayüzü
+    # ------------------------------------------------ main.py'nin kullandığı arayüz
     def reset_streak(self):
         self.consecutive_blocks = 0
 
     def warmup(self):
         return self._get(BASE + "/", "giris") is not None
 
-    def search(self, query, page):
-        return self._get(f"{BASE}/s?k={quote_plus(query)}&page={page}", "arama")
-
     def product(self, asin):
         return self._get(f"{BASE}/dp/{asin}?th=1&psc=1", "urun")
 
+    def page_url(self, url):
+        return self._get(url, "arama")
+
     def offers(self, asin):
-        return ""                       # teklif paneli adresi bu sitede 404; ürün sayfası kullanılır
+        return None                     # teklif paneli kullanılmıyor (amazon.com.tr'de 404); fiyat ürün sayfasından
 
     def save_cookies(self):
-        try:
-            os.makedirs(os.path.dirname(STATE_PATH), exist_ok=True)
-            self.ctx.storage_state(path=STATE_PATH)
-        except Exception as e:
-            print(f"Tarayıcı oturumu kaydedilemedi: {e}")
+        pass                            # kalıcı profil kendini kaydeder
 
     def close(self):
-        for fn in (self.ctx.close, self.browser.close, self._pw.stop):
+        for fn in (self.ctx.close, self._pw.stop):
             try:
                 fn()
             except Exception:
