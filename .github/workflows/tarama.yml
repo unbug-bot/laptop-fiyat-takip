@@ -1,6 +1,6 @@
 name: Site
 
-# Tarama artık Mac'te yapılıyor. Bu iş akışı yalnızca Mac'in gönderdiği veriyle siteyi yayınlar.
+# Mac'in gönderdiği veriyle siteyi yayınlar. Amazon'a istek atmaz.
 on:
   push:
     branches: [main]
@@ -12,13 +12,12 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: site
-  cancel-in-progress: true
-
 jobs:
   yayin:
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages                 # Fiyat iş akışıyla aynı grup: iki yayın aynı anda olmaz
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
