@@ -72,7 +72,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -131,7 +131,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -252,7 +252,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -6.52,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 11069910,
    "manual": null,
    "max_price": 12399900,
@@ -319,7 +319,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.46,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 10049900,
    "manual": null,
    "max_price": 11030155,
@@ -386,7 +386,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.76,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 13769910,
    "manual": null,
    "max_price": 15299900,
@@ -453,7 +453,7 @@
    ],
    "in_stock": true,
    "last_change_pct": -5.76,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 13094910,
    "manual": null,
    "max_price": 14549900,
@@ -512,7 +512,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 12649900,
    "manual": null,
    "max_price": 12649900,
@@ -571,7 +571,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 11649900,
    "manual": null,
    "max_price": 11649900,
@@ -630,7 +630,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -689,7 +689,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 8829900,
    "manual": null,
    "max_price": 8829900,
@@ -802,7 +802,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-09T07:41:21Z",
+   "last_checked": "2026-11-09T08:41:25Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -914,7 +914,7 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 117,
+  "checked": 122,
   "config_hash": "ab0e9f103c97",
   "discovery": {
    "anahtar_kelime_dongu": {
@@ -928,31 +928,41 @@
      "sorgu": 36,
      "started": "2026-11-07T01:07:50Z"
     },
-    "sorgu": 27,
+    "sorgu": 34,
     "toplam_sorgu": 36
    },
    "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-09T07:41:21Z",
-   "atlanan": 1,
+   "at": "2026-11-09T08:41:25Z",
+   "atlanan": 12,
    "atlanan_ornek": [
-    "Dell Pro Max18 Pls Ultra9 285HX-18-32G-1TBSD-12G-W"
+    "Samsung 27\" Odyssey G5 G50F QHD 180 Hz 1 ms IPS Gaming Monitör LS27FG502EUXUF",
+    "MINISFORUM G1 Pro Mini PC AMD Ryzen 9 8945HX(16C/32T, 5.4GHz'e kadar) 32GB DDR5 1TB PCIe4.",
+    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 96GB 512GB SSD+512GB SSD 12GB/RTX5070T",
+    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 80GB 4tb+4tb SSD 12GB/RTX5070Tİ Gddr7 ",
+    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 96GB 512GB SSD 12GB/RTX5070Tİ Gddr7 14",
+    "Msı Vector A18 Hx A9WHG-094TR Amd Ryzen 9-9955HX Aı 80GB 2tb+2tb SSD 12GB/RTX5070Tİ Gddr7 ",
+    "Ryzen 9 9950X3D 5.0ghz 128MB 170W Am5 Fansız Tray",
+    "AMD Ryzen 9 9950X3D Masaüstü İşlemci, 16 Çekirdek / 32 İş Parçacığı, 4.3 GHz Taban / 5.7 G",
+    "Kuzey's Store Profesyonel Dizüstü Bilgisayar MACbook ile Uyumlu Notebook Soğutucu Laptop S",
+    "Lenovo Legion 17 Zoll Armored Backpack II, Gaming-Laptoptasche, doppellagiger Schutz, spez",
+    "Classone 17 inç BP-G100 Gaming XL Serisi Sırt Çantası, Siyah",
+    "Classone BP-TW1704 Twin Color 17\"Uyumlu Notebook Çantası, Gri"
    ],
-   "basliktan_red": 343,
-   "gorulen_ilan": 866,
+   "basliktan_red": 468,
+   "gorulen_ilan": 1007,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
     "kalan_aralik": 33,
-    "sayfa": 780,
+    "sayfa": 810,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "120660-122357 TL: 250 görüldü, Amazon 468 bildirdi; ikiye bölündü",
-    "120660-121508 TL: 240 görüldü, Amazon 247 bildirdi; ikiye bölündü"
+    "122358-123206 TL: 250 görüldü, Amazon 271 bildirdi; ikiye bölündü"
    ],
-   "yeni_aday": 11
+   "yeni_aday": 5
   },
-  "duration_sec": 2788,
+  "duration_sec": 2845,
   "eval_queue": {},
   "evaluated": 11,
   "github": {
@@ -976,11 +986,14 @@
     "B0FNWKMKR5",
     "B0FWKN5HW4",
     "B0FGDPHVW8",
-    "B0FMFL91NB"
+    "B0FMFL91NB",
+    "B0FPMH5CW8",
+    "B0FNWGDPD1",
+    "B0FPMKK891"
    ],
-   "cycle_pages": 75,
+   "cycle_pages": 90,
    "cycle_started": "2026-11-07T08:09:11Z",
-   "i": 27,
+   "i": 34,
    "last_cycle": {
     "finished": "2026-11-07T07:09:04Z",
     "kontrol_bilinen": 14,
@@ -990,7 +1003,7 @@
     "sorgu": 36,
     "started": "2026-11-07T01:07:50Z"
    },
-   "page": 3,
+   "page": 1,
    "queries": [
     "rtx 5060 laptop",
     "rtx5060",
@@ -1031,13 +1044,13 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-09T07:41:21Z",
-  "last_progress": "2026-11-09T07:41:21Z",
-  "last_run": "2026-11-09T07:41:21Z",
+  "last_ok": "2026-11-09T08:41:25Z",
+  "last_progress": "2026-11-09T08:41:25Z",
+  "last_run": "2026-11-09T08:41:25Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 178,
+  "requests": 361,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
@@ -1048,8 +1061,8 @@
     "B0FPMKK891",
     "B0H2VH51K2"
    ],
-   "cycle_pages": 780,
-   "cycle_seen": 18010,
+   "cycle_pages": 810,
+   "cycle_seen": 18707,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1269,25 +1282,25 @@
      null
     ],
     [
-     122358,
+     123207,
      124056,
      1,
      0,
      null
     ],
     [
-     121509,
-     122357,
+     122782,
+     123206,
      1,
      0,
      null
     ],
     [
-     121084,
-     121508,
-     1,
-     0,
-     null
+     122358,
+     122781,
+     5,
+     96,
+     128
     ]
    ]
   }
