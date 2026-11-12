@@ -1,11 +1,12 @@
 name: Fiyat
 
-# Saatlik fiyat kontrolü. KEŞİF YAPMAZ: arama sayfası açmaz, yalnızca onaylı ürünlerin sayfasını
-# ASIN'den açar. Veritabanına (data/db.json) ve data/site.json'a yazmaz; onların sahibi Mac'tir.
-# Yalnızca data/gozlem/ altına yeni bir dosya ve data/github_durum.json yazar; Mac bunları her turda işler.
+# Günde iki kez fiyat kontrolü (Türkiye saatiyle 09:20 ve 21:20). KEŞİF YAPMAZ: arama sayfası açmaz,
+# yalnızca onaylı ürünlerin sayfasını ASIN'den açar. Veritabanına (data/db.json) ve data/site.json'a
+# yazmaz; onların sahibi Mac'tir. Yalnızca data/gozlem/ altına yeni bir dosya ve data/github_durum.json
+# yazar; Mac bunları her turda işler.
 on:
   schedule:
-    - cron: "47 * * * *"          # her saat 47. dakikada (UTC)
+    - cron: "20 6,18 * * *"       # Türkiye saatiyle 09:20 ve 21:20 (06:20 ve 18:20 UTC)
   workflow_dispatch:
 
 permissions:
