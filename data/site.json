@@ -71,7 +71,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 13399900,
    "manual": null,
    "max_price": 13399900,
@@ -130,7 +130,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 12799900,
    "manual": null,
    "max_price": 12799900,
@@ -201,7 +201,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 12.01,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 12399900,
    "manual": null,
    "max_price": 12399900,
@@ -272,7 +272,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 15.92,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 11649900,
    "manual": null,
    "max_price": 11649900,
@@ -331,7 +331,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 11649900,
    "manual": null,
    "max_price": 11649900,
@@ -390,7 +390,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 11249900,
    "manual": null,
    "max_price": 11249900,
@@ -512,7 +512,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 9899900,
    "manual": null,
    "max_price": 9899900,
@@ -571,7 +571,7 @@
    ],
    "in_stock": true,
    "last_change_pct": null,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 12199900,
    "manual": null,
    "max_price": 12199900,
@@ -694,7 +694,7 @@
    ],
    "in_stock": true,
    "last_change_pct": 2.2,
-   "last_checked": "2026-11-17T09:16:26Z",
+   "last_checked": "2026-11-17T10:16:30Z",
    "last_known_price": 13949900,
    "manual": null,
    "max_price": 13949900,
@@ -739,6 +739,65 @@
     }
    },
    "title": "Game Garaj Slayer X9T XL-5070Ti C2 Intel Core i9 14900HX 16GB RAM 1TB SSD RTX5070Ti 18\" 300Hz QHD+ IPS FreeDOS Gaming Laptop"
+  },
+  {
+   "alerts": null,
+   "asin": "B0FYY15BMW",
+   "current_price": 13149900,
+   "first_seen": "2026-11-17T10:16:30Z",
+   "history": [
+    [
+     "2026-11-17T10:16:30Z",
+     13149900
+    ]
+   ],
+   "in_stock": true,
+   "last_change_pct": null,
+   "last_checked": "2026-11-17T10:16:30Z",
+   "last_known_price": 13149900,
+   "manual": null,
+   "max_price": 13149900,
+   "min_price": 13149900,
+   "prev_price": null,
+   "specs": {
+    "cozunurluk": {
+     "degerler": [
+      "qhd+"
+     ],
+     "karar": "gecti"
+    },
+    "cpu": {
+     "degerler": [
+      "ryzen 9 9955hx3d"
+     ],
+     "karar": "gecti"
+    },
+    "ekran_boyutu": {
+     "degerler": [
+      "17.0"
+     ],
+     "karar": "gecti"
+    },
+    "gpu": {
+     "degerler": [
+      "rtx 5070"
+     ],
+     "karar": "gecti"
+    },
+    "ram": {
+     "degerler": [
+      "16"
+     ],
+     "karar": "gecti"
+    },
+    "yenileme": {
+     "degerler": [
+      "240"
+     ],
+     "karar": "gecti"
+    }
+   },
+   "title": "Game Garaj Slayer R9M3D XL-5070 C7 AMD Ryzen 9 9955HX3D 16GB RAM 1TB SSD RTX5070 17\" QHD+ 240Hz IPS FreeDOS Oyuncu Laptop"
   }
  ],
  "meta": {
@@ -746,7 +805,7 @@
   "aod_missing_at": "2026-11-03T05:07:27Z",
   "blocked": 0,
   "captcha_passed": 0,
-  "checked": 128,
+  "checked": 129,
   "config_hash": "ab0e9f103c97",
   "discovery": {
    "anahtar_kelime_dongu": {
@@ -762,33 +821,30 @@
      "sorgu": 36,
      "started": "2026-11-07T08:09:11Z"
     },
-    "sorgu": 24,
+    "sorgu": 27,
     "toplam_sorgu": 36
    },
    "anahtar_kelime_sayfa": 15,
-   "at": "2026-11-17T09:16:26Z",
-   "atlanan": 4,
+   "at": "2026-11-17T10:16:30Z",
+   "atlanan": 1,
    "atlanan_ornek": [
-    "Dell https://storage.googleapis.com/infoowl-1469779222414.appspot.com//b2530136-03e8-4879-",
-    "2 YIL LENOVO TÜRKİYE GARANTİLİ - ADINIZA FATURALI - AYNI GÜN KARGO",
-    "Dell https://storage.googleapis.com/infoowl-1469779222414.appspot.com//b2530136-03e8-4879-",
-    "Dell Pro Max18 Pls Ultra9 285HX-18-32G-1TBSD-12G-W"
+    "Asus Rog Strix G18 G814PP Amd Ryzen 9 8940HX Aı 24GB 512GB SSD 8GB/RTX5070 Gddr7 115W 18\"2"
    ],
-   "basliktan_red": 491,
-   "gorulen_ilan": 961,
+   "basliktan_red": 538,
+   "gorulen_ilan": 995,
    "kategori_dongu": {
     "basladi": "2026-11-05T06:13:31Z",
-    "kalan_aralik": 27,
-    "sayfa": 960,
+    "kalan_aralik": 26,
+    "sayfa": 990,
     "son_tamamlanan": null
    },
    "kategori_sayfa": 30,
    "notlar": [
-    "129151-130848 TL: 250 görüldü, Amazon 470 bildirdi; ikiye bölündü"
+    "130000-130848 TL: 217 görüldü, Amazon 218 bildirdi; ikiye bölündü"
    ],
    "yeni_aday": 1
   },
-  "duration_sec": 2828,
+  "duration_sec": 2859,
   "eval_queue": {},
   "evaluated": 1,
   "github": {
@@ -818,11 +874,12 @@
     "B0FPMKK891",
     "B0FWKN5HW4",
     "B0FGDPHVW8",
-    "B0FBX9X4QC"
+    "B0FBX9X4QC",
+    "B0FMFL91NB"
    ],
-   "cycle_pages": 60,
+   "cycle_pages": 75,
    "cycle_started": "2026-11-13T08:10:15Z",
-   "i": 24,
+   "i": 27,
    "last_cycle": {
     "finished": "2026-11-12T20:29:19Z",
     "kontrol_bilinen": 18,
@@ -875,13 +932,13 @@
    ]
   },
   "laptop_node": "12601898031",
-  "last_ok": "2026-11-17T09:16:26Z",
-  "last_progress": "2026-11-17T09:16:26Z",
-  "last_run": "2026-11-17T09:16:26Z",
+  "last_ok": "2026-11-17T10:16:30Z",
+  "last_progress": "2026-11-17T10:16:30Z",
+  "last_run": "2026-11-17T10:16:30Z",
   "last_search_at": "2026-11-04T18:52:50Z",
   "last_status": "tamam",
   "queue": 0,
-  "requests": 555,
+  "requests": 738,
   "search_pages": 1,
   "sweep": {
    "cycle_ok_seen": [
@@ -893,8 +950,8 @@
     "B0H2VH51K2",
     "B0FGDPHVW8"
    ],
-   "cycle_pages": 960,
-   "cycle_seen": 22112,
+   "cycle_pages": 990,
+   "cycle_seen": 22757,
    "cycle_started": "2026-11-05T06:13:31Z",
    "node": "12601898031",
    "order": true,
@@ -1079,18 +1136,11 @@
      null
     ],
     [
-     130849,
+     131698,
      132546,
      1,
      0,
      null
-    ],
-    [
-     130000,
-     130848,
-     2,
-     24,
-     218
     ]
    ]
   }
